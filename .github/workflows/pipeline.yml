@@ -1,0 +1,26 @@
+name: Pipeline Demo
+
+on:
+  workflow_dispatch:
+    inputs:
+      commit_to_supabase:
+        description: "Write validated candidates to Supabase"
+        required: true
+        default: false
+        type: boolean
+
+jobs:
+  pipeline-demo:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: python scripts/pipeline_demo.py --input scripts/sample_sources.json --dry-run --output pipeline-output.local.json
+      - run: python scripts/supabase_ingest.py --input pipeline-output.local.json
+      - if: ${{ inputs.commit_to_supabase }}
+        env:
+          NEXT_PUBLIC_SUPABASE_URL: ${{ secrets.NEXT_PUBLIC_SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python scripts/supabase_ingest.py --input pipeline-output.local.json --commit

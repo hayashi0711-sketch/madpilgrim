@@ -1,0 +1,20 @@
+[
+  {
+    "source_url": "https://example.com/demo-press-release",
+    "source_type": "official",
+    "expected_title": "Demo Work",
+    "expected_category": "mv",
+    "expected_spot_name": "Demo Station Plaza",
+    "expected_address": "Tokyo Station, Tokyo",
+    "raw_text": "Demo Work announces a music video filmed around Demo Station in Tokyo. The public plaza is safe to visit during daytime."
+  },
+  {
+    "source_url": "https://example.com/demo-fan-note",
+    "source_type": "fan",
+    "expected_title": "River Episode",
+    "expected_category": "anime",
+    "expected_spot_name": "Demo Town Riverside Bridge",
+    "expected_address": "",
+    "raw_text": "Fans often compare the riverside bridge near Demo Town with episode 2. Exact address is unclear, but it appears to be a public walkway."
+  }
+]

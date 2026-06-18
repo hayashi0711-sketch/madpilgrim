@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+.env
+.env.local
+.env.*.local
+dist
+coverage
+*.log
+.dev-server*.log
+pipeline-output*.json
+wikidata_location_candidates.csv
+wikidata_holy_places.csv
+
+# Claude Code session data
+.claude/
+pipeline-output.local.json
+__pycache__/
+*.pyc

@@ -1,0 +1,26 @@
+import { createClient } from "@supabase/supabase-js";
+
+export function getSupabaseClient() {
+  const url = process.env.NEXT_PUBLIC_SUPABASE_URL;
+  const anonKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY;
+
+  if (!url || !anonKey) {
+    return null;
+  }
+
+  return createClient(url, anonKey, {
+    global: {
+      fetch: (input, init) =>
+        fetch(input, {
+          ...init,
+          cache: "no-store"
+        })
+    }
+  });
+}
+
+export const getSupabaseBrowserClient = getSupabaseClient;
+
+export function hasSupabaseConfig() {
+  return Boolean(process.env.NEXT_PUBLIC_SUPABASE_URL && process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY);
+}

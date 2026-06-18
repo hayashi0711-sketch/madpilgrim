@@ -1,0 +1,33 @@
+{
+  "name": "mad-pilgrim",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "pipeline:dry-run": "python scripts/pipeline_demo.py --input scripts/sample_sources.json --dry-run --output pipeline-output.local.json",
+    "pipeline:ingest:preview": "python scripts/supabase_ingest.py --input pipeline-output.local.json",
+    "supabase:seed:preview": "python scripts/supabase_ingest.py --input scripts/mvp_seed.json",
+    "supabase:check": "python scripts/check_supabase.py"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4",
+    "mapbox-gl": "^3.7.0",
+    "next": "^15.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.7.5",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.12.0",
+    "eslint-config-next": "^15.0.0",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "typescript": "^5.6.3"
+  }
+}

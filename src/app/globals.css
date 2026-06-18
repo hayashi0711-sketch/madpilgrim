@@ -1,0 +1,186 @@
+@import "mapbox-gl/dist/mapbox-gl.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f7f4ec;
+  color: #171717;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mapboxgl-control-container {
+  display: none;
+}
+
+.receipt-shell {
+  height: 100vh;
+  min-height: 760px;
+  display: grid;
+  grid-template-rows: 82px minmax(0, 1fr) 72px;
+  background: #f7f7f5;
+  color: #0a0a0a;
+  font-family: "Arial Narrow", "Roboto Condensed", "Yu Gothic", sans-serif;
+  letter-spacing: 0;
+}
+
+.receipt-header {
+  display: grid;
+  grid-template-columns: 230px 250px 1fr 190px 170px;
+  min-height: 82px;
+  align-items: center;
+  border: 1px solid #bbb;
+  background: white;
+}
+
+.receipt-brand, .receipt-subbrand, .receipt-header h1, .receipt-city, .receipt-check { padding: 12px 26px; }
+.receipt-brand, .receipt-subbrand { border-right: 1px solid #555; }
+.receipt-brand { font-size: 38px; font-weight: 900; white-space: nowrap; }
+.receipt-brand span { font-weight: 500; }
+.receipt-subbrand { display: flex; flex-direction: column; }
+.receipt-subbrand strong { color: #ff360b; font-family: monospace; font-size: 18px; }
+.receipt-subbrand span { font-size: 13px; }
+.receipt-header h1 { margin: 0; font-family: Impact, "Arial Narrow", sans-serif; font-size: 36px; letter-spacing: 2px; }
+.receipt-city { display: grid; grid-template-columns: 34px 1fr; }
+.receipt-city .receipt-pin { grid-row: span 2; font-size: 34px; }
+.receipt-city strong { font-size: 18px; }
+.receipt-city small, .receipt-check { font-family: monospace; font-size: 10px; }
+.receipt-check { margin-right: 14px; background: #050505; color: white; display: flex; flex-direction: column; gap: 7px; }
+
+.receipt-workspace { display: grid; grid-template-columns: 28fr 34fr 38fr; gap: 12px; padding: 12px; min-height: 0; background: #f4f4f2; }
+.receipt-scenes, .receipt-map, .receipt-food { min-width: 0; border: 1px solid #999; background: white; overflow: hidden; position: relative; }
+.receipt-blackbar { height: 38px; background: #050505; color: white; display: flex; align-items: center; justify-content: space-between; padding: 0 14px; font-family: monospace; }
+.receipt-blackbar strong { font-size: 15px; }
+.receipt-blackbar em { color: #ff360b; font-style: normal; }
+.receipt-blackbar span, .receipt-blackbar small { font-size: 10px; }
+.receipt-tabs { height: 34px; display: flex; align-items: center; gap: 24px; padding: 0 14px; background: #050505; border-top: 1px dotted #777; color: white; }
+.receipt-tabs button { background: none; border: 0; color: inherit; font-size: 12px; cursor: pointer; }
+.receipt-tabs button.is-active { color: #ff360b; text-decoration: underline; text-underline-offset: 5px; }
+.receipt-stats { display: grid; grid-template-columns: 1fr 70px 1fr 60px; align-items: center; height: 38px; padding: 0 14px; background: #050505; color: white; font: 11px monospace; border-top: 1px dotted #777; }
+.receipt-stats b:first-of-type { color: #ff360b; font-size: 18px; }
+.receipt-scene-list { height: calc(100% - 148px); overflow-y: auto; background: #090909; }
+.receipt-scene { width: 100%; min-height: 110px; display: grid; grid-template-columns: 48px 84px 1fr 40px; gap: 8px; align-items: stretch; border: 0; border-bottom: 5px solid #090909; padding: 7px 10px 7px 12px; background: white; text-align: left; cursor: pointer; color: #111; position: relative; }
+.receipt-scene::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 6px; background: radial-gradient(circle, #090909 3px, transparent 4px) 0 0/6px 14px; }
+.receipt-scene.is-selected { background: linear-gradient(115deg, #ff3b0b, #ff2400); color: white; }
+.receipt-scene.is-selected::after { content: ""; position: absolute; right: -25px; top: 50%; z-index: 6; width: 28px; height: 2px; background: #ff360b; box-shadow: 24px 0 0 #ff360b; }
+.receipt-scene img { width: 84px; height: 92px; object-fit: cover; filter: saturate(.8) contrast(1.05); }
+.receipt-number { font: 17px monospace; display: flex; flex-direction: column; }
+.receipt-number small { font-size: 8px; margin-top: 5px; }
+.receipt-scene-copy { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
+.receipt-scene-copy strong { font-size: 15px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.receipt-scene-copy b { font: 11px monospace; }
+.receipt-scene-copy span { font: 9px monospace; }
+.receipt-scene-copy i { align-self: flex-start; padding: 3px 6px; background: #eee; color: #333; font: 8px sans-serif; font-style: normal; }
+.receipt-scene.is-selected .receipt-scene-copy i { background: transparent; color: white; border: 1px solid white; }
+.receipt-rate { align-self: end; text-align: right; font: 12px monospace; font-weight: bold; }
+.receipt-selected-badge { background: transparent; color: white; border: 1px solid rgba(255,255,255,.7); font: 7px monospace; padding: 2px 5px; margin-left: 6px; font-style: normal; vertical-align: middle; border-radius: 2px; }
+.receipt-view-all { height: 42px; background: #050505; color: white; display: grid; grid-template-columns: 1fr 30px 30px; align-items: center; padding: 0 14px; font: 11px monospace; }
+
+.receipt-map { display: flex; flex-direction: column; }
+.receipt-map-canvas { flex: 1; min-height: 600px; background: #e8e8e4; position: relative; overflow: hidden; }
+.receipt-map-fallback { height: 100%; background: #f4f4f1; }
+.receipt-map-fallback svg { width: 100%; height: 100%; display: block; }
+.map-road { fill: none; stroke: #c7c8c5; stroke-width: 5; }
+.map-road.major { stroke: #b9bbb8; stroke-width: 8; }
+.map-rail { fill: none; stroke: #969996; stroke-width: 4; stroke-dasharray: 2 4; }
+.map-route { fill: none; stroke: #ff360b; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.map-districts { font: 16px "Yu Gothic", sans-serif; fill: #292929; }
+.map-districts text:nth-child(n+5) { font-size: 11px; }
+.map-pin-group { cursor: pointer; }
+.map-pin-shape { fill: #080808; stroke: #fff; stroke-width: 2; }
+.map-pin-group text { fill: #fff; text-anchor: middle; font: 11px monospace; font-weight: 700; pointer-events: none; }
+.map-pin-ring { fill: #fff; stroke: #080808; stroke-width: 2; }
+.map-pin-group.is-selected .map-pin-shape { fill: #ff360b; }
+.map-pin-group.is-selected .map-pin-ring { fill: #ff360b; stroke: #fff; stroke-width: 4; }
+.map-pin-group.is-selected text { font-size: 14px; }
+.map-scale { fill: none; stroke: #111; stroke-width: 1; font: 10px monospace; }
+.map-scale text { fill: #111; stroke: none; }
+.receipt-live-route { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 1; }
+.receipt-live-route path { fill: none; stroke: #ff360b; stroke-width: 2; vector-effect: non-scaling-stroke; }
+.receipt-marker { border: 0; border-radius: 3px 3px 3px 0; transform: rotate(-45deg); background: #050505; color: white; min-width: 36px; height: 30px; font: 10px monospace; cursor: pointer; box-shadow: 0 2px 6px #0004; }
+.receipt-marker::first-line { transform: rotate(45deg); }
+.receipt-marker.is-selected { background: #ff360b; min-width: 48px; height: 38px; font-size: 15px; outline: 4px solid #fff; }
+
+.receipt-food { display: flex; flex-direction: column; }
+.receipt-food-kicker { height: 24px; padding: 5px 14px; background: #050505; color: white; font: 10px monospace; border-top: 1px dotted #777; }
+.receipt-food-image { height: 268px; position: relative; background: #222; }
+.receipt-food-image img { width: 100%; height: 100%; object-fit: cover; }
+.receipt-food-image > span { position: absolute; top: 12px; right: 12px; padding: 5px 10px; background: #25945a; color: white; font: 11px monospace; }
+.receipt-food-image > b { position: absolute; bottom: 8px; left: 10px; background: white; padding: 5px 9px; font: 10px monospace; }
+.receipt-dossier { flex: 1; padding: 12px 14px; overflow-y: auto; }
+.receipt-scene-link { display: grid; grid-template-columns: 1fr 140px; gap: 14px; padding-bottom: 10px; border-bottom: 1px dotted #aaa; }
+.receipt-scene-link > div { min-width: 0; }
+.receipt-scene-link small { display: block; color: #ff360b; font: 9px monospace; }
+.receipt-scene-link strong { display: block; margin: 5px 0; font: 22px monospace; }
+.receipt-scene-link strong span { font-size: 13px; }
+.receipt-scene-link b { display: block; margin-bottom: 5px; font: 11px monospace; }
+.receipt-scene-link p { margin: 0; font-size: 12px; line-height: 1.7; }
+.receipt-scene-link > img { width: 140px; height: 118px; object-fit: cover; filter: saturate(.75) contrast(1.08); }
+.receipt-dossier dl { margin: 0; }
+.receipt-dossier dl > div { display: grid; grid-template-columns: 88px 1fr; padding: 8px 0; border-bottom: 1px dotted #aaa; }
+.receipt-dossier dt { font: 10px monospace; }
+.receipt-dossier dd { margin: 0; display: flex; justify-content: space-between; gap: 10px; font: 12px monospace; }
+.receipt-dossier dd strong { font-family: sans-serif; font-size: 15px; }
+.receipt-dossier dd small { display: block; margin-top: 3px; color: #555; font: 9px monospace; }
+.receipt-dossier .available { color: #239857; font-family: monospace; }
+.receipt-dossier .walk { color: #ff360b; font-family: monospace; }
+.receipt-evidence { display: flex; align-items: center; gap: 8px; margin-top: 10px; }
+.receipt-evidence > span { width: 80px; font: 10px monospace; }
+.receipt-evidence img { width: 58px; height: 52px; object-fit: cover; }
+.receipt-evidence b { width: 50px; height: 52px; display: grid; place-items: center; border: 1px solid #bbb; font: 11px monospace; text-align: center; }
+.receipt-evidence small { font-size: 7px; }
+.receipt-actions { display: grid; grid-template-columns: 1.2fr 1fr; gap: 8px; margin-top: 16px; }
+.receipt-actions a { min-height: 38px; display: grid; place-items: center; border: 1px solid #999; font-size: 12px; }
+.receipt-actions a:first-child { background: #ff360b; color: white; border-color: #ff360b; font-weight: bold; }
+
+.receipt-footer { min-height: 72px; display: grid; grid-template-columns: 1.1fr 1.05fr .8fr 1.3fr 1fr; border: 1px solid #bbb; background: white; }
+.receipt-footer > div { padding: 12px 22px; border-right: 1px solid #999; display: flex; flex-direction: column; justify-content: center; gap: 5px; }
+.receipt-footer small { font: 9px monospace; }
+.receipt-footer strong, .receipt-footer span { font: 14px monospace; }
+.receipt-footer strong i { display: inline-block; width: 120px; height: 8px; margin-left: 10px; background: repeating-linear-gradient(90deg, #ff360b 0 25px, #eee 25px 31px); }
+.receipt-barcode i { height: 28px; background: repeating-linear-gradient(90deg, #111 0 2px, transparent 2px 4px, #111 4px 5px, transparent 5px 8px); }
+.receipt-barcode span { font-size: 8px; text-align: center; }
+
+@media (max-width: 900px) {
+  .receipt-shell { height: auto; min-height: 100vh; display: block; }
+  .receipt-header { grid-template-columns: 1fr 1fr; }
+  .receipt-header h1 { grid-column: 1 / -1; grid-row: 2; border-top: 1px solid #aaa; font-size: 26px; }
+  .receipt-city, .receipt-check { display: none; }
+  .receipt-workspace { grid-template-columns: 1fr; height: auto; }
+  .receipt-scenes, .receipt-food { min-height: auto; }
+  .receipt-map { min-height: 620px; }
+  .receipt-footer { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 640px) {
+  .receipt-header { display: flex; flex-wrap: wrap; }
+  .receipt-brand { font-size: 29px; }
+  .receipt-subbrand { border-right: 0; padding-left: 0; }
+  .receipt-header h1 { width: 100%; font-size: 21px; }
+  .receipt-workspace { padding: 7px; gap: 7px; }
+  .receipt-tabs { gap: 8px; overflow-x: auto; scrollbar-width: thin; }
+  .receipt-tabs button { flex: 0 0 auto; }
+  .receipt-scene { grid-template-columns: 40px 74px 1fr 34px; }
+  .receipt-scene img { width: 74px; }
+  .receipt-actions { grid-template-columns: 1fr; }
+  .receipt-scene-link { grid-template-columns: 1fr 96px; }
+  .receipt-scene-link > img { width: 96px; height: 96px; }
+  .receipt-evidence { flex-wrap: wrap; }
+  .receipt-evidence > span { width: 100%; }
+  .receipt-footer { grid-template-columns: 1fr; }
+  .receipt-footer > div { border-bottom: 1px solid #aaa; }
+}
