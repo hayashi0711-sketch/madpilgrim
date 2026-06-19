@@ -1,0 +1,107 @@
+{
+  "work_title": "VIVANT",
+  "spots": [
+    {
+      "title": "VIVANT",
+      "title_en": "VIVANT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2023,
+      "scene_number": "01",
+      "spot_name": "神田明神（神田神社）",
+      "spot_name_en": "Kanda Myojin Shrine",
+      "prefecture": "tokyo",
+      "city": "chiyoda",
+      "latitude": 35.702056,
+      "longitude": 139.767944,
+      "description_ja": "主人公・乃木憂助（堺雅人）が毎朝欠かさず参拝する神社。実は自衛隊の影の諜報部隊「別班」の隠れ連絡場所であり、境内の祠（ほこら）の裏に「特製まんじゅう」をお供えすることが、上司の櫻井（キムラ緑子）への緊急連絡のシグナルという極めて重要な舞台として全編にわたり登場した。",
+      "description_en": "The historical Shinto shrine where the protagonist, Yusuke Nogi, visits every morning. In reality, it serves as a secret contact point for the elite shadow intelligence unit 'BEPPAN.' Placing a specific bun behind the small shrine triggers an emergency meeting with his commander.",
+      "visit_tips_ja": "JR・東京メトロ「御茶ノ水駅」聖橋口から徒歩約5分、または「秋葉原駅」電気街口から徒歩約7分。劇中で乃木がお供えしていた祠は、境内にある「延寿稲荷神社」がモデル。日中は参拝客や聖地巡礼のファンで非常に賑わいます。",
+      "scene_timestamp": "45:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.kandamyoujin.or.jp/",
+      "source_evidence": "神田明神の広報およびドラマ公式SNSにて撮影協力として大々的に公表。劇中の随神門、本殿、および稲荷神社の配置が実在の境内と完全に一致するため。",
+      "nearby_foods": [
+        {
+          "dish_name": "延寿庵 特製まんじゅう / 勝ち運まんじゅう",
+          "venue_name": "神田明神（文化交流館 EDOCCO内ほか）",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,500",
+          "source_url": "https://edocco-cafe.com/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 1,
+          "scene_evidence": "乃木が別班の緊急招集合図として祠の裏に置く「赤いマーク入りの白いおまんじゅう」。ドラマ放送後、神田明神内の物産館などで『VIVANT』公式コラボ饅頭や、劇中の設定をオマージュしたお饅頭が販売され、聖地巡礼の定番土産となった。"
+        }
+      ]
+    },
+    {
+      "title": "VIVANT",
+      "title_en": "VIVANT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2023,
+      "scene_number": "08",
+      "spot_name": "島根県庁本庁舎",
+      "spot_name_en": "Shimane Prefectural Government Building",
+      "prefecture": "shimane",
+      "city": "matsue",
+      "latitude": 35.472255,
+      "longitude": 133.050512,
+      "description_ja": "乃木憂助のルーツであり、天才ハッカー・太田梨歩（飯沼愛）の潜伏先としても登場する島根編のベースロケーション。劇中では「島根県警察本部」の外観などとして重厚に映し出された。島根県は乃木の家系である「乃木家」の由緒正き地として、物語の後半に深く関わってくる。",
+      "description_en": "The central administrative building used as the exterior of the 'Shimane Prefectural Police Headquarters.' Shimane Prefecture holds great narrative weight as it is the ancestral homeland of the Nogi family, which is deeply explored in the latter half of the series.",
+      "visit_tips_ja": "JR山陰本線「松江駅」からレイクラインバスに乗り「県庁前」バス停下車すぐ。国の登録有形文化財に指定されているモダニズム建築です。平日日中の一般業務時間内であれば、外観や敷地周辺を落ち着いて見学できます。",
+      "scene_timestamp": "15:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.pref.shimane.lg.jp/",
+      "source_evidence": "島根県観光連盟および公式ロケ地マップ「VIVANT しまね食めぐり」に撮影地として明記。特徴的な前庭のロータリー、県庁舎の窓枠のデザインが完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "しまね和牛コロッケ",
+          "venue_name": "ミートショップきたがき",
+          "available": "通年メニュー",
+          "price_range": "¥200〜500",
+          "source_url": "http://www.kitagaki.net/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 3,
+          "scene_evidence": "島根ロケの際、出演者の堺雅人さんやスタッフ陣に差し入れされ、現場で大絶賛されたと公式メディアで話題になった地元名物のコロッケ。県庁から目と鼻の先にある精肉店で、現在は聖地巡礼のご当地グルメとしてポスターも掲示されている。"
+        }
+      ]
+    },
+    {
+      "title": "VIVANT",
+      "title_en": "VIVANT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2023,
+      "scene_number": "08",
+      "spot_name": "出雲大社（周辺およびロケ地エリア）",
+      "spot_name_en": "Izumo Taisha Shrine Area",
+      "prefecture": "shimane",
+      "city": "izumo",
+      "latitude": 35.402011,
+      "longitude": 132.685452,
+      "description_ja": "乃木憂助の父であり、テントのリーダーであるノゴーン・ベキ（役所広司）の過去や、乃木家の歴史を象徴する宿命の地。劇中では、島根の美しい広大な自然とともに、日本の精神性の中心として重要な回想・背景シーンの文脈でサンプリングされた。",
+      "description_en": "The sacred area representing the deep roots of the Nogi lineage and the tragic past of Nogoon Beki (Koji Yakusho). The majestic atmosphere of Izumo reinforces the cultural and spiritual core of the Nogi family tree in the storyline.",
+      "visit_tips_ja": "一畑電車大社線「出雲大社前駅」から徒歩約10分。参道には多くの名物店が並びます。非常に広い境内ですので、午前中の早い時間帯に参拝を済ませ、周辺の老舗そば店を巡るルートがおすすめです。",
+      "scene_timestamp": "38:10",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://izumooyashiro.or.jp/",
+      "source_evidence": "TBS公式の島根ロケ特番および観光協会の公式タイアップ「しまね食めぐり」にて、乃木憂助の出自にまつわる象徴的なロケーションとして確定しているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "三段 割子そば（出雲そば）",
+          "venue_name": "献上そば 羽根屋 本店",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜2,000",
+          "source_url": "https://tabelog.com/shimane/A3202/A320201/32000006/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 15,
+          "scene_evidence": "主演の堺雅人さんがTBSの情報番組『THE TIME,』のVIVANTインタビュー内で「島根を訪れた際は子供の頃から必ず食べている」と大絶賛した、島根ロケ地を象徴する日本三大そばの味。朱塗りの丸い器（割子）に直接つゆをかけて食べる。"
+        }
+      ]
+    }
+  ]
+}

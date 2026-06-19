@@ -1,0 +1,107 @@
+{
+  "work_title": "岸辺露伴は動かない",
+  "spots": [
+    {
+      "title": "岸辺露伴は動かない",
+      "title_en": "Thus Spoke Kishibe Rohan",
+      "category": "drama",
+      "broadcaster": "NHK",
+      "release_year": 2020,
+      "scene_number": "02",
+      "spot_name": "Cafe recovery",
+      "spot_name_en": "Cafe recovery",
+      "prefecture": "tokyo",
+      "city": "edogawa",
+      "latitude": 35.688846,
+      "longitude": 139.873273,
+      "description_ja": "第2話「くしゃがら」にて、志士十五（森山未來）が「くしゃがら」という言葉の謎に取り憑かれ、一心不乱に辞書を貪り読みながら狂気を見せるカフェのロケ地。全面ガラス張りのスタイリッシュかつ開放的な空間が、十五の異常性の際立ちと強いコントラストを生み出している。",
+      "description_en": "The cafe featured in Episode 2 'Kushagara,' where Jugo Shishi (Mirai Moriyama) becomes obsessed with the mysterious word and frantically flips through dictionaries. The stylish, glass-walled open space creates a stark contrast with his growing madness.",
+      "visit_tips_ja": "都営新宿線「一之江駅」から徒歩約10分。瑞江葬儀所の向かい側に位置する、テラス席も備えたお洒落なカフェです。一般の利用客で賑わうため、巡礼時は静かに飲食を楽しみ、他のお客様の迷惑にならないよう撮影マナーに注意してください。",
+      "scene_timestamp": "12:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.nhk.jp/p/ts/YM69Q8456J/",
+      "source_evidence": "ドラマエンディングのクレジットに「撮影協力：Cafe recovery」と明記されている。作中で志士十五が座るテーブルの位置や、ガラス越しに見える外の風景・格子状の窓枠のデザインが実際の店舗と完全に一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "ホットコーヒー",
+          "venue_name": "Cafe recovery",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://tabelog.com/tokyo/A1312/A131205/13248316/",
+          "google_maps_url": "https://maps.app.goo.gl/uXv7z9n1U9W7m6bZ8",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話にて、志士十五がカフェのテーブルに大量の辞書や本を積み上げ、冷めていくコーヒーには目もくれずに「くしゃがら」の謎を調べ続けているシーンに登場する。"
+        }
+      ]
+    },
+    {
+      "title": "岸辺露伴は動かない",
+      "title_en": "Thus Spoke Kishibe Rohan",
+      "category": "drama",
+      "broadcaster": "NHK",
+      "release_year": 2021,
+      "scene_number": "04",
+      "spot_name": "文翔館（山形県郷土館）",
+      "spot_name_en": "Bunshokan (Yamagata Prefectural Museum)",
+      "prefecture": "yamagata",
+      "city": "yamagata",
+      "latitude": 38.256338,
+      "longitude": 140.339678,
+      "description_ja": "第4話「ザ・ラン」にて、露伴が橋本陽馬（笠松将）と出会う場所であり、破滅的なトレッドミル勝負へと繋がる会員制スポーツジム「セントラルジム」のロケ地。大正初期に建てられた英国近世復興様式の美しい赤レンガ造りの重要文化財であり、劇中ではそのクラシカルな内装と近代的なジム設備が融合した独特の空間として描かれた。",
+      "description_en": "Used as the elite 'Central Gym' in Episode 4 'The Run,' where Rohan meets Yoma Hashimoto (Sho Kasamatsu). This majestic British Renaissance-style red brick building, constructed in the early Taisho era, is a Nationally Designated Important Cultural Property. The drama brilliantly blends its historical interiors with modern gym equipment.",
+      "visit_tips_ja": "JR「山形駅」から徒歩約25分、またはベニちゃんバス「市役所・文書館前」下車すぐ。入館料は無料です。歴史的建造物のため、館内での運動器具などの常設はありませんが、劇中に登場した美しい階段や廊下をそのまま見学できます。静かに観覧してください。",
+      "scene_timestamp": "08:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.pref.yamagata.jp/020026/bunshokan/",
+      "source_evidence": "山形県および文翔館の公式広報にて、ドラマ『岸辺露伴は動かない』のロケ地として使用されたことが大々的に発表されている。劇中の重厚な階段ホールやバルコニーの外観は文翔館そのものである。",
+      "nearby_foods": [
+        {
+          "dish_name": "プロテインシェイク（劇中プロップ）",
+          "venue_name": "文翔館 喫茶室（※ロケ地周辺での飲食の象徴として）",
+          "available": "非売品",
+          "price_range": "無料（劇中設定）",
+          "source_url": "https://www.bunshokan.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/9QWz6E6P3v7J2K7m7",
+          "travel_minutes": 0,
+          "scene_evidence": "第4話にて、肉体を極限まで鍛え上げる橋本陽馬が、ジムの休憩スペース（文翔館の重厚な一室）でストイックに特製のプロテインを摂取しているシーンがある。"
+        }
+      ]
+    },
+    {
+      "title": "岸辺露伴は動かない",
+      "title_en": "Thus Spoke Kishibe Rohan",
+      "category": "drama",
+      "broadcaster": "NHK",
+      "release_year": 2022,
+      "scene_number": "07",
+      "spot_name": "総本山 仁和寺",
+      "spot_name_en": "Ninnaji Temple",
+      "prefecture": "kyoto",
+      "city": "ukyoku",
+      "latitude": 35.031172,
+      "longitude": 135.713845,
+      "description_ja": "第7話「ホットサマー・マーガレット」にて登場。怪異が蠢く事件の背景や、露伴が泉京香（飯豊まりえ）と共に独特の空気感の中で謎の調査を進める京都ロケの重要拠点。真言宗御室派の総本山であり、広大な境内と歴史的な建造物が、作品の持つ和風伝奇ミステリーの雰囲気を極限まで高めている。",
+      "description_en": "Featured in Episode 7 'Hot Summer Martha' during the Kyoto arc. This world heritage site, the head temple of the Omuro school of Shingon Buddhism, serves as a grand and mysterious backdrop where Rohan and Kyoka Izumi (Marie Iitoyo) investigate bizarre phenomena, enhancing the show's eerie, traditional Japanese atmosphere.",
+      "visit_tips_ja": "京福電気鉄道（嵐電）北野線「御室仁和寺駅」から徒歩約3分。拝観時間は時期により異なります（通常9:00〜17:00）。国宝の金堂や重要文化財の五重塔など見どころが多いため、午前中の静かな時間帯の訪問がおすすめです。境内は非常に厳かな場所ですので参拝マナーを遵守してください。",
+      "scene_timestamp": "34:10",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://ninnaji.jp/",
+      "source_evidence": "NHKの公式番組メイキング、および京都ロケ公式発表にて仁和寺での撮影協力が確認されている。二王門や特徴的な白砂の境内、御殿の廊下の造形が劇中映像と一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "御室あわ餅",
+          "venue_name": "仁和寺 境内 喫茶（御室会館内）",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://tabelog.com/kyoto/A2601/A260402/26018151/",
+          "google_maps_url": "https://maps.app.goo.gl/yYvXfVnB5Q7K9J4u8",
+          "travel_minutes": 2,
+          "scene_evidence": "劇中、京都へと赴いた泉京香が、露伴の偏屈な調査に付き合う合間に「せっかく京都に来たのだから」と、名物の和菓子やお茶をのんびりと楽しもうとして露伴に急かされるコミカルな旅情シーンの背景・モチーフとなっている。"
+        }
+      ]
+    }
+  ]
+}

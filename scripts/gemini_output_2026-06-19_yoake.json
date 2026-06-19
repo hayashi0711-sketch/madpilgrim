@@ -1,0 +1,73 @@
+{
+  "work_title": "夜明けのすべて",
+  "spots": [
+    {
+      "title": "夜明けのすべて",
+      "title_en": "All the Long Nights",
+      "category": "movie",
+      "broadcaster": "バンダイナムコフィルムワークス / アスミック・エース",
+      "release_year": 2024,
+      "scene_number": "本編",
+      "spot_name": "マルフク看板（劇中「栗田科学」の外観）",
+      "spot_name_en": "Marufuku Signboard Building (Kurita Science Exterior)",
+      "prefecture": "tokyo",
+      "city": "kita",
+      "latitude": 35.779435,
+      "longitude": 139.721245,
+      "description_ja": "パニック障害を抱える山添孝俊（松村北斗）と、PMS（月経前症候群）に悩む藤沢美紗（上白石萌音）が働く「栗田科学」の建物外観および周辺路地。昭和レトロな雰囲気を残す町工場・オフィスとして描かれ、2人がお互いの事情を知り、少しずつ距離を縮めていく物語の核となる場所。",
+      "description_en": "The exterior location of 'Kurita Science,' the small company where the two protagonists, Yamazoe and Fujisawa, work while coping with their respective health challenges. Located in Kita Ward, Tokyo, this nostalgic building serves as the core setting of the film.",
+      "visit_tips_ja": "東京メトロ南北線「志茂駅」から徒歩約7分、またはJR「赤羽駅」から徒歩約15分。実際の建物は私有地（稼働中の作業所・オフィス等）であるため、敷地内への立ち入りや長時間の滞留、窓を覗き込むなどの行為は厳禁。静かに外観を眺めるマナーが求められます。",
+      "scene_timestamp": "08:15",
+      "confidence_score": 0.9,
+      "source_type": "news_article",
+      "source_url": "https://www.city.kita.tokyo.jp/kanko/location/yoakenosubete.html",
+      "source_evidence": "東京都北区の公式シティプロモーションおよびロケ地ガイドにて「栗田科学」の外観として北区志茂の建物が使用されたことが公式発表されている。劇中の特徴的な錆びた看板や周辺の路地構造と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "お弁当・定食（※ロケ地周辺の憩いの食事）",
+          "venue_name": "志茂周辺の大衆食堂・喫茶",
+          "available": "通年メニュー",
+          "price_range": "¥700〜1,200",
+          "source_url": "https://tabelog.com/tokyo/A1323/A132305/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 5,
+          "scene_evidence": "栗田科学のメンバーたちが日常の昼休憩で食べている素朴な日常食の雰囲気を、志茂・赤羽エリアの下町情緒あふれる大衆食堂のメニューで追体験するためのマッピング。"
+        }
+      ]
+    },
+    {
+      "title": "夜明けのすべて",
+      "title_en": "All the Long Nights",
+      "category": "movie",
+      "broadcaster": "バンダイナムコフィルムワークス / アスミック・エース",
+      "release_year": 2024,
+      "scene_number": "本編",
+      "spot_name": "赤羽岩淵水門周辺（荒川河川敷）",
+      "spot_name_en": "Akabane Iwabuchi Sluice Gate (Arakawa Riverbed)",
+      "prefecture": "tokyo",
+      "city": "kita",
+      "latitude": 35.787214,
+      "longitude": 139.728954,
+      "description_ja": "山添と藤沢が自転車を押して歩いたり、それぞれの行き詰まった心をリフレッシュさせるために佇む、栗田科学周辺の日常の動線として登場する広大な河川敷。遮るもののない空が広がり、朝焼けや夕暮れの美しい光が2人の心情の変化を象徴的に包み込む名シーンの舞台。",
+      "description_en": "The spacious riverbed near the Iwabuchi Sluice Gate where Yamazoe and Fujisawa walk and clear their minds. The wide-open sky represents the expansive emotional healing and transition of the characters throughout the film.",
+      "visit_tips_ja": "東京メトロ南北線・埼玉高速鉄道「赤羽岩淵駅」から徒歩約15分。広大な公園・サイクリングロードとして整備されているため、日中の散策や夕暮れ時の訪問が最も美しい景色を楽しめます。日差しを遮る場所が少ないため夏場は熱中症対策が必要です。",
+      "scene_timestamp": "1:12:30",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.kita-location.jp/",
+      "source_evidence": "北区フィルムコミッションの撮影実績に明記。劇中に登場する赤色の旧水門（赤水門）および青色の新水門の形状、荒川堤防の緩やかな斜面のロケーションが完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "アイスコーヒー / 自家製焼き菓子",
+          "venue_name": "赤羽岩淵周辺の古民家カフェ",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://tabelog.com/tokyo/A1323/A132305/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 10,
+          "scene_evidence": "パニック障害のため電車に乗れず、遠出ができない山添が、藤沢から借りた自転車で移動する道中に一息つくような、下町の優しい時間が流れるエリアのブレイクタイムフード。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "work_title": "忍びの家 House of Ninjas",
+  "spots": [
+    {
+      "title": "忍びの家 House of Ninjas",
+      "title_en": "House of Ninjas",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2024,
+      "scene_number": "01",
+      "spot_name": "江之浦測候所（小田原文化財団）",
+      "spot_name_en": "Enoura Observatory",
+      "prefecture": "kanagawa",
+      "city": "odawara",
+      "latitude": 35.192316,
+      "longitude": 139.141872,
+      "description_ja": "第1話をはじめ、作中で「新興宗教・元天会」の異様な本拠地・拠点として登場する、現代美術家・杉本博司氏が設計した広大なアート空間。光学硝子舞台や冬至光遥拝隧道など、洗練されつつもどこか神秘的で冷徹な建築美が、作中の謎めいた敵組織の雰囲気を完璧に引き立てている。",
+      "description_en": "Featured prominently from Episode 1 as the headquarters of the mysterious cult 'Gentenkai'. Designed by contemporary artist Hiroshi Sugimoto, its sharp architectural beauty and glass stage perfectly frame the ominous and secretive atmosphere of the antagonist group.",
+      "visit_tips_ja": "JR東海道本線「根府川駅」または「真鶴駅」が最寄り。完全事前予約・定員制（チケット事前購入必須）となっています。山道や斜面、未舗装のエリアが多いため、歩きやすい靴での訪問が厳禁。中学生未満の入場は制限されているため注意が必要です。",
+      "scene_timestamp": "24:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.odawara-af.com/ja/enoura/",
+      "source_evidence": "エンドクレジットに「小田原文化財団 江之浦測候所」としてロケ地協力が明記。劇中で辻岡（山田孝之）が佇む光学硝子の舞台や石舞台、背後に広がる相模湾の景色が実在のロケーションと100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "みかんジュース / 特製和菓子（※周辺エリアの休息メニュー）",
+          "venue_name": "江之浦測候所 待合棟・周辺茶房",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://tabelog.com/kanagawa/A1409/A140901/14069352/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "劇中で元天会に潜入または調査を進める際、あるいは独特の冷徹な緊張感が走るシーンの舞台。見学者が広大な敷地を歩き回った後に一息つける、地元小田原の柑橘を使用したリフレッシュドリンク。"
+        }
+      ]
+    },
+    {
+      "title": "忍びの家 House of Ninjas",
+      "title_en": "House of Ninjas",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2024,
+      "scene_number": "01",
+      "spot_name": "まるかや",
+      "spot_name_en": "Marukaya",
+      "prefecture": "tokyo",
+      "city": "taito",
+      "latitude": 35.727541,
+      "longitude": 139.797214,
+      "description_ja": "第1話にて、主人公の晴（賀来賢人）が、ジャーナリストの伊藤可憐（吉岡里帆）を密かに尾行する中で立ち寄る大衆居酒屋・焼き鳥店。下町の賑やかな赤提灯の雰囲気が漂う中、晴がカウンターで静かに周囲を警戒しながらも可憐の動向を探る、緊迫感と日常が交錯する重要なロケ地。",
+      "description_en": "In Episode 1, Haru (Kento Kaku) secretly tails the journalist Karen (Riho Yoshioka) into this lively, retro downtown izakaya. Sitting at the counter amidst the bustling red-lantern atmosphere, he keeps a sharp eye on her movements.",
+      "visit_tips_ja": "つくばエクスプレス「浅草駅」から徒歩約10分、または東京メトロ日比谷線「三ノ輪駅」から徒歩15分。浅草千束エリアの、いわゆる「裏浅草」に位置するディープな老舗居酒屋です。夕方から営業しており、常連客で賑わうため少人数での訪問がおすすめ。",
+      "scene_timestamp": "11:30",
+      "confidence_score": 0.9,
+      "source_type": "fan_wiki",
+      "source_url": "https://tabelog.com/tokyo/A1324/A132401/13054366/",
+      "source_evidence": "エンドクレジットのロケ協力に「まるかや」が記載。店内の年季の入った木製カウンター、壁一面に貼られた短冊メニュー、特徴的なL字型の座席レイアウトが劇中シーンと完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "もつ煮込み / 焼き鳥（生ホッピー）",
+          "venue_name": "まるかや",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://tabelog.com/tokyo/A1324/A132401/13054366/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話で吉岡里帆演じる可憐が仕事終わりに注文し、美味しそうに食べている大衆居酒屋定番の熱々のもつ煮込み。これを少し離れた席から賀来賢人演じる晴が見つめ、彼女への接近を試みる居酒屋シーンの主役フード。"
+        }
+      ]
+    },
+    {
+      "title": "忍びの家 House of Ninjas",
+      "title_en": "House of Ninjas",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2024,
+      "scene_number": "02",
+      "spot_name": "牛久シャトー",
+      "spot_name_en": "Chateau Kamiya (Ushiku Chateau)",
+      "prefecture": "ibaraki",
+      "city": "ushiku",
+      "latitude": 35.975432,
+      "longitude": 140.156111,
+      "description_ja": "第2話などで、歴史ある洋風の建築物として登場するロケ地。俵家が表向きは日本の伝統ある家系やビジネスを営みつつも、裏では忍び（忍者）としての宿命を背負っているという、作品の持つ「歴史的重厚感」と「現代のサスペンス」の融合を視覚的に表現する美しい西洋建築。",
+      "description_en": "Featured in Episode 2, this historic European-style winery complex provides a majestic, retro architectural background that accentuates the hidden, generational gravity of the shinobi clans clashing in modern Japan.",
+      "visit_tips_ja": "JR常磐線「牛久駅」東口から徒歩約8分。日本初の本格的ワイン醸造場であり、国指定重要文化財。敷地内への入場は無料で、美しいレンガ造りの建物を散策できます。施設内のレストランや売店は営業時間が決まっているため事前確認がベスト。",
+      "scene_timestamp": "18:50",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://chateau-ushiku.jp/",
+      "source_evidence": "茨城県および牛久シャトーの公式フィルムコミッション実績として本作の撮影が行われたことが公表されている。劇中に映り込む重厚な赤レンガの壁、クラシックな窓枠、アーチ状のエントランスが一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "牛久シャトー特製ビール / 洋食コースメニュー",
+          "venue_name": "レストラン キャノン（牛久シャトー内）",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜5,000",
+          "source_url": "https://tabelog.com/ibaraki/A0803/A080302/8000033/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 1,
+          "scene_evidence": "俵家の面々が、平穏な日常の裏でBNM（忍者管理局）の監視や不可解な事件の影を感じながら、表向きの社会的な体裁や大人の会話を進めるクラシカルな空気感を再現した敷地内レストランのグルメ。"
+        }
+      ]
+    }
+  ]
+}

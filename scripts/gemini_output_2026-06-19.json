@@ -1,0 +1,107 @@
+{
+  "work_title": "ぼっち・ざ・ろっく！",
+  "spots": [
+    {
+      "title": "ぼっち・ざ・ろっく！",
+      "title_en": "Bocchi the Rock!",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "01",
+      "spot_name": "下北沢SHELTER（ライブハウス「STARRY」のモデル）",
+      "spot_name_en": "Shimokitazawa SHELTER (Model for Live House STARRY)",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.661645,
+      "longitude": 139.669046,
+      "description_ja": "結束バンドのメンバーが活動拠点とし、アルバイトもしているライブハウス「STARRY」のモデル。外観の階段やコンクリート壁、黄色い看板の配置、ダストボックスの位置に至るまで極めて忠実に再現されている。作中では第1話で虹夏に連れられてぼっちが初めて訪れて以来、全編を通して最重要拠点として描かれている。",
+      "description_en": "The live house serves as the main hub for the Kessoku Band, where they perform and work part-time. The exterior, including the stairs, concrete walls, and layout, is replicated with extreme accuracy from the real-life indie music sanctuary 'Shimokitazawa SHELTER'. It appears from episode 1 onward as the most significant location in the series.",
+      "visit_tips_ja": "下北沢駅東口から徒歩約3〜4分。現在も営業中の老舗ライブハウスのため、店舗敷地内（階段や敷地内）での居座りや撮影は厳禁。公式・店舗側から「聖地巡礼は平日・午前中・少人数で、近隣の迷惑にならないよう配慮を」との注意喚起が出されている。",
+      "scene_timestamp": "12:45",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://rollingstonejapan.com/articles/detail/39538",
+      "source_evidence": "アニメ制作サイドおよび下北沢SHELTER店長への公式インタビュー記事、エンドクレジットの「取材協力」にて店舗名が明記されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "コーラ（ドリンク各種）",
+          "venue_name": "下北沢SHELTER",
+          "available": "通年メニュー",
+          "price_range": "¥600程度（ドリンクチケット代）",
+          "source_url": "http://www.loft-prj.co.jp/SHELTER/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話などで、ぼっち達がSTARRYのカウンターでドリンクの提供バイトをしているシーン。実際のSHELTERでも入場時に1ドリンク代（通常600円）を支払い、カウンターで各種ドリンクと引き換えるシステムになっている。"
+        }
+      ]
+    },
+    {
+      "title": "ぼっち・ざ・ろっく！",
+      "title_en": "Bocchi the Rock!",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "08",
+      "spot_name": "居酒屋 こけら（劇中居酒屋「かおみせ」のモデル）",
+      "spot_name_en": "Izakaya Kokera (Model for Izakaya Kaomise)",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.661214,
+      "longitude": 139.669865,
+      "description_ja": "第8話「ぼっち・ざ・ろっく」のライブ成功後、台風のなか結束バンドのメンバーや星歌、PAさんたちが打ち上げを行った居酒屋「かおみせ」のモデル。下北沢にある実在の海鮮居酒屋であり、作中では店舗の外観や立地が忠実にトレースされて登場した。虹夏がぼっちに「ぼっち・ざ・ろっくを！」と語りかける名シーンの直前の舞台。",
+      "description_en": "The model for the izakaya 'Kaomise' where the Kessoku Band, Seika, and the PA engineer hold a celebration party after their successful live show in Episode 8. It is a popular real-life seafood pub in Shimokitazawa. While the interior is slightly modified for the anime, the exterior and location perfectly match the actual restaurant.",
+      "visit_tips_ja": "下北沢駅東口から徒歩約4分、ライブハウスSHELTERからも徒歩2分ほどの好立地。非常に人気の居酒屋のため、聖地巡礼を兼ねて飲食する場合は事前予約を推奨。夕方からの営業となるため、夜の訪問が必須。",
+      "scene_timestamp": "19:15",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://note.com/srx40090/n/n7816fb767455",
+      "source_evidence": "第8話の打ち上げシーンで登場する看板のフォントや建物の外装、ダクトの形状が「居酒屋 こけら」の外観と完全一致。複数の探訪ブログやファンコミュニティで特定されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "お刺身盛り合わせ・ポテトサラダ",
+          "venue_name": "こけら",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜4,000",
+          "source_url": "https://tabelog.com/tokyo/A1318/A131802/13019172/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第8話で、テーブルの上に大皿の刺身盛り合わせやサラダ、おつまみ類が並び、高校生メンバーがソフトドリンク、大人メンバーがジョッキで乾杯しているシーン。"
+        }
+      ]
+    },
+    {
+      "title": "ぼっち・ざ・ろっく！",
+      "title_en": "Bocchi the Rock!",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "06",
+      "spot_name": "京急線 金沢八景駅前",
+      "spot_name_en": "Kanazawa-hakkei Station (Keikyu Line)",
+      "prefecture": "kanagawa",
+      "city": "yokohama",
+      "latitude": 35.331202,
+      "longitude": 139.620986,
+      "description_ja": "後藤ひとりの地元・居住地である神奈川県横浜市金沢区の主要駅。第6話「八景」にて、ライブのチケットが売れず絶望していたぼっちが天才ベーシスト・廣井きくりと運命的な出会いを果たす。駅前の広場や高架、シーサイドラインへの乗り換え通路などの構造がリアルに描かれている。",
+      "description_en": "The main station in Kanazawa Ward, Yokohama, which is Hitori Goto's hometown. In Episode 6, Bocchi, depressed over unsold live tickets, has a fateful encounter with the genius bassist Kikuri Hiroi in front of this station. The station square, elevated tracks, and transfer pathways are portrayed realistically.",
+      "visit_tips_ja": "京急線・横浜シーサイドライン「金沢八景駅」下車すぐ。駅前は再開発によりアニメ放送時とやや景観が変わっている部分もあるが、雰囲気は十分に体感できる。一般の通勤・通学客の邪魔にならないよう撮影時は注意が必要。",
+      "scene_timestamp": "04:10",
+      "confidence_score": 0.8,
+      "source_type": "news_article",
+      "source_url": "https://riyot.hatenablog.com/entry/2023/02/16/220858",
+      "source_evidence": "作中で「金沢八景」の駅名標がそのまま描かれているほか、きくりと別れるシーン背景のローソン金沢八景駅前店や周辺のビル群が完全に一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "からあげクン（各種お惣菜類）",
+          "venue_name": "ローソン 金沢八景駅前店",
+          "available": "通年メニュー",
+          "price_range": "¥200〜500",
+          "source_url": "https://www.lawson.co.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 1,
+          "scene_evidence": "第6話後半、路上ライブを終えたぼっちと廣井きくりが駅前で別れるシーンの背景に映り込んでいる、実在する駅前のコンビニエンスストア。"
+        }
+      ]
+    }
+  ]
+}

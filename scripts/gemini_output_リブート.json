@@ -1,0 +1,107 @@
+{
+  "work_title": "リブート",
+  "spots": [
+    {
+      "title": "リブート",
+      "title_en": "REBOOT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2026,
+      "scene_number": "01",
+      "spot_name": "シャトー洋菓子店",
+      "spot_name_en": "Chateau Yogashiten",
+      "prefecture": "tokyo",
+      "city": "musashimurayama",
+      "latitude": 35.748366,
+      "longitude": 139.398007,
+      "description_ja": "主人公の早瀬陸（松山ケンイチ／鈴木亮平）が家族とともに営んでいる下町の老舗「ハヤセ洋菓子店」の外観として使用された店舗。昭和の懐かしい情緒が漂うアーケード商店街に位置し、第1話で陸が理不尽な容疑をかけられて逃走する際、店舗の屋根伝いにダイナミックに逃げるシーンなどの撮影が行われた物語の原点となる場所。",
+      "description_en": "The exterior location for 'Hayase Yogashiten', the retro pastry shop run by the protagonist Riku Hayase. Located in a nostalgic Showa-era shopping arcade, this is a core setting of the story. In the first episode, the rooftop and arcade structures were used for a dynamic escape sequence when Riku was falsely accused of a crime.",
+      "visit_tips_ja": "多摩モノレール「上北台駅」から徒歩約15分。村山団地商店街の中にあります。現在も通常営業している地域に愛される洋菓子店です。巡礼の際は営業の妨げにならないよう配慮し、お買い物をして撮影の許可を得るのがマナーです。",
+      "scene_timestamp": "04:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://toyokeizai.net/articles/-/937146",
+      "source_evidence": "東洋経済オンラインをはじめとするメディアのロケ地取材記事、および劇中に登場する特徴的な「村山団地商店街」のアーケード外観、店内のショーケースの配置が実際の店舗と完全に一致。店舗側もポスター掲示やグッズ展示を公認している。",
+      "nearby_foods": [
+        {
+          "dish_name": "ハヤセショート（プレミアムショートケーキ）",
+          "venue_name": "シャトー洋菓子店",
+          "available": "通年メニュー",
+          "price_range": "〜¥999",
+          "source_url": "https://tabelog.com/tokyo/A1328/A132805/13146887/",
+          "google_maps_url": "https://maps.app.goo.gl/wUAs62RWhbXnLq8w8",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話冒頭、失踪前の妻や家族に囲まれてパティシエ姿の陸がイチゴの乗った懐かしい風貌のショートケーキ「ハヤセショート」を仕上げ、店内のショーケースに並べて客に提供している平和な日常のシーン。"
+        }
+      ]
+    },
+    {
+      "title": "リブート",
+      "title_en": "REBOOT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2026,
+      "scene_number": "02",
+      "spot_name": "PAQUET MONTÉ",
+      "spot_name_en": "PAQUET MONTE",
+      "prefecture": "tokyo",
+      "city": "shibuya",
+      "latitude": 35.669818,
+      "longitude": 139.684534,
+      "description_ja": "本作の「パティシエ監修」を務めた本田珠美シェフが在籍する、フランスの伝統菓子『フラン・パティシエ』の人気専門店。劇中で陸が作る「ハヤセ洋菓子店プリン」や各種スイーツのメニュー開発・調理技術指導の拠点であり、放送期間中には実際に劇中スイーツを再現した期間限定コラボメニューが発売されファンが殺到した。",
+      "description_en": "A real pastry shop specializing in French 'flan patissier', where the drama's official pastry consultant, Tamami Honda, works as head chef. This venue developed the exact sweets and puddings that Riku baked in the series, and it hosted highly successful limited-edition collaboration events for fans during the broadcast.",
+      "visit_tips_ja": "小田急線「代々木八幡駅」または東京メトロ千代田線「代々木公園駅」から徒歩約10分。大変人気で行列ができることが多いため、時間に余裕を持っての訪問が推奨されます。イートイン用の席数には限りがあります。",
+      "scene_timestamp": "25:30",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://topics.tbs.co.jp/article/detail/?id=22372",
+      "source_evidence": "TBSの公式番組ニュースおよび番組エンドクレジットにて「パティシエ監修：本田珠美（PAQUET MONTE）」と明記。出演した鈴木亮平、松山ケンイチが同店で技術指導を受けたエピソードも公式発表されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "ハヤセ洋菓子店プリン（フラン・パティシエ風）",
+          "venue_name": "PAQUET MONTÉ",
+          "available": "要確認",
+          "price_range": "¥1,000〜1,999",
+          "source_url": "https://tabelog.com/tokyo/A1318/A131810/13293296/",
+          "google_maps_url": "https://maps.app.goo.gl/X91aTqjYreG2gL5j6",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話の回想シーンなどで、陸がこだわり抜いて作った特製プリンとして登場。サクサクのパイ生地に濃厚なカスタード液を流し込んで焼き上げた、監修店ならではの美しい造形が施されている。"
+        }
+      ]
+    },
+    {
+      "title": "リブート",
+      "title_en": "REBOOT",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2026,
+      "scene_number": "03",
+      "spot_name": "名主の古民家",
+      "spot_name_en": "Nanushi no Kominka",
+      "prefecture": "saitama",
+      "city": "sakado",
+      "latitude": 35.995120,
+      "longitude": 139.429167,
+      "description_ja": "冬橋航（永瀬廉）や霧矢直（藤澤涼架）らが職員・代表として関わり、合六亘（北村有起哉）の裏組織のフロントにもなっていたNPO法人「しぇるたー」の本部として使用された歴史ある建造物。日傘を差した幸後一香（戸田恵梨香）が、儀堂にリブートした早瀬陸を連れて訪れる象徴的なミステリースポット。",
+      "description_en": "A historical Japanese house used as the headquarters for the NPO 'Shelter', where Fuyuhashi (Ren Nagase) and Kiriya (Ryoka Fujisawa) work under the influence of the villainous Goroku. Ichika (Erika Toda) brings the rebooted Riku here, making it a pivotal dark-mystery location in the drama.",
+      "visit_tips_ja": "東武東上線「若葉駅」からバスまたはタクシー利用、あるいは関越自動車道「鶴ヶ島IC」から車で約15分。歴史的な個人所有・管理の古民家です。見学の際は敷地内ルールを守り、周辺住民の迷惑にならない静かな訪問を心がけてください。",
+      "scene_timestamp": "18:40",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://location.la.coocan.jp/REBOOT_tbs.html",
+      "source_evidence": "複数の有力ロケ地特定サイトの検証データ、および現地での空撮・背景の門構えや母屋のトラス木造構造、周辺丁字路の地理的特徴が第3話・第5話の映像と完全に一致しているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "炊き出しの豚汁",
+          "venue_name": "NPO法人「しぇるたー」炊き出し会場（劇中設定）",
+          "available": "非売品",
+          "price_range": "無料（劇中設定）",
+          "source_url": "https://www.tbs.co.jp/REBOOT_tbs/",
+          "google_maps_url": null,
+          "travel_minutes": 0,
+          "scene_evidence": "第3話中盤にて、冬橋（永瀬廉）や霧矢（藤澤涼架）が「しぇるたー」の敷地周辺で行っていたボランティアの炊き出しシーン。大きな寸胴鍋から具だくさんの温かい豚汁が器に盛られ、集まった人々に配られている。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "work_title": "SPEC〜警視庁公安部公安第五課 未詳事件特別対策係事件簿〜",
+  "spots": [
+    {
+      "title": "SPEC〜警視庁公安部公安第五課 未詳事件特別対策係事件簿〜",
+      "title_en": "SPEC: Birth",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2010,
+      "scene_number": "01",
+      "spot_name": "中華麺舗 虎（劇中「中部日本餃子のCBC」のモデル）",
+      "spot_name_en": "Chuka Menpo Tora (Model for Chubu Nippon Gyoza CBC)",
+      "prefecture": "tokyo",
+      "city": "ota",
+      "latitude": 35.562137,
+      "longitude": 139.691763,
+      "description_ja": "主人公の当麻紗綾（戸田恵梨香）が左手で驚異的なスピードで餃子を貪り食う、作品の象徴とも言える中華料理店「中部日本餃子のCBC」のロケ地。名古屋出身の堤幸彦監督のこだわりが詰まった店内の雰囲気がそのまま残る。第1話で瀬文焚流（加瀬亮）が初めて未詳に赴任した直後、当麻を連れ戻しにくるシーンをはじめ全編にわたり登場する。",
+      "description_en": "The iconic Chinese restaurant where the protagonist, Saya Toma, aggressively devours her favorite gyoza. In reality, it is a well-known location for various Japanese dramas named 'Chuka Menpo Tora.' It appears frequently throughout the series starting from episode 1, capturing the unique, quirky atmosphere of director Yukihiko Tsutsumi's vision.",
+      "visit_tips_ja": "東急多摩川線「武蔵新田駅」から徒歩1分。駅前の黄色い大きな看板が目印です。店内には出演者のサインやポスターが所狭しと飾られています。店内での写真撮影を希望する場合は、必ず事前に店員さんへ一言声をかけるのがルールとなっています。",
+      "scene_timestamp": "18:45",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.foodwatch.jp/screenfoods0098",
+      "source_evidence": "第1話をはじめ劇中で何度も登場。店内のレイアウトや外観、特徴的な厨房の構造が完全に一致。多数のメディアやメイキング映像でも公式に紹介されている非常に高精度な聖地。",
+      "nearby_foods": [
+        {
+          "dish_name": "焼き餃子・茹で餃子（作中の「ゆで5焼き5」のベース）",
+          "venue_name": "中華麺舗 虎",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜1,999",
+          "source_url": "https://tabelog.com/tokyo/A1317/A131716/13062265/",
+          "google_maps_url": "https://maps.app.goo.gl/d25mB42w6r9G3P6T7",
+          "travel_minutes": 0,
+          "scene_evidence": "当麻紗綾がお決まりのフレーズ「ゆで5、焼き5、ニンニク増量！」と頼んでバケツのような器などで平らげる名物餃子。実際の店舗でも非常に人気で、ウスターソースとマスタードをつけて食べるのが堤監督直伝の通な食べ方とされています。"
+        }
+      ]
+    },
+    {
+      "title": "SPEC〜警視庁公安部公安第五課 未詳事件特別対策係事件簿〜",
+      "title_en": "SPEC: Birth",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2010,
+      "scene_number": "05",
+      "spot_name": "もつ福 赤坂店（跡地）",
+      "spot_name_en": "Motsufuku Akasaka (Former Location)",
+      "prefecture": "tokyo",
+      "city": "minato",
+      "latitude": 35.670861,
+      "longitude": 139.736341,
+      "description_ja": "第5話「丙の回（堕天刑事）」にて、当麻紗綾、瀬文焚流、そして瀬文の先輩刑事である里中貢（大森南朋）の3人がプライベートで食事をしながら話し合っていたもつ鍋店のロケ地。里中が家族への想いや刑事としての葛藤を漏らす、物語の重要なターニングポイントとなるシリアスな飲食シーンで使用された。",
+      "description_en": "The izakaya used as the filming location for Episode 5 where Toma, Sebumi, and senior detective Satoru Satonaka (Nao Omori) eat motsunabe together. This is a critical scene filled with tension as Satonaka hints at his hidden distress and conflicting loyalties before the plot takes a tragic turn.",
+      "visit_tips_ja": "東京メトロ千代田線「赤坂駅」6番出口から徒歩3分ほどの場所にありましたが、大変残念ながら2022年3月31日をもって閉店しています。現在は外観のみ当時の面影をしのぶ形となりますが、同系列の「もつ福」の味が食べたい場合は六本木店などで体験可能です。",
+      "scene_timestamp": "12:10",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://loca.ash.jp/info/2010/d201010_spec.htm",
+      "source_evidence": "第5話で3人が囲んでいる特徴的な白濁スープのもつ鍋、背後の木札メニュー、店内の内装レイアウトが、当時営業していた「もつ福 赤坂店」の店内と完全に一致しており、ロケ地検証サイトでも広く特定されています。",
+      "nearby_foods": [
+        {
+          "dish_name": "博多明太もつ鍋 / 国産牛もつ鍋",
+          "venue_name": "もつ福 六本木店（※赤坂店は閉店のため、系列店にて提供）",
+          "available": "通年メニュー",
+          "price_range": "¥4,000〜5,999",
+          "source_url": "https://motsufuku.com/motsu_minato/",
+          "google_maps_url": "https://maps.app.goo.gl/v3DshU89Jj6R8DkP6",
+          "travel_minutes": 25,
+          "scene_evidence": "第5話で当麻、瀬文、里中の3人がテーブルでつついているお鍋。劇中ではキャベツやニラが綺麗に盛られた状態から煮立っていく様子がリアルに映し出されています。"
+        }
+      ]
+    },
+    {
+      "title": "SPEC〜警視庁公安部公安第五課 未詳事件特別対策係事件簿〜",
+      "title_en": "SPEC: Birth",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2010,
+      "scene_number": "01",
+      "spot_name": "早稲田奉仕園 スコットホール",
+      "spot_name_en": "Waseda Hoshien Scott Hall",
+      "prefecture": "tokyo",
+      "city": "shinjuku",
+      "latitude": 35.707328,
+      "longitude": 139.718873,
+      "description_ja": "物語の黒幕的な存在である津田助広（椎名桔平）が、背徳的な雰囲気の漂う教会の前で餃子を食べていたシーンの撮影場所。歴史あるレンガ造りの美しい西洋建築であり、東京都選定歴史的建造物にも指定されている。作中の「未詳」を巡る公安の闇深さと、どこか現実離れした世界観を際立たせる象徴的なロケ地。",
+      "description_en": "A historic red-brick chapel used as the mysterious backdrop where Sukehiro Tsuda (Kippei Shiina) is seen eating gyoza outside a church. This visually striking Western-style structure emphasizes the eerie and dark underworld of the Public Safety Bureau in the series.",
+      "visit_tips_ja": "東京メトロ東西線「早稲田駅」から徒歩5分、または副都心線「西早稲田駅」から徒歩8分。現役のキリスト教礼拝堂・文化施設であり、通常期も外観は見学可能ですが、イベントや礼拝中の敷地内での大声での会話や撮影、立ち入り制限区域への侵入は厳禁です。",
+      "scene_timestamp": "42:15",
+      "confidence_score": 0.8,
+      "source_type": "news_article",
+      "source_url": "http://location.la.coocan.jp/spec2010.html",
+      "source_evidence": "津田助広が教会の階段前で餃子の容器を抱えて佇むシーン。スコットホールの特徴的な赤レンガの壁面、アーチ型の窓、木製の重厚な扉の配置が完全一致しています。",
+      "nearby_foods": [
+        {
+          "dish_name": "テイクアウト餃子（劇中再現用のイメージ）",
+          "venue_name": "早稲田奉仕園周辺（持ち帰り）",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://www.hoshien.or.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/HwXjSg8eQ5W1gGkM9",
+          "travel_minutes": 3,
+          "scene_evidence": "津田助広が教会の階段に腰掛け、プラスチックのパックに入ったテイクアウト風の餃子を箸でつまんで食べている不気味かつ印象的なシーン。"
+        }
+      ]
+    }
+  ]
+}

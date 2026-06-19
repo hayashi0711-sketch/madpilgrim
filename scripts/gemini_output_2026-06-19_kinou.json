@@ -1,0 +1,107 @@
+{
+  "work_title": "きのう何食べた？",
+  "spots": [
+    {
+      "title": "きのう何食べた？ Season1",
+      "title_en": "What Did You Eat Yesterday? Season 1",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2019,
+      "scene_number": "01",
+      "spot_name": "新進市場（劇中「中村屋」のロケ地）",
+      "spot_name_en": "Shinshin Ichiba (Filming Location for Nakamuraya)",
+      "prefecture": "tokyo",
+      "city": "edogawa",
+      "latitude": 35.665715,
+      "longitude": 139.873214,
+      "description_ja": "主人公の筧史朗（西島秀俊）が仕事帰りに毎日のように立ち寄り、熱心に食材の底値を吟味する激安スーパー「中村屋」のロケ地。第1話の冒頭から全編を通してシロさんの生活基盤・節約の戦場として登場する、作品を象徴する極めて重要な日常スポット。",
+      "description_en": "The real-life supermarket 'Shinshin Ichiba' served as the exterior and interior location for 'Nakamuraya,' the discount grocery store where Shiro Kakei (Hidetoshi Nishijima) shops daily. It appears frequently from Episode 1 onward as a symbol of his domestic and budget-conscious lifestyle.",
+      "visit_tips_ja": "都営新宿線「一之江駅」から徒歩約15分、または「新小岩駅」からバス。実際の店舗は地域密着型のスーパーです。買い物客の邪魔にならないよう配慮し、巡礼の際は実際に食材やお惣菜を購入して応援するのがマナーです。",
+      "scene_timestamp": "01:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kinounatibetata/intro/",
+      "source_evidence": "番組エンドクレジットに「新進市場」として撮影協力が明記。劇中で流れるお馴染みの「ナカムラヤ〜♪」のBGMの背景に映る、店舗の看板デザインや売り場の配置が実在の店舗と100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "中村屋のコロッケ・特売の食材各種",
+          "venue_name": "新進市場",
+          "available": "通年メニュー",
+          "price_range": "¥100〜500",
+          "source_url": "https://tabelog.com/tokyo/A1312/A131205/13257850/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話をはじめ、シロさんが特売のスイカや常備菜用の野菜を買い込むシーン。実際の新進市場もお惣菜や生鮮食品が非常に安く、地元住民に愛されている。"
+        }
+      ]
+    },
+    {
+      "title": "きのう何食べた？ Season1",
+      "title_en": "What Did You Eat Yesterday? Season 1",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2019,
+      "scene_number": "11",
+      "spot_name": "ニューアサ（劇中「純喫茶ニューアサ」）",
+      "spot_name_en": "New Asa",
+      "prefecture": "tokyo",
+      "city": "taito",
+      "latitude": 35.701142,
+      "longitude": 139.789124,
+      "description_ja": "第11話にて、シロさんの恋人である矢吹賢二（内野聖陽）が、美容室の店長・三宅祐（マキタスポーツ）から家庭の事情や浮気（？）の相談を持ちかけられたレトロな純喫茶。赤い革張りのソファや昭和風情が残る落ち着いた内装が特徴で、ケンジが店長の愚痴を優しく受け止めるシーンで使用された。",
+      "description_en": "Featured in Episode 11, this nostalgic retro cafe is where Kenji Yabuki (Seiyo Uchino) meets his salon manager Miyake (Makita Sports) for a private chat about family and personal troubles. The crimson leather booths and mid-century aesthetic are fully preserved.",
+      "visit_tips_ja": "都営浅草線「蔵前駅」または「浅草橋駅」から徒歩約7分。昔ながらの喫茶店で、営業時間は朝から夕方まで。名物のナポリタンや珈琲を味わいながら、ケンジたちが座ったボックス席の雰囲気を静かに楽しむのがおすすめです。",
+      "scene_timestamp": "14:35",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kinounatibetata/story/11.html",
+      "source_evidence": "公式ストーリー紹介およびエンドクレジットに「ニューアサ」が明記されている。劇中に登場する独特な丸みを帯びたペンダントライトやメニュー短冊、店構えが完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "ナポリタン / ブレンドコーヒー",
+          "venue_name": "ニューアサ",
+          "available": "通年メニュー",
+          "price_range": "¥600〜1,000",
+          "source_url": "https://tabelog.com/tokyo/A1311/A131103/13105743/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第11話で店長とケンジがテーブルを挟んで会話する際、純喫茶の定番として背後に映り込む、昔ながらの太麺を使用した喫茶ナポリタンや珈琲。"
+        }
+      ]
+    },
+    {
+      "title": "きのう何食べた？ 正月スペシャル2020",
+      "title_en": "What Did You Eat Yesterday? New Year Special 2020",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2020,
+      "scene_number": "第1章",
+      "spot_name": "どうげん（道玄）",
+      "spot_name_en": "Dogen",
+      "prefecture": "tokyo",
+      "city": "shibuya",
+      "latitude": 35.657512,
+      "longitude": 139.696341,
+      "description_ja": "2020年正月SPの第1章にて、シロさんが憧れの三谷まみ（宮沢りえ）とついに対面を果たし、ケンジ、小日向大策（山本耕史）、井上航（磯村勇斗）の4人で食事をした大衆焼肉店。シロさんが極上の肉を前にして興奮を隠しきれず、まみへの熱い想いを吐露する賑やかで幸福感あふれるシーンの舞台。",
+      "description_en": "In the 2020 New Year Special, Shiro finally meets his idol, Mami Mitani (Rie Miyazawa). Along with Kenji, Kohinata, and Wataru, they share a lively dining experience at this legendary, authentic yakiniku restaurant located in the backalleys of Shibuya.",
+      "visit_tips_ja": "JR・東京メトロ「渋谷駅」ハチ公口から徒歩約5分、道玄坂の路地裏。夕方からの営業で、常に満席になる大人気店。煙がかなり立ち込めるノスタルジックな店舗スタイルのため、衣服への匂い移り対策をして予約の上訪問するのが鉄則。",
+      "scene_timestamp": "28:10",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kinounatibetata/special/",
+      "source_evidence": "スペシャルドラマのエンドクレジットに撮影協力として実名表記。劇中で5人が網を囲んで肉を焼く煙の臨場感や、名物のメニュー黒板、特徴的な「ねぎタン塩」のビジュアルが完全一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "ねぎタン塩 / カルビ",
+          "venue_name": "どうげん",
+          "available": "通年メニュー",
+          "price_range": "¥4,000〜6,000",
+          "source_url": "https://tabelog.com/tokyo/A1303/A130301/13001799/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 0,
+          "scene_evidence": "作中でシロさんやケンジたちが大絶賛しながら網の上で丁寧に焼き、口に運んだ肉汁あふれる絶品のねぎタン塩。これをおかずにご飯をモリモリ食べるシーンが印象的。"
+        }
+      ]
+    }
+  ]
+}

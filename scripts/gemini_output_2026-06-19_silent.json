@@ -1,0 +1,107 @@
+{
+  "work_title": "silent",
+  "spots": [
+    {
+      "title": "silent",
+      "title_en": "silent",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2022,
+      "scene_number": "02",
+      "spot_name": "ANEA CAFE 松見坂",
+      "spot_name_en": "ANEA CAFE Matsumizaka",
+      "prefecture": "tokyo",
+      "city": "meguro",
+      "latitude": 35.653427,
+      "longitude": 139.684814,
+      "description_ja": "主人公の青羽紬（川口春奈）と、かつての恋人であり聴覚障害を持つ佐倉想（目黒蓮）が再会後に何度も対話を重ねる、本作で最も象徴的なカフェ。2人が常に座る窓際の席は、ファンの間で通称「silent席」と呼ばれ、放送当時から完全予約制のプラチナシートとして社会現象になりました。ウッディで開放的な店内には、ドラマの記憶を想起させる穏やかな光が差し込みます。",
+      "description_en": "This is the most iconic cafe in the drama, where the protagonist Tsumugi Aoba (Haruna Kawaguchi) and her former lover Sou Sakura (Ren Meguro), who has a hearing impairment, meet and talk repeatedly. The window-side table where they always sat became widely known as the 'silent seat.' It became a social phenomenon, requiring reservations months in advance.",
+      "visit_tips_ja": "最寄り駅は京王井の頭線「神泉駅」南口から徒歩9分、または「駒場東大前駅」東口から徒歩10分。東急バス「松見坂下」バス停からは徒歩1分。ドラマと同じ「silent席」は完全事前予約制（90分制など時期により規定あり）となっているため、訪問前に店舗の公式SNS等で予約方法を確認することを強く推奨します。ペット同伴可能な店舗でもあります。",
+      "scene_timestamp": "12:45",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://anea.jp/",
+      "source_evidence": "ドラマの公式クレジットに撮影協力として明記されており、店舗側も公式SNS等でロケ地となったことや「silent席」の予約対応についてアナウンスしています。背景の大きな窓、コンクリート調の壁面、特徴的なペンダントライトが完全一致します。",
+      "nearby_foods": [
+        {
+          "dish_name": "アーモンドミルクラテ（ラテアート仕様）＆ 生キャラメルと岩塩の固めプリン",
+          "venue_name": "ANEA CAFE 松見坂",
+          "available": "通年メニュー",
+          "price_range": "¥1,500程度",
+          "source_url": "https://tabelog.com/tokyo/A1318/A131801/13260390/",
+          "google_maps_url": "https://maps.app.goo.gl/9t7B4m8zXfbyXNfA7",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話などで紬と想がこのカフェで会話する際、テーブルに並んでいたドリンクやカフェ空間のメニューです。ロケ地となった同店では、ドラマ放映後に「silent」の文字をあしらった限定ラテアートや、作中の優しい世界観をイメージした「生キャラメルと岩塩の固めプリン」を提供し、聖地巡礼の定番メニューとなっています。"
+        }
+      ]
+    },
+    {
+      "title": "silent",
+      "title_en": "silent",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2022,
+      "scene_number": "01",
+      "spot_name": "世田谷代田駅前広場",
+      "spot_name_en": "Setagaya-Daita Station Square",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.659227,
+      "longitude": 139.660144,
+      "description_ja": "小田急線・世田谷代田駅の改札を出てすぐの駅前広場。第1話で紬が偶然、通勤途中の想の姿を見つけ、声にならない衝撃を受ける再会の舞台です。また、紬の恋人であった戸川湊人（鈴鹿央士）が、落ち込んだ紬に温かいコンポタ（コーンポタージュ）を渡し、スマホで「パンダ 落ちる」の動画を検索して見せる優しさ溢れるシーンのロケ地でもあります。",
+      "description_en": "The station square right outside the ticket gate of Setagaya-Daita Station on the Odakyu Line. This is the memorable location where Tsumugi accidentally spots Sou commuting in the first episode, marking their silent reunion. It is also where Minato (Oji Suzuka) hands Tsumugi a warm can of corn soup and shows her a funny panda video to cheer her up.",
+      "visit_tips_ja": "小田急小田原線「世田谷代田駅」の西口・東口改札を出てすぐの場所にあります。広場自体の見学は24時間いつでも可能ですが、通勤通学の時間帯は一般の利用客で混雑するため、撮影やゆっくりとした巡礼を目的とする場合は平日の日中や週末の早朝がおすすめです。",
+      "scene_timestamp": "38:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.odakyu.jp/",
+      "source_evidence": "小田急電鉄が公式にドラマ『silent』のロケ地として世田谷代田駅を提供したことを発表しており、放送当時には駅構内で劇中音楽が流れるなど公式タイアップが行われました。改札外のベンチや特徴的な駅舎のサインが一致します。",
+      "nearby_foods": [
+        {
+          "dish_name": "温かい缶のコーンポタージュ",
+          "venue_name": "世田谷代田駅前 自動販売機",
+          "available": "季節限定（冬期中心）",
+          "price_range": "¥140〜160程度",
+          "source_url": "https://www.odakyu.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/wShp5e1eDAsYVf1N6",
+          "travel_minutes": 1,
+          "scene_evidence": "第1話で、湊人が少し落ち込んでいる様子の紬に対して「主成分、優しさ」を体現するかのように、駅前の自販機で買って手渡した飲み物です。多くのファンがこの駅前広場で缶のコーンポタージュを持ち、再現写真を撮影する定番スポットとなっています。"
+        }
+      ]
+    },
+    {
+      "title": "silent",
+      "title_en": "silent",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2022,
+      "scene_number": "05",
+      "spot_name": "ビオ・オジヤン・カフェ 下北沢",
+      "spot_name_en": "bio ojiyan cafe shimokitazawa",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.659616,
+      "longitude": 139.665977,
+      "description_ja": "下北沢にある、名物「おじや」や定食を楽しめるレトロでカジュアルなカフェ。第5話において、想がカフェの店内にいる桃野奈々（夏帆）に対して、紬の落としたワイヤレスイヤホンを拾ったことをスマートフォンの画面で見せ、2人が手話で会話を交わす切なくも日常的なシーンの撮影に使用されました。",
+      "description_en": "A retro and casual cafe in Shimokitazawa known for its signature 'Ojiya' (rice porridge) dishes and set meals. In episode 5, this cozy interior serves as the backdrop where Sou shows Nana Momono (Kaho) the wireless earphone he picked up for Tsumugi, leading to a poignant conversation in sign language.",
+      "visit_tips_ja": "小田急線・京王井の頭線「下北沢駅」南西口から徒歩約5分。店内はヴィンテージ家具が並ぶ非常にお洒落な空間です。ランチタイムや週末の夕方は非常に混雑するため、並ばずに入りたい場合は平日の15:00〜17:00頃のカフェタイムを狙うのがベストです。",
+      "scene_timestamp": "22:15",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://tabelog.com/tokyo/A1318/A131802/13025686/",
+      "source_evidence": "ファンによる目撃情報および、劇中に映る木製のアンティークテーブル、店内の独特な壁面の塗装、窓外に映る下北沢の線路跡地（シモキタ線路街）の風景がお店のレイアウトと完全に一致するため特定されました。",
+      "nearby_foods": [
+        {
+          "dish_name": "オジヤ（トッピング：揚げパン・明太子など）",
+          "venue_name": "ビオ・オジヤン・カフェ 下北沢",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜1,500",
+          "source_url": "https://tabelog.com/tokyo/A1318/A131802/13025686/",
+          "google_maps_url": "https://maps.app.goo.gl/vSgX9PAn8aayZ6Nq6",
+          "travel_minutes": 0,
+          "scene_evidence": "想と奈々が手話で会話をしていたシーンのテーブル席に登場する、同店の看板メニューです。出汁がしっかり効いた優しい味わいのおじやで、様々なトッピングを選べることで有名であり、ロケ地巡りのランチとして多くのファンに親しまれています。"
+        }
+      ]
+    }
+  ]
+}

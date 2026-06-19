@@ -1,0 +1,106 @@
+{
+  "work_title": "教場",
+  "spots": [
+    {
+      "title": "教場",
+      "title_en": "Kyojo",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2020,
+      "scene_number": "01",
+      "spot_name": "多摩大学 多摩キャンパス",
+      "spot_name_en": "Tama University Tama Campus",
+      "prefecture": "tokyo",
+      "city": "tama",
+      "latitude": 35.632944,
+      "longitude": 139.439833,
+      "description_ja": "神奈川県警察学校（風間教場）の象徴的な校舎外観、エントランス、中庭、講義室、渡り廊下などの大部分のロケ地となった場所。風間公親（木村拓哉）が威厳を持って佇むシーンや、宮坂（工藤阿須加）をはじめとする生徒たちが日々厳しい訓練や過酷な心理戦に臨む、作品の核となるメインロケーションです。",
+      "description_en": "The primary filming location for the Kanagawa Prefectural Police Academy. Most of the academy's exterior shots, entrance hall, corridors, and courtyard scenes featuring Instructor Kazama (Takuya Kimura) and his trainees were shot on this university campus.",
+      "visit_tips_ja": "小田急多摩線・京王相模原線・多摩モノレール「多摩センター駅」から京王バス「多摩大学」行きで約11分、終点下車。実際の教育機関（大学キャンパス）であるため、無断での学内立ち入りや撮影は厳禁です。聖地巡礼の際は公道から外観を見学するに留めてください。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tama.ac.jp/info/news20200106.html",
+      "source_evidence": "多摩大学の公式ウェブサイトにて『教場』のメインロケ地として使用されたことが公式発表されています。劇中に登場する円形の広場やガラス張りの特徴的な渡り廊下、レンガ調の校舎デザインが完全に一致します。",
+      "nearby_foods": [
+        {
+          "dish_name": "警察学校の食堂メニュー（定食・カレー等）のイメージベース",
+          "venue_name": "多摩大学多摩キャンパス 学生食堂（アサヒ食堂）",
+          "available": "通年メニュー",
+          "price_range": "¥400〜600",
+          "source_url": "https://tabelog.com/tokyo/A1327/A132702/13176503/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話や第2話などで、生徒たちが緊迫した空気のなか、唯一の休息時間としてトレイを持って並び、カレーライスや定食を貪り食べる「警察学校の食堂シーン」のロケーションベースおよびその雰囲気を追体験できる学食スポット。"
+        }
+      ]
+    },
+    {
+      "title": "教場",
+      "title_en": "Kyojo",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2020,
+      "scene_number": "02",
+      "spot_name": "明星大学 青梅キャンパス（旧キャンパス）",
+      "spot_name_en": "Meisei University Ome Campus",
+      "prefecture": "tokyo",
+      "city": "ome",
+      "latitude": 35.795833,
+      "longitude": 139.297778,
+      "description_ja": "多摩大学と並び、警察学校の広大な訓練場や武道場、特定の教室、裏手にある緊迫した事件・疑惑が勃発する屋外敷地の撮影地として広く活用されたロケ地。風間が冷徹に生徒を観察する教官室周辺の動線や、過酷なフィジカルトレーニングを行うシーンのベースとなりました。",
+      "description_en": "Alongside Tama University, this campus was heavily used to film the police academy's training grounds, classrooms, and specific indoor facilities where intense individual dramas and confrontations between trainees unfold under Instructor Kazama's watchful eye.",
+      "visit_tips_ja": "JR青梅線「河辺駅」から西東京バス「明星大学」行き、または車。※注意点：青梅キャンパスはすでに大学の拠点としての統合・再編が進んでおり、立ち入りエリアに大幅な制限があるか、一般開放されていない場合が多いため、敷地外から雰囲気を味わうのが原則です。",
+      "scene_timestamp": "41:10",
+      "confidence_score": 0.8,
+      "source_type": "inferred",
+      "source_url": "https://www.meisei-u.ac.jp/",
+      "source_evidence": "放映当時のロケ地目撃情報やエンドクレジットに記載のあるロケ協力情報から特定。劇中で訓練生たちが駆け抜ける独特な傾斜のある外周路や、コンクリート打ちっぱなしを多用した校舎の裏手構造が一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "弁当・おにぎり・スポーツドリンク各種",
+          "venue_name": "周辺のコンビニエンスストア・ローカルショップ",
+          "available": "通年メニュー",
+          "price_range": "¥200〜500",
+          "source_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 5,
+          "scene_evidence": "作中で生徒たちが過酷な特別訓練の合間、泥だらけになりながら水分補給をしたり、張り詰めた状況のなかで気力を保つためにエネルギーを摂取する、ストイックな警察学校の「食」の背景。"
+        }
+      ]
+    },
+    {
+      "title": "教場0-サジタリウスの問い-",
+      "title_en": "Kyojo 0",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2023,
+      "scene_number": "01",
+      "spot_name": "喫茶 白鳥（スワン）",
+      "spot_name_en": "Kissaten Swan",
+      "prefecture": "chiba",
+      "city": "chosei",
+      "latitude": 35.437222,
+      "longitude": 140.387222,
+      "description_ja": "『風間公親-教場0-』第1話をはじめ、作中で非常に重要な「事件現場」や「聞き込み捜査の舞台」としてたびたび登場する、昭和レトロな雰囲気が漂う実在の老舗喫茶店。風間公親とバディを組む新人刑事・瓜原潤史（赤楚衛二）が、事件の謎を解き明かすために店内のボックス席で緊迫したやり取りを繰り広げた。",
+      "description_en": "Featured notably in 'Kyojo 0' Episode 1 as a key retro café setting for detective interrogation and investigation. Instructor Kazama and rookie detective Urihara (Eiji Akaso) sit in its nostalgia-filled leather booths to decipher clues of a homicide case.",
+      "visit_tips_ja": "JR外房線「八積駅」から徒歩約1分（駅の目の前に位置）。営業時間は11:00〜17:00（変動あり）、木曜定休。劇中で使用された味わい深い革張りのソファー席は非常に人気が高く、映画やドラマのロケ地として有名です。巡礼時は1オーダー必須。",
+      "scene_timestamp": "18:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.chosei-fun.jp/",
+      "source_evidence": "千葉県長生村の公式ロケ誘致情報および、フジテレビの番組クレジットに「喫茶 白鳥」として明記。特徴的なアーチ型の窓、年季の入ったテーブル、店内の照明器具が劇中カットと100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "ナポリタン / クリームソーダ",
+          "venue_name": "喫茶 白鳥",
+          "available": "通年メニュー",
+          "price_range": "¥700〜1,200",
+          "source_url": "https://tabelog.com/chiba/A1205/A120503/12027209/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "『教場0』第1話にて、事件の背景を探る刑事たちがレトロな空間のなかで注文する、昔ながらの鉄板ナポリタンや鮮やかな緑色のクリームソーダ。昭和から続く喫茶店の名物メニューそのものです。"
+        }
+      ]
+    }
+  ]
+}

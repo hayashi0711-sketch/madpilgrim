@@ -1,0 +1,107 @@
+{
+  "work_title": "STEINS;GATE",
+  "spots": [
+    {
+      "title": "STEINS;GATE",
+      "title_en": "STEINS;GATE",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2011,
+      "scene_number": "04",
+      "spot_name": "牛丼専門サンボ",
+      "spot_name_en": "Gyudon Senmon Sambo",
+      "prefecture": "tokyo",
+      "city": "chiyoda",
+      "latitude": 35.700143,
+      "longitude": 139.771343,
+      "description_ja": "主人公・岡部倫太郎（オカリン）やダル（橋田至）が足繁く通う牛丼屋として登場する。作中では携帯電話の操作に厳しいおばちゃんがおり、食事中のメール送信がタイムリープの鍵を握る本作において「携帯禁止」のルールが絶妙なサスペンスとギャグを生み出した。看板の文字が一部隠れて描かれるなど演出も細かい。",
+      "description_en": "Featured as the beef bowl restaurant frequented by the main character, Rintaro Okabe, and Hashida Itaru (Daru). In the anime, a strict staff member who prohibits mobile phone usage creates a unique atmosphere, adding humor and tension to the plot, where text messaging is highly confidential. The exterior and strict vibe are heavily reflected from the real establishment.",
+      "visit_tips_ja": "東京メトロ銀座線「末広町駅」から徒歩3分、またはJR「秋葉原駅」電気街口から徒歩5分。店内での大声での会話や通話、食事をしない長時間のスマホ操作は避けるのが粋。入店時に券売機で食券を購入するスタイルです。",
+      "scene_timestamp": "03:50",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://akihabara-bc.jp/akihabara-sambo/",
+      "source_evidence": "第4話で岡部とダルが牛丼を食べるシーン。実在する「牛丼専門サンボ」の外観看板、店内レイアウト、および「店内での携帯電話操作禁止」という名物ルールがそのまま描写されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "牛丼 並・卵・味噌汁",
+          "venue_name": "牛丼専門サンボ",
+          "available": "通年メニュー",
+          "price_range": "¥600〜800",
+          "source_url": "https://tabelog.com/tokyo/A1311/A131101/13006063/",
+          "google_maps_url": "https://maps.app.goo.gl/P8Z8z5G6jH66P1gR6",
+          "travel_minutes": 0,
+          "scene_evidence": "第4話で岡部とダルがテーブル席に座り、無言で頬張っている大盛りの牛丼。チェーン店とは異なる、お肉の味がしっかり染み込んだソウルフード。"
+        }
+      ]
+    },
+    {
+      "title": "STEINS;GATE",
+      "title_en": "STEINS;GATE",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2011,
+      "scene_number": "02",
+      "spot_name": "メイクイーン・ニャンニャン（モデル：Cafe mailish）",
+      "spot_name_en": "May Queen Nyan Nyan (Model: Cafe mailish)",
+      "prefecture": "tokyo",
+      "city": "chiyoda",
+      "latitude": 35.701314,
+      "longitude": 139.771032,
+      "description_ja": "フェイリス・ニャンニャンがオーナーを務め、椎名まゆりが「まゆしぃ」としてアルバイトをしているメイドカフェ「メイクイーン・ニャンニャン」のモデル。1990年代から秋葉原のカルチャーを支え続ける老舗クラシックメイドカフェであり、作中ではメンバーたちの憩いの場や作戦会議の場として何度も登場する。",
+      "description_en": "The model for the maid cafe 'May Queen Nyan Nyan,' owned by Faris NyanNyan, where Mayuri Shiina works part-time. It is based on 'Cafe mailish,' a legendary and long-running maid cafe in Akihabara. It appears frequently throughout the series as a relaxing base and meeting spot for the characters.",
+      "visit_tips_ja": "東京メトロ銀座線「末広町駅」から徒歩3分、JR「秋葉原駅」から徒歩7分。現在も通常営業中。イベント開催時は満席になることが多いため公式SNS等を要確認。メイドさんの撮影は厳禁（チェキ等メニュー除く）。",
+      "scene_timestamp": "16:22",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.mailish.jp/",
+      "source_evidence": "アニメのエンドクレジットに「取材協力：Cafe mailish」と明記されている。劇中の店舗外装の階段やアーチ状の入り口、木調の落ち着いた内装、メイド服のデザインが完全に一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "オムライス（世界がヤバいオムライス）",
+          "venue_name": "Cafe mailish（カフェ メイリッシュ）",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜1,500",
+          "source_url": "https://www.mailish.jp/menu",
+          "google_maps_url": "https://maps.app.goo.gl/TWhd2u3x7eayNpxFA",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話や第4話などで岡部が注文し、フェイリスがケチャップで呪文（文字）を描いたオムライスのモデル。実際の店舗でもオムライスへのケチャップお絵描きサービスが提供されている。"
+        }
+      ]
+    },
+    {
+      "title": "STEINS;GATE",
+      "title_en": "STEINS;GATE",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2011,
+      "scene_number": "01",
+      "spot_name": "秋葉原ラジオ会館",
+      "spot_name_en": "Akihabara Radio Kaikan",
+      "prefecture": "tokyo",
+      "city": "chiyoda",
+      "latitude": 35.697843,
+      "longitude": 139.772584,
+      "description_ja": "物語のすべての始まりであり、終着点でもある本作の最重要スポット。第1話で中鉢博士のタイムマシン発表会が行われ、屋上に謎の人工衛星（タイムマシン）が墜落した衝撃的なビジュアルは作品のアイコンとなった。2014年に建て替えられたため、劇中に登場するのは「旧・ラジオ会館」の姿である。",
+      "description_en": "The most vital landmark of the series, where the story begins and ends. In Episode 1, Dr. Nakabachi holds a press conference regarding time travel here, and a mysterious satellite (time machine) crashes into the roof. The building was rebuilt in 2014, meaning the anime portrays the iconic former structure.",
+      "visit_tips_ja": "JR「秋葉原駅」電気街口を出てすぐ目の前。現在の建物は新館ですが、ホビーショップや専門店が並ぶアキバの象徴。写真撮影の際は、駅前広場から見上げるように撮ると当時の画角に近い雰囲気を味わえます。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.radiokaikan.jp/",
+      "source_evidence": "第1話冒頭から登場。「秋葉原ラジオ会館」のネオン看板や外壁の色が完全に実物そのままトレースされて描かれている（放映当時は実在の旧館とのタイアップイベントも開催された）。",
+      "nearby_foods": [
+        {
+          "dish_name": "ジューシーからあげナンバーワン（劇中登場フードの再現）",
+          "venue_name": "秋葉原ラジオ会館周辺（コンビニ等）",
+          "available": "要確認",
+          "price_range": "¥300〜500",
+          "source_url": "https://www.radiokaikan.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/9QZJ2qV7P2K9wY5T9",
+          "travel_minutes": 1,
+          "scene_evidence": "まゆりが大好きな「ジューシーからあげナンバーワン」の元ネタとされるファミマ等のホットスナック。ラジオ会館のすぐそばの店舗でまゆりと岡部が買い物をするシーンに対応。"
+        }
+      ]
+    }
+  ]
+}

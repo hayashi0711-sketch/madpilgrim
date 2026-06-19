@@ -1,0 +1,87 @@
+{
+  "_comment": "Gemini Deep Research / NotebookLM の出力をこの形式に整形して import_from_gemini.py に渡す。",
+  "_workflow": [
+    "1. Gemini Deep Research で「<作品名> ロケ地 撮影場所 特定 シーン」を調査",
+    "2. 出力テキストを NotebookLM に貼り付けてソース根拠を整理",
+    "3. このテンプレートの形式に合わせてJSONを作成して保存（例: gemini_output.json）",
+    "4. python scripts/import_from_gemini.py --input scripts/gemini_output.json  （プレビュー確認）",
+    "5. 問題なければ python scripts/import_from_gemini.py --input scripts/gemini_output.json --commit",
+    "6. Supabase Dashboard の SQL Editor で ai_suggested → approved に承認"
+  ],
+
+  "work_title": "作品名（例: ドラゴン桜）",
+
+  "spots": [
+    {
+      "_comment": "必須フィールド: title, spot_name, category, prefecture, city, latitude, longitude, description_ja, source_evidence",
+
+      "title": "作品名（日本語）",
+      "title_en": "Work Title (English)",
+      "category": "drama",
+      "_category_options": ["anime", "drama", "movie", "mv", "cm", "manga"],
+
+      "broadcaster": "TBS",
+      "release_year": 2021,
+      "scene_number": "03",
+
+      "_youtube_comment": "Geminiが見つけた公式チャンネル候補をここに記載してよいが、youtube_confirmed を true にしない限り import_from_gemini.py は自動的にこの値を捨てる。必ず人間がチャンネルが公式（配給・制作・放送局等の公式チャンネル）であることをブラウザで目視確認してから true にすること。",
+      "youtube_url": null,
+      "youtube_channel_name": null,
+      "youtube_confirmed": false,
+
+      "spot_name": "ロケ地の名称（日本語）",
+      "spot_name_en": "Location Name (English)",
+
+      "prefecture": "tokyo",
+      "city": "marunouchi",
+      "latitude": 35.6762,
+      "longitude": 139.7653,
+
+      "description_ja": "このロケ地の詳細説明。作品でどのシーンに登場するか、現地の見どころを含む。",
+      "description_en": "English description of this filming location.",
+
+      "visit_tips_ja": "訪問時のアドバイス。アクセス方法、おすすめの時間帯など。",
+      "visit_tips_en": "Visit tips in English.",
+
+      "scene_timestamp": "21:03",
+      "scene_timestamp_en": "21:03",
+
+      "seo_title_ja": "作品名 ロケ地名 撮影場所情報（省略可・自動生成）",
+      "seo_title_en": "Work Title Location Name Filming Location Info (optional)",
+
+      "confidence_score": 0.8,
+      "_confidence_guide": "0.9=公式情報・撮影ロケ地として公認 / 0.8=複数情報源で裏付けあり / 0.7=単一情報源 / 0.6=状況証拠のみ",
+
+      "source_type": "inferred",
+      "_source_type_options": ["official", "fan_wiki", "news_article", "inferred"],
+
+      "source_url": "https://example.com/article-about-filming-location",
+      "source_evidence": "第3話（21:03頃）で主人公が立つ背景に〇〇ビルのロゴが映っており、東京駅丸の内口広場と特定。公式メイキング動画でも同場所でのロケが確認できる。",
+
+      "slug": ""
+    },
+    {
+      "title": "2件目のスポット例",
+      "title_en": "Second Spot Example",
+      "category": "anime",
+      "broadcaster": "MBS",
+      "release_year": 2020,
+      "scene_number": "01",
+      "spot_name": "渋谷スクランブル交差点",
+      "spot_name_en": "Shibuya Scramble Crossing",
+      "prefecture": "tokyo",
+      "city": "shibuya",
+      "latitude": 35.6595,
+      "longitude": 139.7004,
+      "description_ja": "第1話冒頭、主人公が初めて東京に降り立ちスクランブル交差点を渡るシーン。",
+      "description_en": "The opening of Episode 1 where the protagonist arrives in Tokyo for the first time.",
+      "visit_tips_ja": "朝7〜9時・夕方17〜19時の通勤時間帯が最も混雑し、アニメに近い雰囲気を体感できる。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://example.com/another-source",
+      "source_evidence": "公式制作発表でロケ地として渋谷スクランブル交差点を明記。アニメのビジュアルにも「109」ビルが明確に描かれている。",
+      "slug": ""
+    }
+  ]
+}

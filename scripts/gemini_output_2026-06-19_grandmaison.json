@@ -1,0 +1,73 @@
+{
+  "work_title": "グランメゾン東京",
+  "spots": [
+    {
+      "title": "グランメゾン東京",
+      "title_en": "Grand Maison Tokyo",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2019,
+      "scene_number": "02",
+      "spot_name": "アーキテクツ・オフィス（劇中「グランメゾン東京」の外観）",
+      "spot_name_en": "Architects Office (Model for Grand Maison Tokyo Exterior)",
+      "prefecture": "tokyo",
+      "city": "chuo",
+      "latitude": 35.669812,
+      "longitude": 139.776145,
+      "description_ja": "尾花夏樹と早見倫子（鈴木京香）が日本で立ち上げた三つ星を目指すレストラン「グランメゾン東京」の外観ロケ地。築地・新富町エリアにあるモダンで洗練された建築デザインのビルで、劇中では毎話のように看板が掲げられたエントランスや、登場人物たちが店前で行き交うシーンに登場する。",
+      "description_en": "The exterior filming location for the main restaurant 'Grand Maison Tokyo,' established by Obana and Rinko. Located in the Tsukiji/Shintomicho area, this sleek architectural building features prominently in almost every episode as the storefront of their culinary battleground.",
+      "visit_tips_ja": "東京メトロ有楽町線「新富町駅」または日比谷線「築地駅」から徒歩約5分。実際の建物はオフィスビル（設計事務所等）として使用されているため、敷地内への立ち入りや窓を覗き込む行為、業務の邪魔になる長時間の滞留や撮影は厳禁。",
+      "scene_timestamp": "15:45",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "http://loca.ash.jp/info/2019/d201910_grandmaison.htm",
+      "source_evidence": "第2話で物件を決めて改装し、看板を取り付けるシーン以降に頻出。コンクリートと黒枠のガラス、独特なエントランスの階段スロープの配置が中央区新富町の実在ビルと完全一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "ローストビーフ / ランチコース（※至近のおすすめフレンチ）",
+          "venue_name": "クー・ド・フランス（Coup de France）",
+          "available": "通年メニュー",
+          "price_range": "¥3,000〜8,000",
+          "source_url": "https://tabelog.com/tokyo/A1313/A131301/13014815/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 2,
+          "scene_evidence": "グランメゾン東京の内装および料理自体はスタジオの特設セット（服部栄養専門学校が監修）で撮影されていたため、外観ロケ地からすぐ近くにある築地エリア屈指の本格老舗フレンチでドラマの余韻を味わうためのマッピング。"
+        }
+      ]
+    },
+    {
+      "title": "グランメゾン東京",
+      "title_en": "Grand Maison Tokyo",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2019,
+      "scene_number": "01",
+      "spot_name": "メゾン・ポオル・ボキューズ代官山（劇中「gaku」のロケ地）",
+      "spot_name_en": "Maison Paul Bocuse Daikanyama (Model for Restaurant gaku)",
+      "prefecture": "tokyo",
+      "city": "shibuya",
+      "latitude": 35.648753,
+      "longitude": 139.700812,
+      "description_ja": "尾花の宿敵である丹後学（尾上菊之助）がシェフを務め、江藤不三男（手塚とおる）がオーナーである一流フレンチレストラン「gaku」の内装・メインダイニングのロケ地。フランス料理界の至宝ポール・ボキューズの伝統を受け継ぐ、最高峰のラグジュアリーな実在空間が劇中のライバル店としてそのまま使われた。",
+      "description_en": "The actual high-end French restaurant 'Maison Paul Bocuse' in Daikanyama was used as the primary filming location for 'gaku,' the fierce rival restaurant of Grand Maison Tokyo. Its gorgeous main dining area perfectly reflects the wealthy and prestigious vibe of gaku.",
+      "visit_tips_ja": "東急東横線「代官山駅」から徒歩約5分。代官山フォーラムの地下一階に位置します。非常に格式高いレストランのため、ディナー・ランチともに事前予約が必要。洗練されたサービスとともに、劇中で尾花や江藤が座っていた優雅な空間を体験できます。",
+      "scene_timestamp": "32:10",
+      "confidence_score": 0.9,
+      "source_type": "news_article",
+      "source_url": "https://www.hiramatsuhotels.com/news/detail.php?id=516",
+      "source_evidence": "運営会社である株式会社ひらまつが、ドラマ『グランメゾン東京』にて「メゾン ポール・ボキューズ（代官山）」がライバル店gakuのロケ地として撮影協力したことを公式にアナウンスしている。",
+      "nearby_foods": [
+        {
+          "dish_name": "ムニュ・スペシャル（伝統を受け継ぐフランス料理コース）",
+          "venue_name": "メゾン ポール・ボキューズ",
+          "available": "通年メニュー",
+          "price_range": "¥10,000〜25,000",
+          "source_url": "https://www.hiramatsufood.net/paulbocuse-maison/",
+          "google_maps_url": "https://maps.app.goo.gl/P8Z8z5G6jH66P1gR6",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話や第3話などで、オーナーの江藤やシェフの丹後、そして平古祥平（玉森裕太）たちが集い、グランメゾン東京に勝つための美しく冷徹な料理を提供・試食していたきらびやかなダイニングテーブル席の料理。"
+        }
+      ]
+    }
+  ]
+}

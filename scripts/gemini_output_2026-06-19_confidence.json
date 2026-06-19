@@ -1,0 +1,73 @@
+{
+  "work_title": "コンフィデンスマンJP",
+  "spots": [
+    {
+      "title": "コンフィデンスマンJP",
+      "title_en": "The Confidence Man JP",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2018,
+      "scene_number": "02",
+      "spot_name": "川崎競馬場",
+      "spot_name_en": "Kawasaki Racecourse",
+      "prefecture": "kanagawa",
+      "city": "kawasaki",
+      "latitude": 35.532306,
+      "longitude": 139.712667,
+      "description_ja": "第2話「リゾート王編」において、日本のリゾート開発の女王と呼ばれる強敵・桜田しず子（吉瀬美智子）をハメるため、ダー子たちが「格安航空会社（LSA）の偽の空港建設地」やギャンブル・観光事業の買収計画をカモフラージュする一連のエンタメシーンのロケ背景として使用された広大な競馬場空間。",
+      "description_en": "Featured in Episode 2 (The Resort King). Used as a key location to fool the iron-willed resort mogul Shizuko Sakurada into investing in a fake airport and casino infrastructure plan hatched by Darko.",
+      "visit_tips_ja": "京急大師線「港町駅」から徒歩約3分、またはJR「川崎駅」から徒歩約15分。レース開催日には多くの観客で賑わいます。広大なスタンドや場内グルメエリアは一般開放されており、夜間開催（川崎ジョッキーズナイター）のイルミネーションも見どころです。",
+      "scene_timestamp": "28:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.kawasaki-keiba.jp/",
+      "source_evidence": "神奈川県フィルムコミッションおよび川崎競馬場からの公式ロケ協力アーカイブに記載あり。劇中でボクちゃんたちが仕掛けのターゲットを監視・誘導する背景に、特徴的な大型スクリーンや観客席の構造が合致。",
+      "nearby_foods": [
+        {
+          "dish_name": "激辛やきそば / 激辛もつ煮",
+          "venue_name": "川崎競馬場 場内売店（みよし 等）",
+          "available": "通年メニュー",
+          "price_range": "¥500〜800",
+          "source_url": "https://tabelog.com/kanagawa/A1405/A140502/14041170/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話の作中で、ギャンブルや欲望に溺れる一般客に紛れ、リチャードたちが裏作戦の進行状況を確認しながら、競馬場の喧騒の中でB級グルメをプラスチックパックから割り箸でせわしなく啜るシーン。"
+        }
+      ]
+    },
+    {
+      "title": "コンフィデンスマンJP",
+      "title_en": "The Confidence Man JP",
+      "category": "drama",
+      "broadcaster": "フジテレビ",
+      "release_year": 2018,
+      "scene_number": "04",
+      "spot_name": "船橋競馬場（劇中「俵屋フーズの工場街およびオフィス周辺」）",
+      "spot_name_en": "Funabashi Racecourse Area",
+      "prefecture": "chiba",
+      "city": "funabashi",
+      "latitude": 35.678444,
+      "longitude": 139.993917,
+      "description_ja": "第4話「映画マニア編」に登場。食品偽装を行う悪徳社長・俵屋（佐野史郎）をおびき寄せるため、ダー子らが架空の映画製作会社を立ち上げ、ニセの映画ロケ現場として使用した周辺エリア。彼らの欲望を刺激するカモフラージュ舞台として大掛かりな騙しが敢行された。",
+      "description_en": "Featured in Episode 4 (The Movie Mania). Serving as part of the elaborate fake movie set arranged by Darko to entrap the food-adulterating corporate president Tawaraya into funding a fictitious film.",
+      "visit_tips_ja": "京成本線「船橋競馬場駅」から徒歩約5分、またはJR京葉線「南船橋駅」から徒歩約10分。施設改修等により見え方が変わる場合がありますが、周辺の湾岸エリア特有の商業施設や開放的な道路レイアウトを含めてロケ地のダイナミックさを体感できます。",
+      "scene_timestamp": "19:40",
+      "confidence_score": 0.8,
+      "source_type": "inferred",
+      "source_url": "http://loca.ash.jp/info/2018/d201804_confidence.htm",
+      "source_evidence": "千葉県内での『コンフィデンスマンJP』撮影目撃情報および、劇中の背景に見える大規模な競馬場外壁の意匠、映画スタッフに変装したダー子たちが機材を搬入するロードシーンの構図から特定。",
+      "nearby_foods": [
+        {
+          "dish_name": "高級仕出しロケ弁当 / 鰻重",
+          "venue_name": "船橋周辺の割烹・老舗飲食店",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜4,000",
+          "source_url": "https://tabelog.com/chiba/A1202/A120201/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 5,
+          "scene_evidence": "第4話の劇中で、大の映画マニアである俵屋社長を悦ばせ、完全に信用させるために、ダー子たちが「大物映画監督の撮影現場」と称して用意した、芸能人御用達風の豪華なロケ弁（うなぎ）を囲んで会食するシーン。"
+        }
+      ]
+    }
+  ]
+}

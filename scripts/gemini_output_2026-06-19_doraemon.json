@@ -1,0 +1,73 @@
+{
+  "work_title": "ドラえもん",
+  "spots": [
+    {
+      "title": "ドラえもん",
+      "title_en": "Doraemon",
+      "category": "anime",
+      "broadcaster": "テレビ朝日",
+      "release_year": 1979,
+      "scene_number": "定番シーン",
+      "spot_name": "藤子・F・不二雄ミュージアム カフェ",
+      "spot_name_en": "Fujiko F Fujio Museum Cafe",
+      "prefecture": "kanagawa",
+      "city": "kawasaki",
+      "latitude": 35.610166,
+      "longitude": 139.572458,
+      "description_ja": "作品の公式世界観を体現したミュージアム内にあるカフェ。作中に何度も登場するドラえもんの大好物「どら焼き」や、ひみつ道具「アンキパン」などを忠実に再現したメニューが提供されており、アニメの世界に没入して飲食を楽しめる唯一無二の公式聖地。",
+      "description_en": "The official cafe located inside the Fujiko F. Fujio Museum. It features highly detailed, reproduction menus of Doraemon's favorite food, 'Dorayaki,' and famous secret gadgets like 'Anki-pan' (Memory Bread), acting as the ultimate official culinary destination for fans.",
+      "visit_tips_ja": "小田急線・JR南部線「登戸駅」から直行バスで約9分。ミュージアム自体が日時指定の完全予約制（ローソンチケットにて事前購入）となっており、カフェの利用には入館チケットが必要です。土日祝日の昼時は大変混雑するため、入館後早めの発券がおすすめ。",
+      "scene_timestamp": "定番",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://fujiko-museum.com/cafe/",
+      "source_evidence": "藤子・F・不二雄プロが公式に運営するミュージアム内の飲食スペースであり、アニメ・原作コミックに登場するフード・デザート・ドリンクを公認デザインとして提供しているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "フレンチトーストdeアンキパン / どら焼き",
+          "venue_name": "藤子・F・不二雄ミュージアム カフェ",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜2,000",
+          "source_url": "https://tabelog.com/kanagawa/A1405/A140506/14042296/",
+          "google_maps_url": "https://maps.app.goo.gl/9xV3b9Xf1G2KqA8A6",
+          "travel_minutes": 0,
+          "scene_evidence": "のび太がテスト前に使用する有名なひみつ道具「アンキパン」をフレンチトーストに仕上げたメニューや、ドラえもんが作中で至上の喜びを持って頬張る「どら焼き」そのものを再現。"
+        }
+      ]
+    },
+    {
+      "title": "映画ドラえもん のび太の宇宙小戦争 2021",
+      "title_en": "Doraemon the Movie: Nobita's Little Star Wars 2021",
+      "category": "movie",
+      "broadcaster": "東宝",
+      "release_year": 2022,
+      "scene_number": "本編",
+      "spot_name": "高岡おとぎの森公園（ドラえもんの空き地）",
+      "spot_name_en": "Takaoka Otogi-no-Mori Park (Doraemon's Open Lot)",
+      "prefecture": "toyama",
+      "city": "takaoka",
+      "latitude": 36.726512,
+      "longitude": 137.003921,
+      "description_ja": "映画やテレビアニメで、のび太、ジャイアン、スネ夫、しずかちゃんが集まり、土管の上で話し合ったり野球をしたりする「あの空き地」を、原作者の生誕の地である富山県高岡市に完全再現した公式聖地空間。キャラクターたちの等身大像や象徴的な3本の土管が設置されている。",
+      "description_en": "A public park located in Takaoka City, Toyama, the birthplace of Fujiko F. Fujio. It features a physical 1:1 recreation of the iconic 'open lot' (akichi) with the famous stacked concrete pipes and life-sized statues of Doraemon and his friends.",
+      "visit_tips_ja": "JR新高岡駅から徒歩約15分、または車・タクシーで約5分。入場無料の広大な公園。日中は子供たちの遊び場として賑わうため、キャラクター像や土管の記念写真を落ち着いて撮影したい場合は、午前中の早い時間帯の訪問がベストです。",
+      "scene_timestamp": "05:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.city.takaoka.toyama.jp/soshiki/toshikeikakuka/1253.html",
+      "source_evidence": "高岡市および藤子プロの公式監修により、作中の空き地のレイアウト（3本の土管の重ね方、広さの比率）をそのまま具現化した記念碑的広場として整備されているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "どら焼き / 和菓子",
+          "venue_name": "引網香月堂 古沢本店（※高岡・富山エリアの名店）",
+          "available": "通年メニュー",
+          "price_range": "¥300〜1,000",
+          "source_url": "https://tabelog.com/toyama/A1601/A160101/16006764/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 20,
+          "scene_evidence": "空き地でのび太たちが集まっておやつを食べたり、ドラえもんが未来のひみつ道具を出す対価として要求する「どら焼き」の文化を、藤子先生が育った富山・高岡の最高峰の職人技による和菓子で楽しむためのマッピング。"
+        }
+      ]
+    }
+  ]
+}

@@ -2,31 +2,28 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { TrustIndicator } from "@/components/TrustIndicator";
 import type { Locale, NearbyFood, Spot } from "@/types/mad-pilgrim";
 
-const coverImages = [
-  "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=480&q=80",
-  "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=480&q=80",
-  "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=480&q=80",
-  "https://images.unsplash.com/photo-1536098561742-ca998e48cbcc?auto=format&fit=crop&w=480&q=80",
-  "https://images.unsplash.com/photo-1492571350019-22de08371fd3?auto=format&fit=crop&w=480&q=80"
-];
+function mapboxStatic(lng: number, lat: number, w: number, h: number, zoom = 13): string | null {
+  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+  if (!token || !lng || !lat) return null;
+  return `https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/${lng},${lat},${zoom},0/${w}x${h}?access_token=${token}`;
+}
 
-const foodImages = [
-  "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=88",
-  "https://images.unsplash.com/photo-1554118811-1e0d58224f24?auto=format&fit=crop&w=1200&q=88",
-  "https://images.unsplash.com/photo-1553621042-f6e147245754?auto=format&fit=crop&w=1200&q=88",
-  "https://images.unsplash.com/photo-1559314809-0d155014e29e?auto=format&fit=crop&w=1200&q=88",
-  "https://images.unsplash.com/photo-1579871494447-9811cf80d66c?auto=format&fit=crop&w=1200&q=88"
-];
+const FALLBACK_CARD = "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=480&q=80";
+const FALLBACK_HERO = "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=88";
 
 const categoryCode: Record<Spot["category"], string> = {
   anime: "ANIME",
   mv: "MV",
   drama: "DRAMA",
   movie: "MOVIE",
-  cm: "CM"
+  cm: "CM",
+  manga: "MANGA"
 };
+
+type DashboardView = "works" | "map" | "food";
 
 export function LocationReceiptDashboard({
   spots,
@@ -42,6 +39,7 @@ export function LocationReceiptDashboard({
   const markers = useRef<Array<import("mapbox-gl").Marker>>([]);
   const [category, setCategory] = useState<"all" | Spot["category"]>("all");
   const [selectedIndex, setSelectedIndex] = useState(Math.min(2, Math.max(0, spots.length - 1)));
+  const [activeView, setActiveView] = useState<DashboardView>("works");
   const visibleSpots = useMemo(
     () => category === "all" ? spots : spots.filter((spot) => spot.category === category),
     [category, spots]
@@ -50,6 +48,10 @@ export function LocationReceiptDashboard({
   const selectedFoods = selected ? (foodsBySlug[selected.slug] ?? []) : [];
   const primaryFood = selectedFoods[0] ?? null;
   const approvedCount = spots.filter((s) => s.status === "approved").length;
+  const approvedRate = spots.length ? Math.round((approvedCount / spots.length) * 100) : 0;
+  const averageMatch = spots.length
+    ? Math.round(spots.reduce((total, spot) => total + spot.confidenceScore, 0) / spots.length * 100)
+    : 0;
   const hasMapboxToken = Boolean(process.env.NEXT_PUBLIC_MAPBOX_TOKEN);
 
   useEffect(() => {
@@ -106,10 +108,20 @@ export function LocationReceiptDashboard({
     if (spot) mapInstance.current?.flyTo({ center: [spot.lng, spot.lat], zoom: 11.5, duration: 700 });
   }, [selectedIndex, visibleSpots]);
 
-  if (!selected) return null;
+  useEffect(() => {
+    if (activeView !== "map") return;
+    const frame = requestAnimationFrame(() => mapInstance.current?.resize());
+    return () => cancelAnimationFrame(frame);
+  }, [activeView]);
+
+  const dashboardViews: Array<{ id: DashboardView; ja: string; en: string }> = [
+    { id: "works", ja: "作品", en: "WORKS" },
+    { id: "map", ja: "地図", en: "MAP" },
+    { id: "food", ja: primaryFood ? "食" : "詳細", en: primaryFood ? "FOOD" : "DETAILS" }
+  ];
 
   return (
-    <main className="receipt-shell">
+    <section className="receipt-shell" aria-label={locale === "ja" ? "ロケ地探索ダッシュボード" : "Location explorer dashboard"}>
       <header className="receipt-header">
         <div className="receipt-brand">MAD <span>Pilgrim</span></div>
         <div className="receipt-subbrand">
@@ -128,8 +140,50 @@ export function LocationReceiptDashboard({
         </div>
       </header>
 
-      <div className="receipt-workspace">
-        <aside className="receipt-scenes">
+      <nav className="receipt-dashboard-mobile-tabs" aria-label={locale === "ja" ? "表示する情報" : "Dashboard view"} role="tablist">
+        {dashboardViews.map((view, index) => (
+          <button
+            aria-controls={`receipt-panel-${view.id}`}
+            aria-selected={activeView === view.id}
+            id={`receipt-tab-${view.id}`}
+            key={view.id}
+            onClick={() => setActiveView(view.id)}
+            onKeyDown={(event) => {
+              if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+              event.preventDefault();
+              const nextIndex = event.key === "Home"
+                ? 0
+                : event.key === "End"
+                  ? dashboardViews.length - 1
+                  : (index + (event.key === "ArrowRight" ? 1 : -1) + dashboardViews.length) % dashboardViews.length;
+              const next = dashboardViews[nextIndex];
+              setActiveView(next.id);
+              document.getElementById(`receipt-tab-${next.id}`)?.focus();
+            }}
+            role="tab"
+            tabIndex={activeView === view.id ? 0 : -1}
+            type="button"
+          >
+            <small>0{index + 1}</small>
+            {locale === "ja" ? view.ja : view.en}
+          </button>
+        ))}
+      </nav>
+
+      <div className="receipt-workspace receipt-linked-workspace">
+        <div className="receipt-signal-rail" aria-hidden="true">
+          <span>SELECTED SCENE</span>
+          <i />
+          <span>MAP PIN</span>
+          <i />
+          <span>{primaryFood ? "FOOD MATCH" : "LOCATION INFO"}</span>
+        </div>
+        <aside
+          aria-labelledby="receipt-tab-works"
+          className={`receipt-scenes receipt-linked-panel ${activeView !== "works" ? "is-mobile-inactive" : ""}`}
+          id="receipt-panel-works"
+          role="tabpanel"
+        >
           <div className="receipt-blackbar">
             <strong>WORKS <em>&amp;</em> SCENES</strong>
             <span>更新&nbsp; 13:42</span>
@@ -140,7 +194,8 @@ export function LocationReceiptDashboard({
               ["drama", "ドラマ"],
               ["movie", "映画"],
               ["anime", "アニメ"],
-              ["mv", "MV"]
+              ["manga", "マンガ"],
+              ["mv", "Music Video"]
             ] as const).map(([value, label]) => (
               <button
                 aria-pressed={category === value}
@@ -158,18 +213,24 @@ export function LocationReceiptDashboard({
           </nav>
           <div className="receipt-stats">
             <span>TOTAL SCENES</span><b>{visibleSpots.length.toString().padStart(3, "0")}</b>
-            <span>VERIFIED</span><b>96%</b>
+            <span>VERIFIED</span><b title={locale === "ja" ? "人による承認済みスポットの割合" : "Share of spots approved by a human reviewer"}>{approvedRate}%</b>
           </div>
           <div className="receipt-scene-list">
+            {visibleSpots.length === 0 ? (
+              <div className="receipt-empty-state">
+                {locale === "ja" ? "このカテゴリには確認済みスポットがまだありません。" : "No verified spots in this category yet."}
+              </div>
+            ) : null}
             {visibleSpots.map((spot, index) => (
               <button
                 className={`receipt-scene ${selectedIndex === index ? "is-selected" : ""}`}
+                data-category={spot.category}
                 key={spot.id}
                 onClick={() => setSelectedIndex(index)}
                 type="button"
               >
                 <span className="receipt-number">{String(index + 1).padStart(3, "0")}<small>{categoryCode[spot.category]}</small></span>
-                <img alt={`${spot.title[locale]} — ${spot.spotName[locale]}`} height="102" src={coverImages[index % coverImages.length]} width="92" />
+                <img alt={`${spot.title[locale]} — ${spot.spotName[locale]}`} height="102" src={mapboxStatic(spot.lng, spot.lat, 92, 102, 13) ?? FALLBACK_CARD} width="92" />
                 <span className="receipt-scene-copy">
                   <strong>{spot.title[locale]}</strong>
                   <b>{spot.releaseYear}{spot.broadcaster ? ` / ${spot.broadcaster}` : ""}</b>
@@ -180,18 +241,31 @@ export function LocationReceiptDashboard({
                     {selectedIndex === index ? <mark className="receipt-selected-badge">SELECTED</mark> : null}
                   </span>
                   <span>PLACE&nbsp;&nbsp; {spot.spotName[locale]}</span>
-                  <i>{spot.status === "approved" ? "検証済み" : "AI REVIEW"}</i>
+                  <i title={spot.status === "approved" ? "出典確認と人による承認が完了" : "AI候補として人による確認待ち"}>
+                    {spot.status === "approved" ? "検証済み" : "AI REVIEW"}
+                  </i>
                 </span>
                 <span className="receipt-rate">{Math.round(spot.confidenceScore * 100)}%</span>
               </button>
             ))}
           </div>
-          <Link className="receipt-view-all" href={`/${locale}/spots/${selected.slug}`}>
-            VIEW ALL SCENES <span>→</span><b>{visibleSpots.length}</b>
-          </Link>
+          {selected ? (
+            <Link className="receipt-view-all" href={`/${locale}/spots/${selected.slug}`}>
+              VIEW ALL SCENES <span>→</span><b>{visibleSpots.length}</b>
+            </Link>
+          ) : (
+            <div className="receipt-view-all">
+              VIEW ALL SCENES <span>→</span><b>{visibleSpots.length}</b>
+            </div>
+          )}
         </aside>
 
-        <section className="receipt-map">
+        <section
+          aria-labelledby="receipt-tab-map"
+          className={`receipt-map receipt-linked-panel ${activeView !== "map" ? "is-mobile-inactive" : ""}`}
+          id="receipt-panel-map"
+          role="tabpanel"
+        >
           <div className="receipt-blackbar">
             <strong>{locale === "ja" ? "撮影場所" : "FILMING LOCATION"} <small>LIVE MAP</small></strong>
             <span>▣&nbsp; 地図&nbsp;&nbsp;&nbsp; 航空写真&nbsp;&nbsp;&nbsp; ⛶</span>
@@ -250,69 +324,130 @@ export function LocationReceiptDashboard({
                 </svg>
               </div>
             ) : null}
-            {hasMapboxToken ? (
-              <svg className="receipt-live-route" viewBox="0 0 520 790" preserveAspectRatio="none" aria-hidden="true">
-                <path d="M158 72 L158 162 L142 208 L142 292 L96 326 L110 444 L182 500 L184 594 L274 650 L274 704 L178 748" />
-              </svg>
-            ) : null}
           </div>
         </section>
 
-        <aside className="receipt-food">
-          <div className="receipt-blackbar">
-            <strong>{locale === "ja" ? "作品に出た味" : "FOOD ON SCREEN"}</strong>
-            <span>LIVE</span>
-          </div>
-          <div className="receipt-food-kicker">SCREEN × FOOD LEDGER</div>
-          <div className="receipt-food-image">
-            <img alt={locale === "ja" ? "作品に登場する料理のイメージ" : "Food experience connected to the scene"} height="245" src={foodImages[selectedIndex % foodImages.length]} width="640" />
-            <span>AVAILABLE NOW</span>
-            <b>MATCH 100%</b>
-          </div>
-          <div className="receipt-dossier">
-            <div className="receipt-scene-link">
-              <div>
-                <small>SCENE LINK</small>
-                <strong>
-                    {selected.title[locale]}{" "}
-                    <span>
-                      {selected.sceneNumber ? `#${/^\d+$/.test(selected.sceneNumber) ? selected.sceneNumber.padStart(2, "0") : selected.sceneNumber}` : `#${String(selectedIndex + 1).padStart(2, "0")}`}
-                      &nbsp;{selected.sceneTimestamp[locale] || "21:03"}
-                    </span>
-                  </strong>
-                <b>{selected.releaseYear}{selected.broadcaster ? ` / ${selected.broadcaster}` : ""}</b>
-                <p>{selected.description[locale]}</p>
+        <aside
+          aria-labelledby="receipt-tab-food"
+          className={`receipt-food receipt-linked-panel ${activeView !== "food" ? "is-mobile-inactive" : ""}`}
+          id="receipt-panel-food"
+          role="tabpanel"
+        >
+          {selected ? (
+            <>
+              <div className="receipt-blackbar">
+                <strong>{primaryFood ? (locale === "ja" ? "作品に出た味" : "FOOD ON SCREEN") : (locale === "ja" ? "ロケ地情報" : "LOCATION NOTES")}</strong>
+                <span>LIVE</span>
               </div>
-              <img alt={`${selected.title[locale]} scene reference`} height="118" src={coverImages[(selectedIndex + 1) % coverImages.length]} width="140" />
-            </div>
-            <dl>
-              <div><dt>DISH</dt><dd><strong>{primaryFood ? primaryFood.name : (locale === "ja" ? "—" : "—")}</strong></dd></div>
-              <div><dt>VENUE</dt><dd><span><strong>{primaryFood ? primaryFood.name : "N/A"}</strong><small>{primaryFood ? primaryFood.address : ""}</small></span>{primaryFood ? <span>›</span> : null}</dd></div>
-              <div><dt>AVAILABLE</dt><dd><strong className="available">{primaryFood ? "AVAILABLE NOW" : "—"}</strong></dd></div>
-              <div><dt>PRICE RANGE</dt><dd>{primaryFood ? `¥${primaryFood.priceLevel * 500} - ¥${primaryFood.priceLevel * 1000 + 300}` : "—"}</dd></div>
-              <div><dt>TRAVEL TIME</dt><dd><strong className="walk">🚶 徒歩 06 MIN</strong></dd></div>
-              <div><dt>SOURCE</dt><dd>{primaryFood?.tags?.join(" / ") || (selected.sourceType === "official" ? "OFFICIAL" : selected.sourceType?.toUpperCase())}</dd></div>
-            </dl>
-            <div className="receipt-evidence">
-              <span>EVIDENCE</span>
-              {coverImages.slice(0, 4).map((image, index) => <img alt={`Evidence ${index + 1}`} height="52" key={image} src={image} width="58" />)}
-              <b>+3<br /><small>MORE</small></b>
-            </div>
-            <div className="receipt-actions">
-              <a href={primaryFood?.googleMapsUrl ?? "https://maps.google.com"} rel="noreferrer" target="_blank">{locale === "ja" ? "このお店へ行く" : "Visit this spot"}</a>
-              <Link href={`/${locale}/spots/${selected.slug}`}>ルートを見る&nbsp; ↗</Link>
-            </div>
-          </div>
+              <div className="receipt-food-kicker">{primaryFood ? "SCREEN × FOOD LEDGER" : "SCENE × LOCATION LEDGER"}</div>
+              <div className="receipt-food-image">
+                <img
+                  alt={primaryFood ? (locale === "ja" ? "作品に登場する料理のイメージ" : "Food experience connected to the scene") : selected.spotName[locale]}
+                  height="245"
+                  src={primaryFood
+                    ? (mapboxStatic(selected.lng, selected.lat, 640, 245, 15) ?? FALLBACK_HERO)
+                    : (mapboxStatic(selected.lng, selected.lat, 640, 245, 14) ?? FALLBACK_HERO)
+                  }
+                  width="640"
+                />
+                {primaryFood ? <span>AVAILABLE NOW</span> : <span>{selected.prefecture?.toUpperCase()} · {selected.city?.toUpperCase()}</span>}
+                {primaryFood
+                  ? <b title={locale === "ja" ? "作品と食体験の関連一致度" : "Match between the work and food experience"}>MATCH 100%</b>
+                  : <b title={locale === "ja" ? "ロケ地情報の検証状態" : "Verification status for this location"}>{selected.sourceType === "official" ? "OFFICIAL" : "VERIFIED"}</b>}
+              </div>
+              <div className="receipt-dossier">
+                <div className="receipt-scene-link">
+                  <div>
+                    <small>SCENE LINK</small>
+                    <strong>
+                      {selected.title[locale]}{" "}
+                      <span>
+                        {selected.sceneNumber ? `#${/^\d+$/.test(selected.sceneNumber) ? selected.sceneNumber.padStart(2, "0") : selected.sceneNumber}` : `#${String(selectedIndex + 1).padStart(2, "0")}`}
+                        &nbsp;{selected.sceneTimestamp[locale] || ""}
+                      </span>
+                    </strong>
+                    <b>{selected.releaseYear}{selected.broadcaster ? ` / ${selected.broadcaster}` : ""}</b>
+                    <p>{selected.description[locale]}</p>
+                  </div>
+                  <img
+                    alt={`${selected.title[locale]} scene reference`}
+                    height="118"
+                    src={mapboxStatic(selected.lng, selected.lat, 140, 118, 14) ?? FALLBACK_CARD}
+                    width="140"
+                  />
+                </div>
+                {primaryFood ? (
+                  <dl>
+                    <div><dt>DISH</dt><dd><strong>{primaryFood.name}</strong></dd></div>
+                    <div><dt>VENUE</dt><dd><span><strong>{primaryFood.name}</strong><small>{primaryFood.address}</small></span><span>›</span></dd></div>
+                    <div><dt>AVAILABLE</dt><dd><strong className="available">AVAILABLE NOW</strong></dd></div>
+                    <div><dt>PRICE RANGE</dt><dd>{`¥${primaryFood.priceLevel * 500}〜¥${primaryFood.priceLevel * 1000 + 300}`}</dd></div>
+                    <div><dt>TRAVEL TIME</dt><dd><strong className="walk">🚶 徒歩 {String(selectedFoods[0] ? 5 : 6).padStart(2, "0")} MIN</strong></dd></div>
+                    <div><dt>SOURCE</dt><dd>{primaryFood.tags?.join(" / ") || (selected.sourceType === "official" ? "OFFICIAL" : selected.sourceType?.toUpperCase())}</dd></div>
+                  </dl>
+                ) : (
+                  <dl>
+                    <div><dt>SPOT</dt><dd><strong>{selected.spotName[locale]}</strong></dd></div>
+                    <div><dt>AREA</dt><dd><strong>{selected.prefecture} / {selected.city}</strong></dd></div>
+                    <div><dt>SCENE</dt><dd><strong>{selected.sceneNumber ? `#${selected.sceneNumber}` : "—"}&nbsp;{selected.sceneTimestamp[locale] || ""}</strong></dd></div>
+                    <div><dt>CONFIDENCE</dt><dd>
+                      <TrustIndicator kind="match" label="MATCH" title={locale === "ja" ? "作品内の場面と実在地点が一致する信頼度です。" : "Confidence that the scene matches this real-world location."}>
+                        {Math.round(selected.confidenceScore * 100)}%
+                      </TrustIndicator>
+                    </dd></div>
+                    <div><dt>SOURCE</dt><dd>
+                      <TrustIndicator kind="source" label={selected.sourceType.toUpperCase()} title={locale === "ja" ? "ロケ地情報の根拠として登録された出典種別です。" : "The evidence-source type recorded for this location."} />
+                    </dd></div>
+                    <div><dt>ACCESS</dt><dd><small>{selected.visitTips?.[locale] ? selected.visitTips[locale].slice(0, 60) + "…" : "—"}</small></dd></div>
+                  </dl>
+                )}
+                <div className="receipt-actions">
+                  {primaryFood
+                    ? <a href={primaryFood.googleMapsUrl ?? "https://maps.google.com"} rel="noreferrer" target="_blank">{locale === "ja" ? "このお店へ行く" : "Visit this restaurant"}</a>
+                    : <a href={`https://www.google.com/maps/search/?api=1&query=${selected.lat},${selected.lng}`} rel="noreferrer" target="_blank">{locale === "ja" ? "ロケ地をマップで見る" : "View on Google Maps"}</a>
+                  }
+                  <Link href={`/${locale}/spots/${selected.slug}`}>詳細を見る&nbsp; ↗</Link>
+                </div>
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="receipt-blackbar">
+                <strong>{locale === "ja" ? "ロケ地情報" : "LOCATION NOTES"}</strong>
+                <span>LIVE</span>
+              </div>
+              <div className="receipt-food-kicker">SCENE × LOCATION LEDGER</div>
+              <div className="receipt-dossier">
+                <p className="receipt-empty-state">
+                  {locale === "ja"
+                    ? "このカテゴリには確認済みスポットがまだありません。別のカテゴリを選んでください。"
+                    : "No verified spots in this category yet. Please choose another category."}
+                </p>
+              </div>
+            </>
+          )}
         </aside>
       </div>
 
       <footer className="receipt-footer">
         <div><small>LAST UPDATE</small><strong>2026.06.18&nbsp; 13:42</strong></div>
-        <div><small>SCENE MATCH RATE</small><strong>96% <i /></strong></div>
-        <div><small>SPOTS VERIFIED</small><strong>{String(approvedCount).padStart(3, "0")} / {String(spots.length).padStart(3, "0")}</strong></div>
-        <div><small>DATA SOURCE</small><span>Official / Media / User Report / AI Verify</span></div>
+        <div>
+          <TrustIndicator kind="match" label="SCENE MATCH" title={locale === "ja" ? "掲載スポット全体の平均シーン一致信頼度です。" : "Average scene-match confidence across listed spots."}>
+            {averageMatch}%
+          </TrustIndicator>
+        </div>
+        <div>
+          <TrustIndicator kind="verified" label="VERIFIED" title={locale === "ja" ? "出典確認と人による承認が完了したスポット数です。" : "Spots whose evidence was checked and approved by a human reviewer."}>
+            {String(approvedCount).padStart(3, "0")} / {String(spots.length).padStart(3, "0")}
+          </TrustIndicator>
+        </div>
+        <div>
+          <TrustIndicator kind="source" label="DATA SOURCE" title={locale === "ja" ? "公式・媒体・利用者報告・推定情報を区別して記録しています。" : "Sources are recorded as official, media, user-reported, or inferred."}>
+            OFFICIAL / MEDIA / REPORT
+          </TrustIndicator>
+        </div>
         <div className="receipt-barcode"><i /><span>MADP-TRP-20260618-134207</span></div>
       </footer>
-    </main>
+    </section>
   );
 }

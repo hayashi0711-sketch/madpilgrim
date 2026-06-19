@@ -29,6 +29,8 @@ type PublicSpotRow = {
   source_type: Spot["sourceType"] | null;
   status: SpotStatus;
   og_image_url: string | null;
+  youtube_url: string | null;
+  youtube_channel_name: string | null;
 };
 
 type PublicFoodRow = {
@@ -88,7 +90,9 @@ function toSpot(row: PublicSpotRow): Spot {
     confidenceScore: row.confidence_score ?? 0.5,
     sourceType: row.source_type || "inferred",
     status: row.status,
-    ogImageUrl: row.og_image_url || undefined
+    ogImageUrl: row.og_image_url || undefined,
+    youtubeUrl: row.youtube_url || undefined,
+    youtubeChannelName: row.youtube_channel_name || undefined
   };
 }
 

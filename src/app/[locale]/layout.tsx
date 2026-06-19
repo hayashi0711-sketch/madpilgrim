@@ -8,5 +8,5 @@ export default async function LocaleLayout({
   params: Promise<{ locale: string }>;
 }) {
   const { locale } = await params;
-  return <main lang={getLocale(locale)}>{children}</main>;
+  return <div lang={getLocale(locale)}>{children}</div>;
 }

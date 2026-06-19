@@ -1,0 +1,107 @@
+{
+  "work_title": "月夜行路 －答えは名作の中に－",
+  "spots": [
+    {
+      "title": "月夜行路 －答えは名作の中に－",
+      "title_en": "Tsukiyo Kouro: Kotae wa Meisaku no Naka ni",
+      "category": "drama",
+      "broadcaster": "日本テレビ",
+      "release_year": 2026,
+      "scene_number": "01",
+      "spot_name": "露天神社（お初天神）",
+      "spot_name_en": "Tsuyu no Tenjinja Shrine (Ohatsu Tenjin)",
+      "prefecture": "osaka",
+      "city": "kita",
+      "latitude": 34.7024,
+      "longitude": 135.5001,
+      "description_ja": "第1話「曽根崎心中」の舞台となった実在の神社。主人公のルナ（波瑠）と涼子（麻生久美子）が、涼子の昔の恋人を捜すために訪れた大阪の地。境内近辺で近松門左衛門の心中物語を模した男女の遺体が発見され、物語の始まりとなる最初の事件現場として描かれた。",
+      "description_en": "A real Shinto shrine in Osaka that serves as the setting for Episode 1. Luna and Ryoko visit this historical spot while searching for Ryoko's past lover, only for it to become the initial crime scene where two bodies are found mimicking the famous classic play 'Sonezaki Shinju'.",
+      "visit_tips_ja": "大阪メトロ谷町線「東梅田駅」から徒歩約5分。曽根崎お初天神通り商店街の奥に位置します。一般の参拝客が多く訪れる神聖な場所であるため、撮影や巡礼の際は周囲の迷惑にならないよう配慮が必要です。",
+      "scene_timestamp": "15:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.ntv.co.jp/getsuyakouro/",
+      "source_evidence": "公式の第1話ストーリー紹介および劇中で「曽根崎心中」の舞台として実名で大々的に登場。現地の社殿や石碑がそのまま映し出されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "たこ焼き",
+          "venue_name": "タコ家道頓堀くくる 道頓堀ミナミ店",
+          "available": "通年メニュー",
+          "price_range": "¥600〜800",
+          "source_url": "https://www.shirohato.com/kukuru/",
+          "google_maps_url": null,
+          "travel_minutes": 15,
+          "scene_evidence": "第1話でルナと涼子が大阪ミナミ周辺を散策・移動する際の回想シーンや道頓堀商店街の背景として、象徴的な看板や街並みが登場している。"
+        }
+      ]
+    },
+    {
+      "title": "月夜行路 －答えは名作の中に－",
+      "title_en": "Tsukiyo Kouro: Kotae wa Meisaku no Naka ni",
+      "category": "drama",
+      "broadcaster": "日本テレビ",
+      "release_year": 2026,
+      "scene_number": "01",
+      "spot_name": "ウォータータワービル",
+      "spot_name_en": "Water Tower Building",
+      "prefecture": "tokyo",
+      "city": "chuo",
+      "latitude": 35.6650,
+      "longitude": 139.7575,
+      "description_ja": "ルナがママを務める銀座のミックスバー「マーキームーン」が入居している設定の商業ビル。第1話冒頭で、主婦の涼子が夫の浮気を疑って尾行を続けた末にたどり着き、ルナと衝撃的な出会いを果たす物語の出発点。",
+      "description_en": "The commercial building used for the exterior scenes of the mix bar 'Marquee Moon' managed by Luna. In the opening of Episode 1, Ryoko follows her husband here under suspicion of an affair, leading to her fateful encounter with Luna.",
+      "visit_tips_ja": "東京メトロ銀座線・日比谷線「銀座駅」から徒歩約7分、新橋駅からもアクセス良好です。銀座8丁目の高級飲食店が立ち並ぶエリアにあります。テナントが入る商業ビルのため、敷地内への無断立ち入りは避け、外観のみを見学してください。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://loca.ash.jp/info/2026/d202604_getsuyakouro.htm",
+      "source_evidence": "ロケ地検証サイトおよびファンの目撃情報。ビル固有の外観デザインや、特徴的なエントランス周辺の構造、夜間の照明の配置が劇中の映像と完全に一致している。",
+      "nearby_foods": [
+        {
+          "dish_name": "カクテル",
+          "venue_name": "バー・マーキームーン（劇中セット）",
+          "available": "閉店",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://www.ntv.co.jp/getsuyakouro/articles/5278955b1qmtji2mpo6t.html",
+          "google_maps_url": null,
+          "travel_minutes": 0,
+          "scene_evidence": "バー「マーキームーン」の店内（スタジオセット）にて、店員のバブリーやメグル、そしてルナが常連客や涼子に対して様々な種類のカクテルやドリンクをサーブしている。"
+        }
+      ]
+    },
+    {
+      "title": "月夜行路 －答えは名作の中に－",
+      "title_en": "Tsukiyo Kouro: Kotae wa Meisaku no Naka ni",
+      "category": "drama",
+      "broadcaster": "日本テレビ",
+      "release_year": 2026,
+      "scene_number": "05",
+      "spot_name": "そば処 大村庵",
+      "spot_name_en": "Sobadokoro Omura-an",
+      "prefecture": "tokyo",
+      "city": "nerima",
+      "latitude": 35.7482,
+      "longitude": 139.6513,
+      "description_ja": "第5話にて、大阪府警の刑事・小湊（渋川清彦）がルナと偶然の再会を果たす「うどん屋 つるんと亭」のロケ地として撮影に使用された実在の蕎麦店。昭和レトロな佇まいと下町の温かみがある内装が、作中の旅情をそそる演出に一役買っている。",
+      "description_en": "A real Japanese soba noodle shop that was filmed as the udon shop 'Tsurunto-tei' in Episode 5. This is where the veteran detective Kominato unexpectedly crosses paths with Luna, featuring its authentic, nostalgic interior.",
+      "visit_tips_ja": "西武池袋線「練馬高野台駅」から徒歩約8分。現在も通常営業している地域密着型のお蕎麦屋さんです。お昼時などの混雑時を避け、マナーを守って名物のお蕎麦やうどんを注文して楽しむのがおすすめです。",
+      "scene_timestamp": "12:40",
+      "confidence_score": 0.8,
+      "source_type": "inferred",
+      "source_url": "https://location.la.coocan.jp/getsuyakouro.html",
+      "source_evidence": "複数のロケ地特定データベースと、ドラマエンディングの撮影協力クレジット（大村庵）より。店内の座敷の配置、メニューの木札、暖簾などの特徴が一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "出汁うどん（きつねうどん等）",
+          "venue_name": "そば処 大村庵",
+          "available": "通年メニュー",
+          "price_range": "¥700〜1,000",
+          "source_url": "https://tabelog.com/tokyo/A1321/A132102/13076410/",
+          "google_maps_url": null,
+          "travel_minutes": 0,
+          "scene_evidence": "第5話にて、小湊刑事とルナが「うどん屋 つるんと亭」の店内で器を並べ、関西風の出汁について文学的な会話を交わしながらうどんをすするシーンに登場。"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "work_title": "木更津キャッツアイ",
+  "spots": [
+    {
+      "title": "木更津キャッツアイ",
+      "title_en": "Kisarazu Cat's Eye",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2002,
+      "scene_number": "01",
+      "spot_name": "中之島大橋",
+      "spot_name_en": "Nakanoshima Ohashi Bridge",
+      "prefecture": "chiba",
+      "city": "kisarazu",
+      "latitude": 35.383819,
+      "longitude": 139.914278,
+      "description_ja": "全編を通して作品のシンボルとして何度も登場する日本一高い歩道橋。ぶっさん（岡田准一）やバンビ（櫻井翔）らキャッツの面々がたむろし、語り合う青春の象徴的なロケ地。「赤い橋の伝説（若い男女が民子をおんぶして渡ると恋が成就する）」の発祥の地として描かれ、ファンの最大の聖地となった。",
+      "description_en": "The iconic pedestrian bridge featured throughout the entire series as a symbol of Kisarazu. It serves as the main hangout spot for Bussan and his friends. Famous in the show for the 'Red Bridge Legend,' making it the ultimate destination for holy land pilgrimage.",
+      "visit_tips_ja": "JR内房線「木更津駅」西口から徒歩約20分、または車。橋の向かいに専用駐車場があります。日没後のライトアップや東京湾に沈む夕日が非常に美しいスポットです。海風が強いため、防寒や帽子が飛ばされないよう注意が必要です。",
+      "scene_timestamp": "02:45",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.city.kisarazu.lg.jp/shokai/kanko/midokoro/1001314.html",
+      "source_evidence": "木更津市公式の観光情報およびエンドクレジットにロケ協力として明記。日本一高い歩道橋の独特な螺旋スロープと赤い塗装が劇中カットと100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "バーベキュー弁当（バー弁）",
+          "venue_name": "吟米亭 浜屋 文京店",
+          "available": "通年メニュー",
+          "price_range": "¥600〜1,000",
+          "source_url": "http://www.k-hamaya.com/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 15,
+          "scene_evidence": "劇中でキャッツのメンバーたちが部室や屋外のたむろ場所でよく食べている、木更津市民のソウルフード。秘伝のタレで焼いた豚肉が敷き詰められたお弁当で、ロケ中にキャスト・スタッフのロケ弁としても愛された。"
+        }
+      ]
+    },
+    {
+      "title": "木更津キャッツアイ",
+      "title_en": "Kisarazu Cat's Eye",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2002,
+      "scene_number": "01",
+      "spot_name": "木更津みらいラボ（旧・こうや食堂）周辺",
+      "spot_name_en": "Kisarazu Mirai Lab (Former Koya Shokudo Area)",
+      "prefecture": "chiba",
+      "city": "kisarazu",
+      "latitude": 35.381389,
+      "longitude": 139.923194,
+      "description_ja": "第1話をはじめ、キャッツのメンバーが日常的に集まり焼きそばや定食を貪り食っていた、作品を代表する大衆食堂「こうや食堂」のロケ地跡地周辺。木更津の下町情緒と、宮藤官九郎脚本特有のコミカルな掛け合いが繰り広げられた、キャッツたちの胃袋を支えた最重要の飲食ロケ地。",
+      "description_en": "The location modeled after 'Koya Shokudo,' the nostalgic diner where Bussan and the crew regularly gathered to eat yakisoba and talk about their daily lives. It represents the local, retro atmosphere of Kisarazu's shopping district.",
+      "visit_tips_ja": "JR内房線「木更津駅」西口から徒歩約5分。実際の「こうや食堂」は2000年代後半に多くのファンに惜しまれつつ閉店し、現在は建物が改修されコミュニティスペースとなっていますが、周辺のレトロな商店街の街並みに当時の面影が強く残っています。",
+      "scene_timestamp": "18:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "http://loca.ash.jp/info/2002/d200201_kisarazu.htm",
+      "source_evidence": "放映当時のTBS公式ロケ地ガイドやエンドクレジットに記載。実在の「こうや食堂」の看板や店内レイアウトが、ぶっさんたちが焼きそばを食べるシーンと完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "木更津焼きそば（特製ソース焼きそば）",
+          "venue_name": "周辺のレトロ喫茶・大衆食堂（旧こうや食堂リスペクトメニュー）",
+          "available": "要確認",
+          "price_range": "¥500〜800",
+          "source_url": "https://tabelog.com/chiba/A1206/A120602/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話や日常シーンで、マスター（佐藤隆太）やアニ（塚本高史）らが、鉄板で焼かれたボリューム満点のソース焼きそばを、せわしなく口に運びながら怪しい作戦会議をするシーン。"
+        }
+      ]
+    },
+    {
+      "title": "木更津キャッツアイ",
+      "title_en": "Kisarazu Cat's Eye",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2002,
+      "scene_number": "定番シーン",
+      "spot_name": "富士見通り商店街（劇中「バーバー田渕」周辺）",
+      "spot_name_en": "Fujimi-dori Shopping Street (Barber Tabuchi Area)",
+      "prefecture": "chiba",
+      "city": "kisarazu",
+      "latitude": 35.381111,
+      "longitude": 139.921389,
+      "description_ja": "主人公・ぶっさんの実家であり、父親の公助（小日向文世）が営む理髪店「バーバー田渕」が軒を連ねていた設定のメイン商店街。キャッツが野球のユニフォーム姿で自転車で駆け抜けたり、オジリー（古田新太）が徘徊するなど、生活の中心として全編のベースとなった路地。",
+      "description_en": "The central shopping street where Bussan's family barbershop 'Barber Tabuchi' was located. It forms the geographical center of the characters' daily movements, often shown as they bike past the retro storefronts.",
+      "visit_tips_ja": "JR内房線「木更津駅」西口から港方面へまっすぐ続く通り。徒歩約4分。実際の理髪店ビルは撮影用のセットカモフラージュでしたが、周辺には「木更津キャッツアイ」の記念プレートや狸のオブジェが多数設置されており、散策に最適です。",
+      "scene_timestamp": "05:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.kisarazu-kankou.jp/",
+      "source_evidence": "木更津フィルムコミッションの公式聖地巡礼マップに「バーバー田渕跡」として記載。周辺のタヌキ像の配置や建物の並びが劇中の日常シーンと完全に一致するため。",
+      "nearby_foods": [
+        {
+          "dish_name": "あさり丼 / あさりしぐれ煮",
+          "venue_name": "宝家（たからや）",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://tabelog.com/chiba/A1206/A120602/12000216/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 2,
+          "scene_evidence": "劇中で木更津の特産としてたびたび話題に上る「あさり」。商店街に位置する明治創業の老舗割烹「宝家」では、大粒のあさりをふんだんに使った名物「あさり丼」を味わうことができ、作中の木更津ローカルのアイデンティティを食で追体験できる。"
+        }
+      ]
+    }
+  ]
+}

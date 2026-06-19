@@ -9,8 +9,12 @@ export default async function FoodsPage({
 }: {
   params: Promise<{ locale: string; spotSlug: string }>;
 }) {
-  const { locale: localeParam, spotSlug } = await params;
+  const { locale: localeParam, spotSlug: rawSpotSlug } = await params;
   const locale = getLocale(localeParam);
+  let spotSlug = rawSpotSlug;
+  try {
+    spotSlug = decodeURIComponent(rawSpotSlug);
+  } catch {}
   const spot = await readSpot(spotSlug);
   if (!spot) notFound();
   const foods = await listNearbyFoods(spotSlug);

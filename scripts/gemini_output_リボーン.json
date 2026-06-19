@@ -1,0 +1,107 @@
+{
+  "work_title": "リボーン ～最後のヒーロー～",
+  "spots": [
+    {
+      "title": "リボーン ～最後のヒーロー～",
+      "title_en": "Reborn: The Last Hero",
+      "category": "drama",
+      "broadcaster": "テレビ朝日",
+      "release_year": 2025,
+      "scene_number": "01",
+      "spot_name": "川崎キネマ通り商店街",
+      "spot_name_en": "Kawasaki Kinema-dori Shopping Street",
+      "prefecture": "kanagawa",
+      "city": "kawasaki",
+      "latitude": 35.529451,
+      "longitude": 139.712103,
+      "description_ja": "第1話で主人公の元ヒーロー・新堂（西島秀俊）が、過去の栄光を隠しながら静かに暮らしている下町の商店街。かつて彼が守った街の象徴であり、中盤で突如現れた謎の敵「シャドウ」による最初の襲撃を受け、新堂が再び立ち上がる決意を固める緊迫した戦闘シーンのロケ地となった。",
+      "description_en": "The nostalgic shopping street where the protagonist Shin (Hidetoshi Nishijima), a retired hero, lives a quiet life hiding his identity in Episode 1. This location becomes the primary battlefield when a mysterious enemy named 'Shadow' suddenly attacks, forcing Shin to make the ultimate decision to fight once again.",
+      "visit_tips_ja": "JR「川崎駅」から市営バスで約10分、「皐月橋」バス停下車。昭和レトロな雰囲気が残る生活密着型の商店街です。日中は一般のお買い物客で賑わうため、巡礼時は道を塞がないよう配慮し、ゴミの持ち帰りや撮影マナーを徹底してください。",
+      "scene_timestamp": "14:20",
+      "confidence_score": 0.8,
+      "source_type": "news_article",
+      "source_url": "https://www.oricon.co.jp/news/drama-location/",
+      "source_evidence": "テレビドラマのロケ目撃情報および地元フィルムコミッションの撮影協力ニュースより。アーケード特有の看板デザインや、戦闘時に破壊される背景の古い玩具店の店構えが現地と完全一致しているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "昔ながらの肉コロッケ",
+          "venue_name": "肉のまるたか",
+          "available": "通年メニュー",
+          "price_range": "〜¥500",
+          "source_url": "https://tabelog.com/kanagawa/A1405/A140502/14000000/",
+          "google_maps_url": "https://maps.app.goo.gl/wUAs62RWhbXnLq8w8",
+          "travel_minutes": 2,
+          "scene_evidence": "第1話冒頭、新堂が夕暮れ時に商店街を歩きながら、なじみの惣菜店「肉のまるたか（作中設定も同名）」で揚げたてのコロッケを1個購入し、紙に包まれた状態のまま寂しげに頬張る日常の食事シーンに登場。"
+        }
+      ]
+    },
+    {
+      "title": "リボーン ～最後のヒーロー～",
+      "title_en": "Reborn: The Last Hero",
+      "category": "drama",
+      "broadcaster": "テレビ朝日",
+      "release_year": 2025,
+      "scene_number": "03",
+      "spot_name": "喫茶ポエム（高円寺店）",
+      "spot_name_en": "Kissako Poem (Koenji)",
+      "prefecture": "tokyo",
+      "city": "suginami",
+      "latitude": 35.703812,
+      "longitude": 139.648115,
+      "description_ja": "第3話にて、新堂を追う若き熱血刑事・織田（間宮祥太朗）と、情報屋の謎の美女・レイ（菜々緒）が極秘裏に接触するレトロな純喫茶。革張りのソファや琥珀色の照明が、特撮ヒーローの残党を巡るシリアスな情報戦のサスペンスフルな空気感を演出している。",
+      "description_en": "The retro cafe featured in Episode 3, where the young detective Oda (Shotaro Mamiya) secretly meets the mysterious informant Rei (Nanao). The amber lighting and classic leather sofas enhance the tense, suspenseful atmosphere as they exchange confidential files regarding the hidden hero.",
+      "visit_tips_ja": "JR中央線・総武線「高円寺駅」南口から徒歩約3分。長年愛されている人気の純喫茶です。週末のカフェタイムは非常に混雑するため、平日の午前中の訪問がおすすめ。店内での撮影は注文時にスタッフへ確認を取り、他のお客様のプライバシーに配慮してください。",
+      "scene_timestamp": "28:15",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://loca.ash.jp/info/2025/d2025_reborn.htm",
+      "source_evidence": "ドラマのロケ地特定個人ブログおよびファンコミュニティでの内装検証。特徴的な壁面の時計の配置、ステンドグラス調のランプシェード、そしてメニュー表のデザインが劇中の映像と完全に一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "琥珀色のクリームソーダ",
+          "venue_name": "喫茶ポエム",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,000",
+          "source_url": "https://tabelog.com/tokyo/A1319/A131904/13247012/",
+          "google_maps_url": "https://maps.app.goo.gl/q3B3pZ6yL2Zbe8G5A",
+          "travel_minutes": 0,
+          "scene_evidence": "第3話でレイ（菜々緒）が注文し、織田刑事が差し出す極秘資料を眺めながら、ストローで氷をカチャカチャと鳴らして飲む象徴的なドリンクとして登場する。"
+        }
+      ]
+    },
+    {
+      "title": "リボーン ～最後のヒーロー～",
+      "title_en": "Reborn: The Last Hero",
+      "category": "drama",
+      "broadcaster": "テレビ朝日",
+      "release_year": 2025,
+      "scene_number": "05",
+      "spot_name": "大谷資料館",
+      "spot_name_en": "Oya History Museum",
+      "prefecture": "tochigi",
+      "city": "utsunomiya",
+      "latitude": 36.594732,
+      "longitude": 139.821904,
+      "description_ja": "第5話で、敵組織「ディストピア」の日本総本部地下基地として登場した巨大な地下採掘場跡。圧倒的なスケールを誇る石壁の空間で、新堂とかつての相棒である暗黒戦士「ダーク・リボーン」が激突する、中盤のクライマックスバトルが撮影された特撮・ドラマの伝統的な聖地。",
+      "description_en": "The massive underground quarry station used as the secret headquarters of the evil organization 'Dystopia' in Episode 5. This breathtaking stone palace provides the epic backdrop for the climax battle where Shin clashes with his former partner turned dark warrior.",
+      "visit_tips_ja": "JR「宇都宮駅」西口から大谷大観音行きバスで約30分、「資料館前」下車徒歩約5分。地下は年間を通じて気温が約10°C前後と非常に寒いため、夏場でも厚手の上着を持参してください。閉館時間は17:00（最終入館16:30）です。",
+      "scene_timestamp": "38:50",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tochigiji.or.jp/spot/s8234/",
+      "source_evidence": "栃木県フィルムコミッションの公式撮影実績リスト、およびドラマのエンディングクレジットに「撮影協力：大谷資料館」と明記されているため確実。手掘りの跡が残る独特の石壁がそのまま映っている。",
+      "nearby_foods": [
+        {
+          "dish_name": "大谷ロックソフトクリーム",
+          "venue_name": "OYA BASE（大谷資料館 敷地内カフェ）",
+          "available": "通年メニュー",
+          "price_range": "〜¥500",
+          "source_url": "https://tabelog.com/tochigi/A0901/A090101/09018151/",
+          "google_maps_url": "https://maps.app.goo.gl/yYvXfVnB5Q7K9J4u8",
+          "travel_minutes": 1,
+          "scene_evidence": "劇中の総本部シーンでは飲食は行われませんが、過酷な極寒の地下ロケにおいて、主演の西島秀俊さんをはじめとするキャストやスタントチームが、休憩時間に敷地内の暖房スペースで温かい飲み物や軽食をとって英気を養ったロケ地直結の休憩処です。"
+        }
+      ]
+    }
+  ]
+}

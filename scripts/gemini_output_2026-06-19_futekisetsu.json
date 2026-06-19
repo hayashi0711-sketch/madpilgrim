@@ -1,0 +1,107 @@
+{
+  "work_title": "不適切にもほどがある！",
+  "spots": [
+    {
+      "title": "不適切にもほどがある！",
+      "title_en": "Extremely Inappropriate!",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2024,
+      "scene_number": "01",
+      "spot_name": "喫茶すずらん（外観：コーヒーショップ ギャラン）",
+      "spot_name_en": "Coffee Shop Galant (Model for Cafe Suzuran Exterior)",
+      "prefecture": "tokyo",
+      "city": "taito",
+      "latitude": 35.711861,
+      "longitude": 139.775833,
+      "description_ja": "主人公の小川市郎（阿部サダヲ）らがたむろする1986年の昭和の喫茶店「すずらん」の外観ロケ地。ギラギラとした派手なネオン看板や、昭和のバブル期を彷彿とさせる純喫茶の佇まいがそのまま劇中に登場し、昭和パートにおけるタイムスリップの起点・溜まり場として象徴的な役割を果たした。",
+      "description_en": "The exterior location for 'Cafe Suzuran,' the 1986 Showa-era coffee shop where the protagonist Ichiro Ogawa hangs out. The real-life 'Coffee Shop Galant' in Ueno retains its flashy neon signs and bubble-era retro interior, serving as a core symbolic spot for the show's retro timeline.",
+      "visit_tips_ja": "JR「上野駅」不忍口から徒歩約2分。年中無休で朝8時から夜23時まで営業。非常に人気の純喫茶のため、土日祝日の昼下がりは満席で行列ができることが多い。平日の午前中や夕方以降の訪問が狙い目。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tbs.co.jp/futekisetsunimohodogaaru/story/",
+      "source_evidence": "TBSのドラマ公式エンドクレジットに「コーヒーショップ ギャラン」として明記。劇中で市郎が店から飛び出してくるシーンに映る上野の街並みやビルの2階へ続く階段、派手なLED看板が完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "クリームソーダ / チョコレートパフェ",
+          "venue_name": "コーヒーショップ ギャラン",
+          "available": "通年メニュー",
+          "price_range": "¥800〜1,200",
+          "source_url": "https://tabelog.com/tokyo/A1311/A131101/13008604/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話をはじめとする昭和パートの「喫茶すずらん」の店内で、阿部サダヲや河合優実（純子役）らの前に置かれている昭和を象徴する喫茶メニュー。実際のギャランでも、当時のままのビジュアルで提供されている看板メニューである。"
+        }
+      ]
+    },
+    {
+      "title": "不適切にもほどがある！",
+      "title_en": "Extremely Inappropriate!",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2024,
+      "scene_number": "01",
+      "spot_name": "SCANDIA（スカンディア）",
+      "spot_name_en": "SCANDIA",
+      "prefecture": "kanagawa",
+      "city": "yokohama",
+      "latitude": 35.447556,
+      "longitude": 139.642917,
+      "description_ja": "第1話で、令和から昭和へタイムスリップした犬島渚（仲里依紗）の父・ゆずる（古田新太）の若き日（錦戸亮）が、ダンスの後に食事をしたり、1986年当時のディスコカルチャーや大人びたデートの背景として描かれた、横浜海岸通りの異国情緒あふれる老舗北欧料理レストラン。",
+      "description_en": "Featured in Episode 1, this historic Nordic restaurant in Yokohama serves as the background for the 1986 dating scenes involving a younger Yuzuru (Ryo Nishikido). Its exotic, classic European wooden interior perfectly matches the retro-chic vibe of the 1980s port city.",
+      "visit_tips_ja": "みなとみらい線「日本大通り駅」から徒歩約3分、横浜開港資料館の向かい。1階はカジュアルなカフェ風、2階は本格的な北欧料理のダイニング。クラシックな雰囲気を楽しむなら2階のディナー（要予約）がおすすめ。",
+      "scene_timestamp": "32:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tbs.co.jp/futekisetsunimohodogaaru/",
+      "source_evidence": "エンドクレジットに「スカンディア」としてロケ地協力が記載。特徴的な北欧の木彫りレリーフが施された内壁、重厚なテーブル、窓から見える横浜の景色が劇中映像と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "スカンディアプレート（北欧風オードブル盛り合わせ）",
+          "venue_name": "SCANDIA",
+          "available": "通年メニュー",
+          "price_range": "¥3,000〜5,000",
+          "source_url": "https://tabelog.com/tokyo/A1401/A140104/14000109/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話の1986年回想シーンで、トレンディな衣装に身を包んだ若者たちが、お酒とともに囲んでいた横浜の夜を象徴する異国情緒あふれる大人の贅沢メニュー。"
+        }
+      ]
+    },
+    {
+      "title": "不適切にもほどがある！",
+      "title_en": "Extremely Inappropriate!",
+      "category": "drama",
+      "broadcaster": "TBS",
+      "release_year": 2024,
+      "scene_number": "02",
+      "spot_name": "ニュー新橋ビル（外観）",
+      "spot_name_en": "New Shinbashi Building",
+      "prefecture": "tokyo",
+      "city": "minato",
+      "latitude": 35.666944,
+      "longitude": 139.7575,
+      "description_ja": "第2話以降、市郎が令和にタイムスリップした際に訪れる現代の新橋の象徴。昭和の遺物である格子状の独特なビル外観と、コンプライアンスに縛られた令和のサラリーマンたちが入り乱れる新橋駅前のカオスな対比構造を描くシーンで頻繁に背景として使用された。",
+      "description_en": "Appearing from Episode 2, this building represents the clash between Showa-era architecture and Reiwa-era salaryman culture in Shinbashi. Its distinctive white lattice facade creates a perfect visual contrast when Ichiro observes modern corporate compliance issues.",
+      "visit_tips_ja": "JR・東京メトロ「新橋駅」烏森口から徒歩1分。建物内部は昭和レトロなマッサージ店、喫茶店、金券ショップ、地下の飲食店街がそのまま残っており、建物の中を歩くだけでもタイムスリップ感を味わうことができます。",
+      "scene_timestamp": "15:10",
+      "confidence_score": 0.9,
+      "source_type": "inferred",
+      "source_url": "http://loca.ash.jp/info/2024/d202401_futekisetsu.htm",
+      "source_evidence": "第2話で市郎が令和の働き方に頭を抱えるシーンなどで、新橋駅SL広場側から烏森口にかけての特徴的な格子状（格子模様）のビル外装がはっきりと映り込んでいるため。",
+      "nearby_foods": [
+        {
+          "dish_name": "ナポリタン / オムライス",
+          "venue_name": "むさしや",
+          "available": "通年メニュー",
+          "price_range": "¥800〜1,200",
+          "source_url": "https://tabelog.com/tokyo/A1301/A130103/13024098/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 1,
+          "scene_evidence": "令和パートで新橋のサラリーマンの聖地として描かれるニュー新橋ビルの1階で、常に大行列を作る超有名カウンター洋食店。市郎が好む「昭和の味」そのものの濃厚なナポリタンを駅チカで体感できる重要スポット。"
+        }
+      ]
+    }
+  ]
+}

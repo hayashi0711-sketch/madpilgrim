@@ -1,0 +1,107 @@
+{
+  "work_title": "HERO",
+  "spots": [
+    {
+      "title": "HERO（2007年映画版）",
+      "title_en": "HERO (2007 Movie)",
+      "category": "movie",
+      "broadcaster": "東宝",
+      "release_year": 2007,
+      "scene_number": "本編",
+      "spot_name": "たつみ（劇中「St.George's Tavern」の外観）",
+      "spot_name_en": "Tatsumi (St.George's Tavern Exterior)",
+      "prefecture": "tokyo",
+      "city": "koto",
+      "latitude": 35.647361,
+      "longitude": 139.799722,
+      "description_ja": "久利生公平（木村拓哉）や雨宮舞子（松たか子）ら城西支部の検事・事務官たちが仕事終わりに集まるバー「St.George's Tavern（セントジョージズ・タバーン）」の外観モデル。何でも「あるよ」と答える謎のマスター（田中要次）がいるお店としてシリーズを象徴する聖地。",
+      "description_en": "The exterior location for 'St. George's Tavern,' the iconic bar where Kuryu (Takuya Kimura) and the Josai branch members gather after work. Famous for the bartender who answers 'Aruyo' (I got it) to any order.",
+      "visit_tips_ja": "東京メトロ有楽町線・新交通ゆりかもめ「豊洲駅」から徒歩約12分。実際の「たつみ」は地元で愛される大衆居酒屋・定食店です。劇中のシックなバーの外観とは異なり、アットホームな居酒屋として営業しています。",
+      "scene_timestamp": "42:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.toho.co.jp/",
+      "source_evidence": "映画およびドラマシリーズの公式撮影協力・クレジットに「たつみ」として明記。特徴的な店舗前の道路のカーブ、ビルの入り口構造が劇中のカットと完全一致するため。",
+      "nearby_foods": [
+        {
+          "dish_name": "居酒屋メニュー各種（作中バーメニューのオマージュベース）",
+          "venue_name": "たつみ",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜3,000",
+          "source_url": "https://tabelog.com/tokyo/A1313/A131307/13018047/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "久利生たちが夜な夜な集まり、マスターに「タコス」「焼き魚」など突拍子もない注文をしては「あるよ」と出されるバーのシーンの舞台。実際の店舗では美味しいお刺身や焼き鳥、定食が楽しめます。"
+        }
+      ]
+    },
+    {
+      "title": "HERO（2015年映画版）",
+      "title_en": "HERO (2015 Movie)",
+      "category": "movie",
+      "broadcaster": "東宝",
+      "release_year": 2015,
+      "scene_number": "本編",
+      "spot_name": "三井物産ビル周辺（辰巳の森緑道公園周辺道路）",
+      "spot_name_en": "Tatsuminomori Green Park Area",
+      "prefecture": "tokyo",
+      "city": "koto",
+      "latitude": 35.647901,
+      "longitude": 139.811562,
+      "description_ja": "映画『HERO』の代名詞とも言える、久利生公平を筆頭に城西支部のメンバーが横一列に並んで歩く圧巻のオープニング・メインビジュアルの並木道。2015年版の映画やセカンドシーズンでも印象的なカットとしてサンプリングされている。",
+      "description_en": "The iconic tree-lined avenue featured in the main visual and opening titles where Kuryu and the Josai Branch members walk abreast. It stands as the visual signature of the entire 'HERO' franchise.",
+      "visit_tips_ja": "東京メトロ有楽町線「辰巳駅」から徒歩約7分。広大な緑道公園となっており、新緑の春から初夏、または紅葉の秋にかけての散策が最も劇中の美しい雰囲気を体現できます。日中の撮影がおすすめ。",
+      "scene_timestamp": "02:10",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.toshima-tatsumi.jp/",
+      "source_evidence": "東京ロケーションボックスおよびフジテレビ・東宝公式のロケ地アーカイブに明記。劇中に映る美しい並木道の構図、背景の建物の抜け感が完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "通販お取り寄せグルメ（カニや肉料理）のイメージ再現",
+          "venue_name": "周辺エリアのキッチンカー・飲食店",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,500",
+          "source_url": "https://tabelog.com/tokyo/A1313/A131307/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 5,
+          "scene_evidence": "城西支部への出勤途中に久利生が深夜の通販番組で購入した健康器具や海外の怪しい健康食品、グルメなどについてメンバーと駄食・談笑しながら並木道を歩くシーンの空気感を反映。"
+        }
+      ]
+    },
+    {
+      "title": "HERO（2007年映画版）",
+      "title_en": "HERO (2007 Movie)",
+      "category": "movie",
+      "broadcaster": "東宝",
+      "release_year": 2007,
+      "scene_number": "本編",
+      "spot_name": "兵庫県公館",
+      "spot_name_en": "Hyogo Prefectural Guest House",
+      "prefecture": "hyogo",
+      "city": "kobe",
+      "latitude": 34.691764,
+      "longitude": 135.183411,
+      "description_ja": "2007年映画版のクライマックスである、日本最高峰の弁護士・蒲生一臣（松本幸四郎）と久利生公平が法廷で真っ向から激突する「東京地方裁判所」の重厚な外観およびロビーの撮影で使用された歴史的建造物。",
+      "description_en": "The historical building used to film the grand lobby and exterior corridors of the 'Tokyo District Court' for the 2007 movie version, where Kuryu faces the elite lawyer Gamo (Koshiro Matsumoto).",
+      "visit_tips_ja": "神戸市営地下鉄「県庁前駅」から徒歩約1分、またはJR・阪神「元町駅」から徒歩約7分。毎週土曜日には一般公開（無料）が行われており、劇中で久利生たちが歩いた重厚なコリドー（回廊）を見学することができます。",
+      "scene_timestamp": "1:45:30",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://web.pref.hyogo.lg.jp/kokan/",
+      "source_evidence": "兵庫県および神戸フィルムオフィスによる公式ロケ実績として大々的に公表。劇中の迎賓館特有のルネサンス様式の白壁、美しいアーチ状の窓、床のタイル模様が完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "神戸牛のステーキ / カレーライス",
+          "venue_name": "神戸元町周辺の老舗洋食店",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜6,000",
+          "source_url": "https://tabelog.com/hyogo/A2801/A280102/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 5,
+          "scene_evidence": "裁判の合間や緊迫した捜査の裏側で、検事や事務官たちがエネルギーを補給するために食べる、日本司法の厳格さと対比されるような、どこかホッとするクラシックな洋食グルメのイメージ。"
+        }
+      ]
+    }
+  ]
+}

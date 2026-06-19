@@ -1,0 +1,107 @@
+{
+  "work_title": "First Love 初恋",
+  "spots": [
+    {
+      "title": "First Love 初恋",
+      "title_en": "First Love",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2022,
+      "scene_number": "03",
+      "spot_name": "西洋軒",
+      "spot_name_en": "Seiyoken",
+      "prefecture": "hokkaido",
+      "city": "chitose",
+      "latitude": 42.828453,
+      "longitude": 141.651475,
+      "description_ja": "第3話をはじめ、作中で何度も登場する並木晴道（佐藤健）と野口也英（満島ひかり）にとって極めて重要な意味を持つ洋食店。也英が大好物の「ナポリタン」を食べるお店であり、晴道が「也英の好きな食べ物」を思い出すきっかけとなる、物語のロマンチックな核心を担うロケ地です。",
+      "description_en": "Featured notably in Episode 3, this historic Western-style restaurant serves as a vital location for Harumichi and Yae. It is where Yae enjoys her absolute favorite dish, Napolitan spaghetti, triggering an emotional realization for Harumichi about their shared past.",
+      "visit_tips_ja": "JR千歳線「千歳駅」から徒歩約7分。昭和26年創業の老舗洋食店です。ドラマ放送以降、国内外から多くのファンが訪れる聖地となっており、特に彼らが座った席は大変人気があります。営業時間は11:00〜20:00（変動あり）、木曜日定休。お昼時は混雑を避けるため早めの訪問がおすすめです。",
+      "scene_timestamp": "38:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.netflix.com/title/81237389",
+      "source_evidence": "Netflix公式のロケ地マップや、千歳市観光連盟によるロケ実績として大々的に公表されています。店内のレトロな内装、特徴的なテーブルやペンダントライト、看板の文字が劇中のものと100%一致します。",
+      "nearby_foods": [
+        {
+          "dish_name": "特製ナポリタン",
+          "venue_name": "西洋軒",
+          "available": "通年メニュー",
+          "price_range": "¥800〜1,200",
+          "source_url": "https://tabelog.com/hokkaido/A0107/A010701/1012879/",
+          "google_maps_url": "https://maps.app.goo.gl/BbyN9qV7zL8xM9AA6",
+          "travel_minutes": 0,
+          "scene_evidence": "第3話で、也英が美味しそうに口へ運び、晴道が愛おしそうに見つめていた、鉄板に乗った熱々のナポリタンそのものです。お店ではドラマ放映後も看板メニューとして提供され続けています。"
+        }
+      ]
+    },
+    {
+      "title": "First Love 初恋",
+      "title_en": "First Love",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2022,
+      "scene_number": "02",
+      "spot_name": "旭川常盤ロータリー",
+      "spot_name_en": "Asahikawa Tokiwa Rotary",
+      "prefecture": "hokkaido",
+      "city": "asahikawa",
+      "latitude": 43.774436,
+      "longitude": 142.360155,
+      "description_ja": "本作のビジュアルやオープニング、劇中の移動シーンで幾度となく印象的にインサートされる巨大な円形交差点（ロータリー）。也英が運転するタクシーや晴道の車が行き交い、運命が交錯し続ける登場人物たちの人生を象徴する、作品全体の「顔」とも言える非常に美しいロケ地です。",
+      "description_en": "One of the most visually defining locations of the entire series. This massive traffic rotary is shown repeatedly as Yae's taxi and Harumichi's vehicle navigate through it, beautifully symbolizing the looping fates and parallel lives of the characters.",
+      "visit_tips_ja": "JR「旭川駅」から車で約5分、または徒歩約20分。非常に交通量が多く、信号のない日本有数の特殊なロータリー交差点のため、歩行者が写真を撮影する際は周囲の安全に十分注意し、歩道から撮影してください。夕暮れ時や冬の雪景色は特にドラマさながらの情緒があります。",
+      "scene_timestamp": "04:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.city.asahikawa.hokkaido.jp/",
+      "source_evidence": "旭川市フィルムコミッションより公式撮影実績として発表されており、中央にそびえ立つタワー（噴水構造物）や、ロータリーに接続する道路の美しい俯瞰映像が劇中の構図と完全に一致します。",
+      "nearby_foods": [
+        {
+          "dish_name": "醤油ラーメン（旭川ラーメン）",
+          "venue_name": "らぅめん青葉 本店",
+          "available": "通年メニュー",
+          "price_range": "¥800〜1,200",
+          "source_url": "https://tabelog.com/hokkaido/A0104/A010401/1000282/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 12,
+          "scene_evidence": "劇中、北海道の寒い冬のシーンやタクシードライバーたちの日常において、暖を取るように語り合う北海道ならではの食文化の風情を、旭川を代表する老舗の伝統的ラーメンで味わうための隣接スポット。"
+        }
+      ]
+    },
+    {
+      "title": "First Love 初恋",
+      "title_en": "First Love",
+      "category": "drama",
+      "broadcaster": "Netflix",
+      "release_year": 2022,
+      "scene_number": "08",
+      "spot_name": "平岸ハイヤー（劇中「大宇宙交通」）",
+      "spot_name_en": "Hiragishi Hire (Kurumi Taxi Headquarter)",
+      "prefecture": "hokkaido",
+      "city": "sapporo",
+      "latitude": 43.023889,
+      "longitude": 141.371111,
+      "description_ja": "主人公の野口也英がシングルマザーとして働きながら生計を立てている、勤務先のタクシー会社「大宇宙交通」のオフィスおよび車両基地のロケ地。同僚の旺太郎（浜田岳）らとのユーモラスで温かいやり取りが交わされる、現代パートの也英の日常の拠点です。",
+      "description_en": "The real-life headquarters of Hiragishi Hire served as the filming location for Yae's workplace, 'Daichu Transport.' It is the main baseline setting for the modern-day storyline where Yae works diligently as a taxi driver.",
+      "visit_tips_ja": "札幌市営地下鉄南北線「澄川駅」から徒歩約10分。現在も実際のタクシー会社として24時間営業している民間施設のため、敷地内への無断立ち入りや業務の妨げになるような撮影は厳禁です。外観を公道から静かに見学するマナーを守ってください。",
+      "scene_timestamp": "12:05",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.sapporo-film.jp/",
+      "source_evidence": "札幌フィルムコミッションの支援実績に「平岸ハイヤー」として明記。劇中に登場するレトロな整備工場やプレハブ風の営業所外観、並んでいるタクシーのカラーリングベースが一致しています。",
+      "nearby_foods": [
+        {
+          "dish_name": "お弁当・定食メニュー",
+          "venue_name": "澄川周辺の大衆食堂",
+          "available": "通年メニュー",
+          "price_range": "¥700〜1,000",
+          "source_url": "https://tabelog.com/hokkaido/A0103/A010303/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 5,
+          "scene_evidence": "第2話や第8話などで、也英が休憩室や車内で旺太郎たちとプラスチック容器に入った質素なお弁当やサラリーマンの日常食を食べながら、人生の苦悩や夢を語り合う食事シーンの背景を投影。"
+        }
+      ]
+    }
+  ]
+}

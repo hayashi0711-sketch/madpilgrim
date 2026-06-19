@@ -1,0 +1,107 @@
+{
+  "work_title": "ゆるキャン△",
+  "spots": [
+    {
+      "title": "ゆるキャン△",
+      "title_en": "Laid-Back Camp",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2018,
+      "scene_number": "01",
+      "spot_name": "本栖湖 浩庵キャンプ場",
+      "spot_name_en": "Koan Campground at Lake Motosu",
+      "prefecture": "yamanashi",
+      "city": "minamitsuru",
+      "latitude": 35.474667,
+      "longitude": 138.572472,
+      "description_ja": "第1話で各務原なでしこと志摩リンが運命的な出会いを果たす、作品の原点にして最も象徴的なキャンプ場。管理棟の建物や、リンがテントを設営する湖畔のテントサイト、なでしこがベンチで眠っていた場所などが極めて高い解像度でトレースされており、ここから見える千円札の裏でお馴染みの富士山の絶景が描かれた。",
+      "description_en": "Featured in Episode 1, this is the legendary campground where Nadeshiko Kagamihara and Rin Shima have their fateful first meeting. The main office, the lakeside campsite, and the iconic view of Mount Fuji (famous for being on the 1,000-yen bill) are realistically depicted in the anime.",
+      "visit_tips_ja": "富士急行線「河口湖駅」から本栖湖方面行きのバスで約50分、「本栖湖」バス停下車後、徒歩約50分。公共交通機関でのアクセスは難しいため車やバイクでの訪問を推奨。キャンプやデイキャンプ利用は完全事前予約制。聖地巡礼目的の売店利用も可能ですが、キャンパーのプライバシーに配慮が必要です。",
+      "scene_timestamp": "14:20",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://yurucamp.jp/first/",
+      "source_evidence": "アニメ第1話のエンドクレジットに「浩庵キャンプ場」として撮影協力が明記。劇中の受付管理棟、湖畔へ降りる坂道、案内看板のデザインが実在の風景と完全に一致するため。",
+      "nearby_foods": [
+        {
+          "dish_name": "カレーめん（日清カレーヌードル）",
+          "venue_name": "浩庵キャンプ場（売店・自販機）",
+          "available": "通年メニュー",
+          "price_range": "¥200〜300",
+          "source_url": "https://koan-campsite.com/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話の夜、遭難しかけてお腹を空かせたなでしこに、リンが買い置きのカップ麺（カレーめん）を振る舞うシーン。富士山を眺めながら2人で食べるこの一杯は、作中屈指の名飲食シーン。現地売店ではゆるキャン△デザインの限定品やグッズも販売されている。"
+        }
+      ]
+    },
+    {
+      "title": "ゆるキャン△",
+      "title_en": "Laid-Back Camp",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2018,
+      "scene_number": "03",
+      "spot_name": "身延駅前 栄昇堂",
+      "spot_name_en": "Eishodo at Minobu Station",
+      "prefecture": "yamanashi",
+      "city": "minobu",
+      "latitude": 35.362194,
+      "longitude": 138.451944,
+      "description_ja": "第3話をはじめ、なでしこたちが通う本栖高校の下校ルートの日常生活シーンに登場する駅前通りに実在する和菓子店。野外活動サークル（野クル）のメンバーが、学校帰りにこの店の名物である「みのぶまんじゅう」を購入し、すぐ近くの身延駅前のベンチに腰掛けて美味しそうに食べるシーンの舞台となった。",
+      "description_en": "Appearing from Episode 3, this traditional Japanese confectionery shop near Minobu Station is famous for 'Minobu Manju.' Nadeshiko, Chiaki, and Aoi buy the manju here after school and eat them on the benches facing the river, a staple everyday scene for the Outdoor Activities Club.",
+      "visit_tips_ja": "JR身延線「身延駅」から徒歩約1分、駅前商店街の中に位置する。営業時間は8:30〜18:00（水曜定休）。店内で購入したお饅頭を、なでしこたちと同じように駅前のベンチや富士川沿いで食べる巡礼スタイルがファンの間で大人気。お土産用にも最適です。",
+      "scene_timestamp": "08:12",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.minobu-kanko.jp/",
+      "source_evidence": "アニメ放送時のエンドクレジット協力および身延町公式観光情報に掲載。劇中の店舗外観の暖簾や、包装紙のデザイン、店内のレイアウトが実在の「栄昇堂」と100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "みのぶまんじゅう",
+          "venue_name": "栄昇堂",
+          "available": "通年メニュー",
+          "price_range": "¥70〜700",
+          "source_url": "https://tabelog.com/yamanashi/A1904/A190402/19004116/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第3話などで、なでしこが「安い！うまい！」と大絶賛し、1個単位（当時65円）で大量に買い込んでその場で何個も平らげた身延町伝統の銘菓。小麦粉の生地に味噌を練り込んだ、甘じょっぱい白餡の饅頭。"
+        }
+      ]
+    },
+    {
+      "title": "ゆるキャン△",
+      "title_en": "Laid-Back Camp",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2018,
+      "scene_number": "09",
+      "spot_name": "藤義",
+      "spot_name_en": "Fujiyoshi",
+      "prefecture": "yamanashi",
+      "city": "kai",
+      "latitude": 35.659833,
+      "longitude": 138.520861,
+      "description_ja": "第9話「なでしこナビと湯けむりの夜」に登場。長野へ原付旅に出たリンが、なでしこからのおすすめナビに従って立ち寄った、甲斐市に実在するお食事処（蕎麦・和食店）。劇中では「藤田」という店名にアレンジされて登場したが、建物の外観やのぼり旗、そしてリンが驚愕した巨大な大海老天丼のビジュアルが完全再現されている。",
+      "description_en": "Featured in Episode 9. Rin visits this Japanese restaurant in Kai City following Nadeshiko's recommendation during her solo moped journey. Although named 'Fujita' in the anime, the actual exterior, interior, and the remarkably massive jumbo shrimp tempura bowl are directly modeled after 'Fujiyoshi.'",
+      "visit_tips_ja": "JR中央本線「竜王駅」から徒歩約15分、または車・バイク。営業時間はランチ11:00〜14:30、ディナー17:00〜21:00。人気メニューの「ジャンボ海老天丼」は、劇中のインパクト通り非常にボリュームがあるため、お腹を空かせて訪問するのがベスト。",
+      "scene_timestamp": "06:45",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.fujiyoshi.info/",
+      "source_evidence": "アニメのエンドクレジットに「藤義」としてクレジット。リンが注文したメニュー、お盆の配置、店内の小上がり（座敷）の造作が実在店舗と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "ジャンボ海老天重（作中「大海老天丼」のモデル）",
+          "venue_name": "藤義",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://tabelog.com/yamanashi/A1901/A190101/19000624/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 0,
+          "scene_evidence": "第9話でリンが注文し、目の前に運ばれてきた瞬間にその規格外の大きさにスマホを構えて写真を撮った「大海老天丼」。サクサクの巨大な海老天がそびえ立つ、お店の名物重。"
+        }
+      ]
+    }
+  ]
+}

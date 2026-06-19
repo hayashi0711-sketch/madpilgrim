@@ -1,0 +1,107 @@
+{
+  "work_title": "孤独のグルメ",
+  "spots": [
+    {
+      "title": "孤独のグルメ Season1",
+      "title_en": "Kodoku no Gurume Season1",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2012,
+      "scene_number": "01",
+      "spot_name": "みんみん（劇中「庄助」の前に立ち寄る街並み周辺）",
+      "spot_name_en": "Minmin (Area around Yakitori Shosuke)",
+      "prefecture": "tokyo",
+      "city": "koto",
+      "latitude": 35.671542,
+      "longitude": 139.799424,
+      "description_ja": "記念すべきSeason1・第1話の舞台となった門前仲町。井之頭五郎が商談を終えた後、「腹が、減った」のフレーズとともに居酒屋を探して彷徨う路地裏の風情あるエリア。下町の古き良き飲み屋街の雰囲気がそのまま残されており、五郎が暖簾をくぐった焼き鳥店の実在ロケ地がある。",
+      "description_en": "Monzen-nakacho is the memorable location for Season 1, Episode 1. After finishing his business meeting, Inogashira Goro wanders around these nostalgic backalleys looking for a place to eat. The area beautifully preserves the old Tokyo downtown atmosphere, housing the real yakitori restaurant featured in the episode.",
+      "visit_tips_ja": "東京メトロ東西線・都営大江戸線「門前仲町駅」1番出口から徒歩約3分。夕方17時以降の開店となるため、ドラマの雰囲気を味わいたい場合は夜の時間帯の訪問が必須。非常に人気店のため満席になることが多い。",
+      "scene_timestamp": "12:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kodokunogurume1/story/story01.html",
+      "source_evidence": "番組公式サイトのストーリー紹介およびエンドクレジットに「庄助」が明記されており、外観の赤提灯や店内のコの字型カウンター、メニュー短冊が劇中映像と完全一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "焼鳥（つくね・ピーマン）",
+          "venue_name": "庄助",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜3,000",
+          "source_url": "https://tabelog.com/tokyo/A1313/A131303/13043135/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "五郎が注文した、つくねを生のピーマンの中に手で潰し入れて一緒に齧るという「つくねピーマン」の食べ方の発祥シーン。ピーマンの苦味とつくねのタレが絶妙にマッチする人気メニュー。"
+        }
+      ]
+    },
+    {
+      "title": "孤独のグルメ Season3",
+      "title_en": "Kodoku no Gurume Season3",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2013,
+      "scene_number": "05",
+      "spot_name": "中野区東中野の洋食店（キャラヴァンサライ）",
+      "spot_name_en": "Caravan Sarai (East Nakano)",
+      "prefecture": "tokyo",
+      "city": "nakano",
+      "latitude": 35.706121,
+      "longitude": 139.684124,
+      "description_ja": "第5話「中野区東中野のアフガニスタン料理」に登場した多国籍な雰囲気が漂う名店。五郎が未知なるアフガン料理（ラム肉料理や鉄鍋蒸し）に挑戦し、エスニックなスパイスの魅力に引き込まれていく様子がリアルに描かれた。店内は絨毯や民族衣装が飾られた独特な空間。",
+      "description_en": "Featured in Season 3, Episode 5, this unique restaurant serves authentic Afghan cuisine in Higashi-Nakano. Goro tries unfamiliar dishes like lamb meat and iron-pot steamed dumplings, becoming deeply captivated by the exotic spices. The interior is richly decorated with traditional rugs and garments.",
+      "visit_tips_ja": "JR中央・総武線、都営大江戸線「東中野駅」西口から徒歩約2分。異国情緒を五感で楽しめる座敷席がおすすめ。スパイスが効いた料理が多いため、デートや少人数でのディナーに最適。予約がベター。",
+      "scene_timestamp": "15:40",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kodokunogurume3/story/story05.html",
+      "source_evidence": "公式ストーリーアーカイブに掲載。「パオ」と呼ばれるテントを模した空間や、羊肉の串焼きを炭火で焼くロースターが店内の実物と一致している。",
+      "nearby_foods": [
+        {
+          "dish_name": "ラム肉の串焼き（カバブ）・カブリポロウ",
+          "venue_name": "PAO Compound キャラヴァンサライ",
+          "available": "通年メニュー",
+          "price_range": "¥3,000〜4,500",
+          "source_url": "https://tabelog.com/tokyo/A1319/A131901/13001057/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "五郎が肉汁を滴らせながら貪り食ったジューシーなラムの串焼き。臭みが全くなくスパイスが香る絶品として描かれ、人参とレーズンが乗ったピラフ「カブリポロウ」との相性も抜群だった。"
+        }
+      ]
+    },
+    {
+      "title": "孤独のグルメ Season8",
+      "title_en": "Kodoku no Gurume Season8",
+      "category": "drama",
+      "broadcaster": "テレビ東京",
+      "release_year": 2019,
+      "scene_number": "01",
+      "spot_name": "横浜中華街（南粤美食）",
+      "spot_name_en": "Yokohama Chinatown (Nanyue Bishoku)",
+      "prefecture": "kanagawa",
+      "city": "yokohama",
+      "latitude": 35.442345,
+      "longitude": 139.646781,
+      "description_ja": "Season8の第1話。横浜中華街のメイン通りから少し外れた路地に佇む、本格的な広東料理を提供する小さなお店。五郎が店先の看板に惹かれて入店し、釜飯や丸鶏の塩焼きなど、並大抵の中華料理店では味わえない隠れた絶品料理に唸る名エピソードの舞台。",
+      "description_en": "Featured in Season 8, Episode 1. Located in a narrow alley slightly away from the main streets of Yokohama Chinatown, this small, authentic Cantonese restaurant became an instant sensation. Goro is drawn in by the shopfront displays and is deeply impressed by their specialized clay pot rice and salted chicken.",
+      "visit_tips_ja": "みなとみらい線「元町・中華街駅」2番出口から徒歩約3分。放送後から現在に至るまで非常に長い行列ができる大人気店となったため、開店の1時間以上前から並ぶか、平日のピークを外した時間帯を狙うのが鉄則。",
+      "scene_timestamp": "19:05",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tv-tokyo.co.jp/kodokunogurume8/story/01.html",
+      "source_evidence": "公式エンドクレジットに「南粤美食」の協力が明記。劇中で五郎が食べた、干し肉とアヒルの卵が乗った独特な釜炊きご飯のビジュアルが完全一致する。",
+      "nearby_foods": [
+        {
+          "dish_name": "アヒルのパリパリ皮焼き・腸詰めの釜飯",
+          "venue_name": "南粤美食（なんえつびしょく）",
+          "available": "通年メニュー",
+          "price_range": "¥2,000〜4,000",
+          "source_url": "https://tabelog.com/tokyo/A1401/A140105/14064503/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 0,
+          "scene_evidence": "五郎が注文した「丸鶏の塩焼き」や「アヒルの干し肉の釜飯」。タイ米に旨味の詰まった脂と特製タレが染み込み、おこげまで残さず完食した至高の中華。"
+        }
+      ]
+    }
+  ]
+}

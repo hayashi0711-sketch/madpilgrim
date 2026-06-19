@@ -1,0 +1,107 @@
+{
+  "work_title": "ワカコ酒",
+  "spots": [
+    {
+      "title": "ワカコ酒 Season1",
+      "title_en": "Wakakozake Season1",
+      "category": "drama",
+      "broadcaster": "BSテレビ東京",
+      "release_year": 2015,
+      "scene_number": "01",
+      "spot_name": "鮭の店 会津（劇中「逢洲」のモデル店舗）",
+      "spot_name_en": "Shake no Mise Aizu",
+      "prefecture": "tokyo",
+      "city": "shinjuku",
+      "latitude": 35.694611,
+      "longitude": 139.704778,
+      "description_ja": "記念すべきドラマ第1作の第1話「鮭の塩焼き」の舞台。26歳のOL・村崎ワカコ（武田梨奈）が仕事帰りに一人呑みを満喫し、至福の吐息「ぷしゅー」を地上波で初披露した記念碑的なお店。鮭料理を中心とした素朴で温かみのある店内のカウンターで、ワカコが夜な夜な自分を労う世界観の原点となった。",
+      "description_en": "Featured in Season 1, Episode 1. This real-life salmon specialty izakaya serves as the legendary first background where the protagonist Murasaki Wakako enjoys her solo drinking and utters her iconic catchphrase 'Pshu-'. The warm, rustic counter seating sets the tone for the entire series.",
+      "visit_tips_ja": "東京メトロ丸ノ内線・副都心線・都営新宿線「新宿三丁目駅」C6出口から徒歩約3分。夕方17時からの営業。席数が限られたアットホームな老舗のため、少人数（1〜2人）での訪問が最適。満席のことも多いため事前確認がおすすめ。",
+      "scene_timestamp": "02:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.bs-tvtokyo.co.jp/wakako_zake/story/story01.html",
+      "source_evidence": "番組公式サイトの第1話ストーリー紹介およびドラマエンドクレジットに「鮭の店 会津」としてクレジットされている。店内の特徴的な木札メニューやカウンターの質感が劇中映像と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "鮭の塩焼き、冷酒（菊水）",
+          "venue_name": "鮭の店 会津",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://tabelog.com/tokyo/A1304/A130401/13012093/",
+          "google_maps_url": "https://maps.app.goo.gl/9Jb3Q5mNskS1wXm99",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話でワカコが「これこそ鮭の王道」と感動しながら食べた、皮までパリパリに焼かれた分厚い鮭の塩焼き。これにキリッと冷えた日本酒を合わせることで、ドラマ最初の「ぷしゅー」が生まれた。"
+        }
+      ]
+    },
+    {
+      "title": "ワカコ酒 Season2",
+      "title_en": "Wakakozake Season2",
+      "category": "drama",
+      "broadcaster": "BSテレビ東京",
+      "release_year": 2016,
+      "scene_number": "04",
+      "spot_name": "下北沢 魚真",
+      "spot_name_en": "Shimokitazawa Uoshin",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.661034,
+      "longitude": 139.668112,
+      "description_ja": "Season2・第4話「エゴマの葉の醤油漬けとウニクレソン」の前半パートに登場。ワカコが新鮮な海の幸を求めて立ち寄った、活気あふれる人気魚介居酒屋。魚屋が母体だからこそできる圧倒的な鮮度の刺身を前に、ワカコが至福の一人酒を堪能する下北沢の定番ナイトスポット。",
+      "description_en": "Appearing in Season 2, Episode 4. A lively and highly popular seafood izakaya in Shimokitazawa run by a fishmonger. Wakako visits here in search of premium fresh sashimi to pair with her drink, enjoying the energetic downtown pub atmosphere.",
+      "visit_tips_ja": "小田急線・京王井の頭線「下北沢駅」東口または南西口から徒歩約3分。17:00〜24:00営業。非常に活気があり混雑する名店のため、開店直後を狙うか事前の席予約が強く推奨される。",
+      "scene_timestamp": "04:30",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.bs-tvtokyo.co.jp/wakako_zake2/story/04.html",
+      "source_evidence": "Season2の公式ストーリーおよびエンドクレジットに「魚真 下北沢店」の表記あり。店内の大きなネタケースや、目の前で職人が捌くオープンカウンターのレイアウトが劇中と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "お刺身の盛り合わせ、のどぐろ塩焼き",
+          "venue_name": "下北沢 魚真",
+          "available": "通年メニュー（仕入れにより内容変更あり）",
+          "price_range": "¥3,000〜4,500",
+          "source_url": "https://tabelog.com/tokyo/A1318/A131802/13001452/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第4話前半で、ワカコがカウンター席で注文した、贅沢に厚切りされた本日のおすすめ刺身盛り合わせ。日本酒の辛口と合わせて一切れずつ慈しむように味わうシーン。"
+        }
+      ]
+    },
+    {
+      "title": "ワカコ酒 Season3",
+      "title_en": "Wakakozake Season3",
+      "category": "drama",
+      "broadcaster": "BSテレビ東京",
+      "release_year": 2017,
+      "scene_number": "02",
+      "spot_name": "萬福",
+      "spot_name_en": "Manpuku",
+      "prefecture": "tokyo",
+      "city": "chuo",
+      "latitude": 35.670278,
+      "longitude": 139.769167,
+      "description_ja": "Season3・第2話「ご近所の味、町中華」に登場した、東銀座に佇む大正創業の伝説的な老舗町中華。ワカコが暖簾をくぐり、どこか懐かしい昭和レトロな店内で「昼下がりの町中華呑み」を実践。冷えたビールと手作り餃子の王道コンビネーションに、身も心もとろけさせる至福の時間を過ごした空間。",
+      "description_en": "Featured in Season 3, Episode 2. Established in the Taisho era, this legendary Chinese diner in Higashi-Ginza serves as the backdrop for Wakako's casual afternoon drinking. The retro wooden interior perfectly enhances the comforting combination of beer and gyoza.",
+      "visit_tips_ja": "東京メトロ日比谷線・都営浅草線「東銀座駅」A2出口から徒歩2分。営業時間は11:00〜23:00（日祝定休）。ランチタイムは周辺のビジネスパーソンで大行列ができるため、ワカコのようにゆっくりお酒と中華を合わせたい場合は14:00〜16:00頃のアイドルタイムがベスト。",
+      "scene_timestamp": "11:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.bs-tvtokyo.co.jp/wakako_zake3/story/02.html",
+      "source_evidence": "公式クレジットおよび公式HPの掲載情報。萬福の特徴的な三角形の卵焼きが乗った中華そばや、年季の入った美しい木調の壁面・カウンターが100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "焼き餃子、瓶ビール（アサヒスーパードライ）",
+          "venue_name": "萬福",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜1,999",
+          "source_url": "https://tabelog.com/tokyo/A1301/A130101/13002324/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 0,
+          "scene_evidence": "第2話でワカコが注文した、焼き目が美しくモチモチした食感の自家製焼き餃子。グラスに注いだ黄金色の瓶ビールを一気に喉に流し込み、熱々の餃子を頬張る最高の中華呑みシーン。"
+        }
+      ]
+    }
+  ]
+}

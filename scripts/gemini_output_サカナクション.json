@@ -1,0 +1,107 @@
+{
+  "work_title": "サカナクション ミュージックビデオ集",
+  "spots": [
+    {
+      "title": "アルクアラウンド",
+      "title_en": "Aruku Around",
+      "category": "mv",
+      "broadcaster": "ビクターエンタテインメント",
+      "release_year": 2010,
+      "scene_number": "アルクアラウンド",
+      "spot_name": "幕張メッセ（国際展示場展示ホール9-11）",
+      "spot_name_en": "Makuhari Messe (International Exhibition Hall 9-11)",
+      "prefecture": "chiba",
+      "city": "chiba",
+      "latitude": 35.648712,
+      "longitude": 140.034621,
+      "description_ja": "文化庁メディア芸術祭優秀賞など数々の賞を受賞した、日本のMV史に残る名作のロケ地。深夜の幕張メッセの広大な屋内展示ホールおよびその周辺通路を使用し、一切のCGを使わずにカメラの動きと緻密に計算された配置だけでタイポグラフィ（文字オブジェクト）が繋がって見える驚異の一発撮り（ワンカット）撮影が行われた、ファンにとって最大の聖地。",
+      "description_en": "The shooting location for one of the most iconic Japanese music videos, which won the Excellence Award at the Japan Media Arts Festival. Filmed at night in the massive halls of Makuhari Messe, this ambitious music video was shot in a single continuous take without any CGI, relying purely on precise camera movement and carefully placed physical typography objects that align perfectly as the camera passes by.",
+      "visit_tips_ja": "JR京葉線「海浜幕張駅」から徒歩約5分。イベント非開催時は展示ホール内への立ち入りはできませんが、MVの冒頭や終盤でメンバーが歩いている屋外のコンコースや通路、柱の並びなどは自由に散策・見学が可能です。夜間に訪れるとMVのスリリングな雰囲気をより体感できます。",
+      "scene_timestamp": "00:00",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://ja.wikipedia.org/wiki/%E3%82%A2%E3%83%AB%E3%82%AF%E3%82%A2%E3%83%A9%E3%82%A6%E3%83%B3%E3%83%89",
+      "source_evidence": "公式のメイキング映像、インタビュー、およびWikipedia等の公的記録にて撮影地が「幕張メッセ」であることが明記されている。劇中に映る特徴的なホールのトラス構造や、屋外通路のコンクリート柱の意匠が現物と完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "自家製ローストビーフ丼",
+          "venue_name": "メッセアミューズモール（すし・創作料理 船頭の台所など周辺店舗）",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜2,000",
+          "source_url": "https://www.m-messe.co.jp/gourmet/amusemall",
+          "google_maps_url": "https://maps.app.goo.gl/K2fM7vT3Pj9WpAsaA",
+          "travel_minutes": 6,
+          "scene_evidence": "MV本編に直接の飲食シーンはありませんが、深夜に及ぶワンカット一発撮りの過酷な撮影において、バンドメンバーや多くのスタッフが幕張メッセ周辺の飲食店やケータリング等を利用して長時間の撮影を乗り切ったことで知られています。"
+        }
+      ]
+    },
+    {
+      "title": "蓮の花",
+      "title_en": "Hasu no Hana",
+      "category": "mv",
+      "broadcaster": "ビクターエンタテインメント",
+      "release_year": 2014,
+      "scene_number": "蓮の花",
+      "spot_name": "十条銀座商店街",
+      "spot_name_en": "Jujo Ginza Shopping District",
+      "prefecture": "tokyo",
+      "city": "kita",
+      "latitude": 35.761899,
+      "longitude": 139.721865,
+      "description_ja": "映画『近キョリ恋愛』の主題歌。MVでは、山口一郎が謎のパペット（ロボット）を抱えながら、深夜の誰もいない静まり返ったアーケード商店街を不気味かつ幻想的に歩き続けるシュールな世界観が描かれた。昼間の活気ある下町の雰囲気とは全く異なる、夜の独特な表情がロケ地として選ばれている。",
+      "description_en": "The theme song for the movie 'Close Range Love'. The music video features Ichiro Yamaguchi walking through a completely deserted shopping arcade at night while holding a mysterious puppet creature. This location was chosen to contrast the bustling daytime energy of a traditional Tokyo neighborhood with the eerie, surreal, and cinematic atmosphere of the arcade after hours.",
+      "visit_tips_ja": "JR埼京線「十条駅」北口を出てすぐ目の前に広がるアーケードです。商店街自体は日中から夕方にかけて非常に賑わっており、名物の惣菜食べ歩きが楽しめます。MVの静寂な雰囲気を味わいたい場合は、ほとんどの店舗が閉まる22:00以降の訪問がおすすめです。",
+      "scene_timestamp": "01:15",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://note.com/bou_zumi/n/n38ac59e2c357",
+      "source_evidence": "サカナクションのファンによる聖地巡礼データベース、およびMV内に映り込むアーケード特有の天井吊り下げ看板、タイル舗装のデザイン、商店街の各店舗のシャッターに描かれた独自のイラストや店名ロゴの配置が完全に一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "チキンボール",
+          "venue_name": "鳥大（とりだい）",
+          "available": "通年メニュー",
+          "price_range": "〜¥500",
+          "source_url": "https://tabelog.com/tokyo/A1323/A132304/13044167/",
+          "google_maps_url": "https://maps.app.goo.gl/g6z2A8PqXbsh68j89",
+          "travel_minutes": 2,
+          "scene_evidence": "MVの中盤（1分すぎ〜）、山口一郎が抱えるパペットと共に歩いていく夜の商店街の道中に、十条銀座の象徴的な人気惣菜店「鳥大」の店舗前を通過するシーンが背景に収められている。"
+        }
+      ]
+    },
+    {
+      "title": "さよならはエモーション",
+      "title_en": "Sayonara wa Emotion",
+      "category": "mv",
+      "broadcaster": "ビクターエンタテインメント",
+      "release_year": 2014,
+      "scene_number": "さよならはエモーション",
+      "spot_name": "セブン-イレブン 世田谷代沢3丁目店",
+      "spot_name_en": "7-Eleven Setagaya Daizawa 3-Chome",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.651132,
+      "longitude": 139.667504,
+      "description_ja": "過去と現在、記憶のループをテーマにした叙情的なMV。監督は田中裕介。山口一郎が夜の街を歩きながらコンビニに立ち寄り、缶コーヒーを購入してレシートをゴミ箱に捨てるという、日常の何気ないワンシーンが時間の逆行や視点の変化を交えてドラマチックに描かれた重要なロケ地。",
+      "description_en": "A lyrical music video directed by Yusuke Tanaka, themed around the loops of past memories and the present. A pivotal scene takes place at this standard neighborhood convenience store, where Ichiro Yamaguchi stops by at night, buys a canned coffee, and throws away the receipt. This mundane action is repeated with chronological reverses and shifting perspectives.",
+      "visit_tips_ja": "小田急線・京王井の頭線「下北沢駅」から徒歩約12分、または東急田園都市線「三軒茶屋駅」からもアクセス可能です。閑静な住宅街にある通常の営業店舗ですので、一般のお客様の迷惑にならないよう深夜の大人数での立ち止まりや店舗敷地内での過度な撮影は厳禁です。",
+      "scene_timestamp": "02:10",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://note.com/bou_zumi/n/n38ac59e2c357",
+      "source_evidence": "複数のファンサイトでの実地検証、およびMV内で山口一郎が店外のゴミ箱（当時は外設置）へ向かう際に見えるレジ周辺のレイアウト、道路に面したガラス窓の独特な傾斜とパーキングスペースの位置関係が完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "缶コーヒー（またはセブンカフェ）",
+          "venue_name": "セブン-イレブン 世田谷代沢3丁目店",
+          "available": "通年メニュー",
+          "price_range": "〜¥500",
+          "source_url": "https://www.sej.co.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/q3B3pZ6yL2Zbe8G5A",
+          "travel_minutes": 0,
+          "scene_evidence": "MVの2分10秒頃、山口一郎が実際に店内のチルド・缶飲料コーナーからコーヒーを選び、レジで会計を済ませた後に、店外に出てレシートをクシャクシャに丸めてゴミ箱に投げ捨てる一連の象徴的な飲食・購買シーン。"
+        }
+      ]
+    }
+  ]
+}

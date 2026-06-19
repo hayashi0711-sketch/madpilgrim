@@ -1,0 +1,107 @@
+{
+  "work_title": "リコリス・リコイル",
+  "spots": [
+    {
+      "title": "リコリス・リコイル",
+      "title_en": "Lycoris Recoil",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "04",
+      "spot_name": "すみだ水族館",
+      "spot_name_en": "Sumida Aquarium",
+      "prefecture": "tokyo",
+      "city": "sumida",
+      "latitude": 35.710138,
+      "longitude": 139.810556,
+      "description_ja": "第4話「Nothing seek, nothing find」にて、錦木千束が井ノ上たきなを連れ出した「東京観光デート」のメインスポット。たきながDAへの執着を吹っ切り、千束に対して完全に心を開くきっかけとなった作中最重要の情緒的シーン。大水槽の前で千束がポーズを決める「さかなー」、たきなが返す「チンアナゴー」の応酬は作品の代名詞となった。",
+      "description_en": "Featured in Episode 4, this is the main destination for Chisato and Takina's Tokyo date. It serves as a vital emotional turning point where Takina moves past her obsession with DA and bonds deeply with Chisato. The famous, playful exchange of 'Sakana~' (fish) and 'Chin-anago~' (garden eel) in front of the massive jellyfish and fish tanks took place here.",
+      "visit_tips_ja": "東武スカイツリーライン・東京メトロ半蔵門線ほか「押上（スカイツリー前）駅」直結、東京スカイツリータウン5階・6階。土日祝日は大変混雑するため、混雑を避けて劇中の静かな雰囲気を味わいたい場合は平日の夜の訪問がおすすめ。一般の来館者の迷惑にならないよう「さかなー」ポーズの撮影時は周囲への十分な配慮を。",
+      "scene_timestamp": "12:35",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.sumida-aquarium.com/",
+      "source_evidence": "第4話のデートシーン。館内のクラゲ万華鏡トンネル、チンアナゴが砂から出ている大水槽、小笠原大水槽のレイアウトや、入場ゲートのデザインが完全に一致。公式のタイアップイベントやコラボグッズの展開も複数回実施されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "チンアナゴチュロス",
+          "venue_name": "すみだ水族館（ペンギンカフェ）",
+          "available": "通年メニュー",
+          "price_range": "¥400〜600",
+          "source_url": "https://www.sumida-aquarium.com/shop/index.html",
+          "google_maps_url": "https://maps.app.goo.gl/pM7M3x7Z9Z7Z9Z7Z9",
+          "travel_minutes": 0,
+          "scene_evidence": "劇中で千束とたきなが水族館を巡るなか、名セリフの題材となった「チンアナゴ」をモチーフにした、すみだ水族館を代表する名物オリジナルスイーツ。"
+        }
+      ]
+    },
+    {
+      "title": "リコリス・リコイル",
+      "title_en": "Lycoris Recoil",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "01",
+      "spot_name": "すみだ珈琲（喫茶リコリコのモデル店舗）",
+      "spot_name_en": "Sumida Coffee (Model for Cafe LycoReco)",
+      "prefecture": "tokyo",
+      "city": "sumida",
+      "latitude": 35.703273,
+      "longitude": 139.814234,
+      "description_ja": "主人公たちが所属するDA（Direct Attack）の表向きの支部であり、たきなが転属してきた「喫茶リコリコ」の空間的モデル。築50年以上の古民家を改装した店舗であり、和洋折衷の落ち着いた佇まいや天井の梁の構造などが劇中の和カフェの温かみある世界観に強く反映されている。作中では全編にわたり登場する最重要拠点。",
+      "description_en": "The atmospheric model for 'Cafe LycoReco,' the hidden DA branch where Chisato and Takina work. Rebuilt from a 50-year-old traditional Japanese house, its cozy, blended style and wooden beams heavily inspired the anime's background art. It appears throughout the series as the central hub for the characters.",
+      "visit_tips_ja": "JR総武線「錦糸町駅」北口より徒歩約6分、または東京メトロ半蔵門線「錦糸町駅」4番出口より徒歩約5分。営業時間は11:00〜19:00。席数が限られた静かな名店のため、多人数での訪問や店舗前でのたむろ、店内での無断撮影は厳禁。ルールを守ってコーヒーを味わうのがファンの嗜み。",
+      "scene_timestamp": "02:40",
+      "confidence_score": 0.8,
+      "source_type": "fan_wiki",
+      "source_url": "https://sumidacoffee.jp/",
+      "source_evidence": "劇中の喫茶リコリコでコーヒーを提供する際、非常に印象的に描かれている「江戸切子（廣田硝子）のカップ」を使用している点が共通している。錦糸町・押上周辺を舞台にロケハンが行われた中で、美術スタッフが古民家の内装や伝統工芸のディテールをサンプリングした店舗として広く知られている。",
+      "nearby_foods": [
+        {
+          "dish_name": "THE SUMIDA COFFEE（自家焙煎コーヒー・江戸切子カップ提供）",
+          "venue_name": "すみだ珈琲",
+          "available": "通年メニュー",
+          "price_range": "¥500〜800",
+          "source_url": "https://tabelog.com/tokyo/A1312/A131201/13119561/",
+          "google_maps_url": "https://maps.app.goo.gl/TWhd2u3x7eayNpxFA",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話をはじめ、劇中で千束たちが常連客やミカ、先生たちにドリップして提供している本格的なブレンドコーヒーのモチーフ。美しい伝統工芸の切子グラスで提供される点も同様。"
+        }
+      ]
+    },
+    {
+      "title": "リコリス・リコイル",
+      "title_en": "Lycoris Recoil",
+      "category": "anime",
+      "broadcaster": "TOKYO MX",
+      "release_year": 2022,
+      "scene_number": "01",
+      "spot_name": "錦糸公園",
+      "spot_name_en": "Kinshi Park",
+      "prefecture": "tokyo",
+      "city": "sumida",
+      "latitude": 35.699312,
+      "longitude": 139.817342,
+      "description_ja": "第1話「Easy does it」にて、喫茶リコリコに異動してきたばかりのたきなに対し、千束が「DAとは異なる、この店ならではの平和を守る仕事」についてベンチに座ってレクチャーを施すシーンで登場。凸凹コンビだった二人が本格的に相棒として歩み始める、物語の原点ともいえる非常に印象的な公園。",
+      "description_en": "Appearing in Episode 1, this is the park where Chisato explains her philosophy of 'helping people in need' rather than just eliminating targets to a bewildered Takina. Sitting on a park bench, this conversation marks the official beginning of their relationship as partners.",
+      "visit_tips_ja": "JR総武線・東京メトロ半蔵門線「錦糸町駅」北口から徒歩3分。大型商業施設オリナスの目の前に広がる開放的な公園。24時間立入可能。千束たちが座っていたベンチの周辺は一般の利用客（特に子連れのご家族）も多いため、撮影時は譲り合いの精神を忘れずに。",
+      "scene_timestamp": "14:15",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.city.sumida.lg.jp/sisetu_info/kouen/kunai_kouen_annai/sumida_kouen/kinshi/",
+      "source_evidence": "第1話中盤。背景に映り込む大型ショッピングモール「olinas（オリナス）」の外観形状、公園内のちびっこ広場周辺の柵や遊具、案内板の配置、芝生エリアから見上げる東京スカイツリーの画角が完全に一致している。",
+      "nearby_foods": [
+        {
+          "dish_name": "団子（作中で千束が食べている和菓子各種のイメージ）",
+          "venue_name": "北斎茶房（錦糸公園から徒歩約5分）",
+          "available": "通年メニュー",
+          "price_range": "¥500〜1,500",
+          "source_url": "https://tabelog.com/tokyo/A1312/A131201/13002937/",
+          "google_maps_url": "https://maps.app.goo.gl/9QZJ2qV7P2K9wY5T9",
+          "travel_minutes": 5,
+          "scene_evidence": "劇中（喫茶リコリコの営業中や休憩シーン）で甘味大好きな千束がよくつまんでいる、串団子やあんみつなどの和スイーツを錦糸公園周辺でリアルに味わえる、エリア屈指の和菓子・甘味処の名店。"
+        }
+      ]
+    }
+  ]
+}

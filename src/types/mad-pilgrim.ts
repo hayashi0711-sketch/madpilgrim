@@ -1,6 +1,6 @@
 export type Locale = "ja" | "en";
 
-export type SpotCategory = "anime" | "mv" | "drama" | "movie" | "cm";
+export type SpotCategory = "anime" | "mv" | "drama" | "movie" | "cm" | "manga";
 
 export type SpotStatus = "unverified" | "ai_suggested" | "approved" | "hidden";
 
@@ -44,4 +44,6 @@ export type Spot = {
   sourceType: "official" | "fan" | "social" | "inferred";
   status: SpotStatus;
   ogImageUrl?: string;
+  youtubeUrl?: string;
+  youtubeChannelName?: string;
 };

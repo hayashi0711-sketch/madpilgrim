@@ -1,0 +1,73 @@
+{
+  "work_title": "相棒",
+  "spots": [
+    {
+      "title": "相棒 season12",
+      "title_en": "AIBOU: Tokyo Detective Duo Season 12",
+      "category": "drama",
+      "broadcaster": "テレビ朝日",
+      "release_year": 2014,
+      "scene_number": "13",
+      "spot_name": "デンメア ティーハウス 六本木店",
+      "spot_name_en": "DEMMERS TEEHAUS Roppongi",
+      "prefecture": "tokyo",
+      "city": "minato",
+      "latitude": 35.664417,
+      "longitude": 139.728917,
+      "description_ja": "season12 第13話「右京さんの友達」のメイン舞台。無類の紅茶マニアである杉下右京が、同じく紅茶に強いこだわりを持つ毒島（尾美としのり）と運命的な出会いを果たし、テーブルを挟んで優雅にお茶の知識を競い合った実在のウィーン発・高級紅茶専門店。",
+      "description_en": "Featured in Season 12, Episode 13. A real Austrian luxury tea house where the tea-obsessed Sugishita Ukyo meets a fellow tea connoisseur, Busujima, to share a sophisticated tea time and intellectual conversation.",
+      "visit_tips_ja": "東京メトロ日比谷線・都営大江戸線「六本木駅」2番出口から徒歩約4分、または千代田線「乃木坂駅」から徒歩約4分。劇中に登場したお洒落なイートインスペースで、実際に右京さんと同じように紅茶とスコーンを楽しめます。店内には出演者の貴重なサインも展示されています。",
+      "scene_timestamp": "15:30",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.demmer.co.jp/",
+      "source_evidence": "該当話のエンディングクレジットに撮影協力として「DEMMERS TEEHAUS」が明記。真っ赤な内装デザイン、壁一面に並ぶ特徴的な紅茶のスクエア缶、店内のテーブルレイアウトが本編映像と100%一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "ザッハブレンド（紅茶） / スコーン",
+          "venue_name": "デンメア ティーハウス 六本木店",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜2,000",
+          "source_url": "https://tabelog.com/tokyo/A1307/A130701/13060196/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "右京さんが砂時計で正確に時間を計りながら、高い位置から芸術的に紅茶を注ぎ、毒島とともにフレーバーの香りや紅茶の奥深い歴史について「細かいことが気になってしまう僕の悪い癖」を発揮しながら語り合うシーン。"
+        }
+      ]
+    },
+    {
+      "title": "相棒",
+      "title_en": "AIBOU: Tokyo Detective Duo",
+      "category": "drama",
+      "broadcaster": "テレビ朝日",
+      "release_year": 2002,
+      "scene_number": "定番シーン",
+      "spot_name": "日比谷茶廊",
+      "spot_name_en": "Hibiya Saroh",
+      "prefecture": "tokyo",
+      "city": "chiyoda",
+      "latitude": 35.673833,
+      "longitude": 139.755833,
+      "description_ja": "初期シーズンから長年にわたり、杉下右京と警察庁長官官房長（のちに殉職）の小野田公顕（岸部一徳）が密談や情報交換を行った、日比谷公園内に実在する超有名オープンカフェ。緑豊かな開放的空間の中で、二人が警察組織の暗部や事件の核心について語る緊迫したシーンで度々使用された。",
+      "description_en": "A historic open-air cafe inside Hibiya Park where Sugishita Ukyo and his long-time ideological rival/ally, Chief Oonoda, frequently met for secretive high-stakes discussions and casual dining across early seasons.",
+      "visit_tips_ja": "東京メトロ日比谷線・千代田線「日比谷駅」B2出口から徒歩約2分。日比谷公園のなかに佇む1949年創業の老舗で、日本におけるオープンカフェのパイオニアです。右京と小野田が座っていたパラソル下のテラス席は、ファンにとって不動の聖地となっています。",
+      "scene_timestamp": "35:10",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "http://hibiyasaroh.jp/",
+      "source_evidence": "『相棒』シリーズのオフィシャルロケ地ガイドや各種メディアのロケ実績、ドラマのエンドロールに何度も登場。背景に映り込む日比谷公園の噴水、独特な店名のフォントが刻まれたパラソルやウッドテラスのデザインが完全一致。",
+      "nearby_foods": [
+        {
+          "dish_name": "昔ながらのオムライス / 特製カレーライス",
+          "venue_name": "日比谷茶廊",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,500",
+          "source_url": "https://tabelog.com/tokyo/A1301/A130102/13002202/",
+          "google_maps_url": "https://maps.app.goo.gl/fbyS3bJpXJ79hWd77",
+          "travel_minutes": 0,
+          "scene_evidence": "小野田官房長官が「右京さん、ちょっと付き合ってよ」と飄々とした態度で右京を誘い出し、テラス席でマイペースにスプーンを動かしながら洋食を食べ、特命係の進退や司法の正義について揺さぶりをかけるシーン。"
+        }
+      ]
+    }
+  ]
+}

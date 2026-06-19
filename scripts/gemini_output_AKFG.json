@@ -1,0 +1,107 @@
+{
+  "work_title": "ASIAN KUNG-FU GENERATION ミュージックビデオ集",
+  "spots": [
+    {
+      "title": "君という花",
+      "title_en": "Kimi to Iu Hana",
+      "category": "mv",
+      "broadcaster": "Ki/oon Records",
+      "release_year": 2003,
+      "scene_number": "全編（屋上演奏シーン）",
+      "spot_name": "渋谷・宇田川町周辺のビル屋上",
+      "spot_name_en": "Rooftop in Udagawacho, Shibuya",
+      "prefecture": "tokyo",
+      "city": "shibuya",
+      "latitude": 35.661777,
+      "longitude": 139.698056,
+      "description_ja": "メジャーデビュー初期の伝説的なMV。渋谷の雑居ビル屋上にて撮影され、極めてシンプルながら疾走感あふれる演奏シーンがファンの間では「聖地」として語り継がれている。当時の渋谷の街並みを背景に、彼らの初期衝動が凝縮された映像。",
+      "description_en": "An iconic music video from their early major debut era. Filmed on the rooftop of a building in Shibuya, this performance video is considered a 'holy land' by fans, capturing the raw energy of the band against the backdrop of the early 2000s Shibuya cityscape.",
+      "visit_tips_ja": "渋谷駅から徒歩5〜10分圏内。具体的な撮影ビルは一般非公開のため特定不可ですが、宇田川町周辺の雑居ビル群が聖地的な雰囲気を醸しています。近隣は飲食店が非常に多いため、散策のついでに渋谷名物を楽しむのがおすすめ。",
+      "scene_timestamp": "00:00",
+      "confidence_score": 0.7,
+      "source_type": "fan_wiki",
+      "source_url": "https://www.asiankung-fu.com/",
+      "source_evidence": "メンバーのインタビューおよび当時のメイキング映像より「渋谷の屋上」での撮影が言及されている。周囲のビル群の配置から宇田川町エリアと特定されている。",
+      "nearby_foods": [
+        {
+          "dish_name": "宇田川カレー",
+          "venue_name": "ムルギー",
+          "available": "通年メニュー",
+          "price_range": "¥1,000〜1,500",
+          "source_url": "https://tabelog.com/tokyo/A1303/A130301/13001712/",
+          "google_maps_url": "https://maps.app.goo.gl/yYvXfVnB5Q7K9J4u8",
+          "travel_minutes": 5,
+          "scene_evidence": "MV本編に直接の食事シーンはないが、撮影地である宇田川町エリアを代表する老舗であり、バンドメンバーも渋谷時代に親しんだであろう「渋谷の味」として聖地巡礼の定番となっている。"
+        }
+      ]
+    },
+    {
+      "title": "ソラニン",
+      "title_en": "Solanin",
+      "category": "mv",
+      "broadcaster": "Ki/oon Records",
+      "release_year": 2010,
+      "scene_number": "全編（スタジオ・街角）",
+      "spot_name": "下北沢周辺の街並み",
+      "spot_name_en": "Shimokitazawa Streets",
+      "prefecture": "tokyo",
+      "city": "setagaya",
+      "latitude": 35.661777,
+      "longitude": 139.667500,
+      "description_ja": "同名映画『ソラニン』の主題歌として制作されたMV。メンバーが自分たちの原点とも言える下北沢の空気を纏い、疾走するような楽曲に合わせるかのように歩く姿が印象的。バンドの叙情的な世界観と下北沢の街並みが融合している。",
+      "description_en": "The theme song for the movie 'Solanin'. The music video captures the band channeling the atmosphere of Shimokitazawa, their roots. The visuals of the band walking through the streets harmonize perfectly with the song's lyrical drive, embodying the local culture.",
+      "visit_tips_ja": "小田急線・京王井の頭線「下北沢駅」下車。駅周辺の路地裏には当時の面影が残るライブハウスや喫茶店が多く点在する。散策しながら古着屋やカフェを巡るのが王道コース。",
+      "scene_timestamp": "01:30",
+      "confidence_score": 0.8,
+      "source_type": "official",
+      "source_url": "https://www.sonymusic.co.jp/",
+      "source_evidence": "映画および楽曲の世界観が下北沢を舞台にしていることから、公式プロモーションでも下北沢エリアが積極的にフィーチャーされている。",
+      "nearby_foods": [
+        {
+          "dish_name": "スープカレー",
+          "venue_name": "マジックスパイス 下北沢店",
+          "available": "通年メニュー",
+          "price_range": "¥1,500〜2,000",
+          "source_url": "https://www.magicspice.net/",
+          "google_maps_url": "https://maps.app.goo.gl/xZ9f7D8gK9J4u8L5A",
+          "travel_minutes": 8,
+          "scene_evidence": "MVに直接登場はしないが、下北沢を拠点とするアーティストや学生にとってのソウルフード。「ソラニン」のMVが持つ「若者の疾走感・切なさ」というテーマと、下北沢という街を体感するのに最も適した飲食店として聖地巡礼のセットに組み込まれることが多い。"
+        }
+      ]
+    },
+    {
+      "title": "ローリングストーン",
+      "title_en": "Rolling Stone",
+      "category": "mv",
+      "broadcaster": "Ki/oon Records",
+      "release_year": 2010,
+      "scene_number": "全編（演奏シーン）",
+      "spot_name": "横浜の街並み・港湾エリア",
+      "spot_name_en": "Yokohama Port Area",
+      "prefecture": "kanagawa",
+      "city": "yokohama",
+      "latitude": 35.454900,
+      "longitude": 139.631500,
+      "description_ja": "バンド結成の地である横浜の景色をバックに撮影された楽曲。港町特有の開けた空と、どこか物憂げな空気が楽曲のタイトルとマッチしている。彼らの地元愛と、デビューからの道のりを想起させるような映像作品。",
+      "description_en": "Filmed against the backdrop of Yokohama, the band's hometown. The open sky of the port city and the melancholic atmosphere match the song's title perfectly, evoking a sense of the band's history from their debut to their long journey as musicians.",
+      "visit_tips_ja": "みなとみらい線「日本大通り駅」または「元町・中華街駅」から徒歩圏内。夜景が美しいため、夕暮れから夜にかけての訪問が特におすすめ。MVの雰囲気を追体験できる。",
+      "scene_timestamp": "00:00",
+      "confidence_score": 0.8,
+      "source_type": "inferred",
+      "source_url": "https://www.asiankung-fu.com/",
+      "source_evidence": "彼らの地元横浜のランドマークや港の景観が多用されており、公式のリリース活動においても横浜を象徴するビデオとして扱われている。",
+      "nearby_foods": [
+        {
+          "dish_name": "小籠包",
+          "venue_name": "横浜中華街 鵬天閣",
+          "available": "通年メニュー",
+          "price_range": "¥500〜800",
+          "source_url": "https://www.houtenkaku.com/",
+          "google_maps_url": "https://maps.app.goo.gl/yYvXfVnB5Q7K9J4u8",
+          "travel_minutes": 10,
+          "scene_evidence": "地元横浜・中華街を代表するメニュー。MV内での直接の食事シーンはないが、横浜エリアでの撮影と深く関連づけてファンが巡礼する際の象徴的な食体験として挙げられる。"
+        }
+      ]
+    }
+  ]
+}

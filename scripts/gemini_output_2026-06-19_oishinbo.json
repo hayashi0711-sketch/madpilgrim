@@ -1,0 +1,73 @@
+{
+  "work_title": "美味しんぼ",
+  "spots": [
+    {
+      "title": "美味しんぼ",
+      "title_en": "Oishinbo",
+      "category": "anime",
+      "broadcaster": "フジテレビ",
+      "release_year": 1988,
+      "scene_number": "01",
+      "spot_name": "銀座レカン（劇中フランス料理店「ル・カン」のモデル）",
+      "spot_name_en": "Ginza L'ecrin (Model for Le Kan)",
+      "prefecture": "tokyo",
+      "city": "chuo",
+      "latitude": 35.671042,
+      "longitude": 139.765691,
+      "description_ja": "第1話「あぁ、フォアグラ」に登場。東西新聞社の文化部メンバーや大原社主、そしてフォアグラの真贋を巡って山岡士郎と対立することになるお偉方たちが集った、日本最高峰の高級フランス料理店のモデル。アニメ放映当時は日本におけるフレンチの最高峰としての象徴的な存在として、外観や内装のエレガントな赤を基調としたデザインがサンプリングされた。",
+      "description_en": "Appearing in Episode 1, this is the model for the ultra-luxurious French restaurant 'Le Kan' where cultural department staff and business elites gather. The real-life 'Ginza L'ecrin' is recognized as a historic pioneer of French cuisine in Japan, with its distinctively elegant red-themed dining space and prestige beautifully captured in the initial animated scenes.",
+      "visit_tips_ja": "東京メトロ銀座線・丸ノ内線「銀座駅」A4出口から徒歩約1分（ミキモトビル地下1階）。日本屈指の本格グランメゾンであり、完全予約制。スマートカジュアル以上のドレスコードが必要。記念日などの利用に最適です。",
+      "scene_timestamp": "02:40",
+      "confidence_score": 0.8,
+      "source_type": "news_article",
+      "source_url": "https://www.twellv.co.jp/program/anime/oishinbo/",
+      "source_evidence": "第1話で登場する店名「ル・カン」の響き、アールヌーボー調の内装調度品、および銀座に位置する最高級フレンチという設定が、実在の老舗「銀座レカン」の特徴と完全に合致するため。",
+      "nearby_foods": [
+        {
+          "dish_name": "フォアグラのテリーヌ（劇中対比メニューのベース）",
+          "venue_name": "銀座レカン",
+          "available": "通年メニュー（コース内要確認）",
+          "price_range": "¥20,000〜40,000",
+          "source_url": "https://www.lecringinza.co.jp/",
+          "google_maps_url": "https://maps.app.goo.gl/wY3vX6n891mDk6E8A",
+          "travel_minutes": 0,
+          "scene_evidence": "第1話で、お偉方が「本物のフォアグラだ」と絶賛したのに対し、山岡士郎が「本物のフォアグラの味を知らない」と一蹴し、後に独自の調理法（鮟鱇の肝を用いた料理）で鼻を明かすきっかけとなったフレンチの高級メニューのベース。"
+        }
+      ]
+    },
+    {
+      "title": "美味しんぼ",
+      "title_en": "Oishinbo",
+      "category": "anime",
+      "broadcaster": "フジテレビ",
+      "release_year": 1989,
+      "scene_number": "14",
+      "spot_name": "築地場外市場（旧・築地市場周辺）",
+      "spot_name_en": "Tsukiji Outer Market (Former Tsukiji Market Area)",
+      "prefecture": "tokyo",
+      "city": "chuo",
+      "latitude": 35.665421,
+      "longitude": 139.770512,
+      "description_ja": "第14話「横づけの味」をはじめ、作中で山岡士郎や栗田ゆう子が「究極のメニュー」にふさわしい、最高の鮮度を誇る魚介類や食材を買い出し・目利きするために何度も訪れる魚市場。海原雄山と鉢合わせるなど、食の戦いの前哨戦が繰り広げられる定番の背景ロケ地。",
+      "description_en": "Featured frequently starting from Episode 14, this is the historic fish market area where Shiro Yamaoka and Yuko Kurita visit to source and inspect the highest quality seafood for the 'Ultimate Menu.' It serves as a recurrent backdrop for culinary exploration and tense encounters with Yuzan Kaibara.",
+      "visit_tips_ja": "都営大江戸線「築地市場駅」または東京メトロ日比谷線「築地駅」下車すぐ。卸売市場（場内）は豊洲へ移転しましたが、一般向けの「場外市場」は現在も営業中。午前中の早い時間帯（8:00〜11:00頃）の散策が最も活気がありおすすめ。",
+      "scene_timestamp": "05:12",
+      "confidence_score": 0.9,
+      "source_type": "official",
+      "source_url": "https://www.tsukiji.or.jp/",
+      "source_evidence": "劇中で「築地市場」の正門やターレットトラック、魚の競り場の風景がそのまま当時の実物通りに描写されており、登場人物たちのセリフ内でも「築地」と明言されているため。",
+      "nearby_foods": [
+        {
+          "dish_name": "江戸前 握り寿司 / マグロ刺身",
+          "venue_name": "つきぢ神楽寿司 本店",
+          "available": "通年メニュー",
+          "price_range": "¥3,000〜6,000",
+          "source_url": "https://tabelog.com/tokyo/A1313/A131301/13044155/",
+          "google_maps_url": "https://maps.app.goo.gl/TWhd2u3x7eayNpxFA",
+          "travel_minutes": 2,
+          "scene_evidence": "第14話等で、山岡が職人の包丁の入れ方や魚の熟成、シャリの温度（砂糖の使い方）について熱弁を振るう江戸前寿司のリアリティを、伝統的な赤酢を使ったシャリで体現し続けている場外市場の名店。"
+        }
+      ]
+    }
+  ]
+}
