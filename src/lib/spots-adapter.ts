@@ -31,6 +31,7 @@ type PublicSpotRow = {
   og_image_url: string | null;
   youtube_url: string | null;
   youtube_channel_name: string | null;
+  is_featured: boolean | null;
 };
 
 type PublicFoodRow = {
@@ -92,7 +93,8 @@ function toSpot(row: PublicSpotRow): Spot {
     status: row.status,
     ogImageUrl: row.og_image_url || undefined,
     youtubeUrl: row.youtube_url || undefined,
-    youtubeChannelName: row.youtube_channel_name || undefined
+    youtubeChannelName: row.youtube_channel_name || undefined,
+    isFeatured: Boolean(row.is_featured)
   };
 }
 

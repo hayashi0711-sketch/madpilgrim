@@ -46,4 +46,5 @@ export type Spot = {
   ogImageUrl?: string;
   youtubeUrl?: string;
   youtubeChannelName?: string;
+  isFeatured?: boolean;
 };

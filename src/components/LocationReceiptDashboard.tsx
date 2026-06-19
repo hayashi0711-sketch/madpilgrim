@@ -404,7 +404,15 @@ export function LocationReceiptDashboard({
                 {primaryFood ? (
                   <dl>
                     <div><dt>DISH</dt><dd><strong>{primaryFood.name}</strong></dd></div>
-                    <div><dt>VENUE</dt><dd><span><strong>{primaryFood.name}</strong><small>{primaryFood.address}</small></span><span>›</span></dd></div>
+                    <div>
+                      <dt>VENUE</dt>
+                      <dd>
+                        <a className="receipt-venue-link" href={primaryFood.googleMapsUrl} rel="noreferrer" target="_blank">
+                          <span><strong>{primaryFood.name}</strong><small>{primaryFood.address}</small></span>
+                          <span>›</span>
+                        </a>
+                      </dd>
+                    </div>
                     <div><dt>AVAILABLE</dt><dd><strong className="available">AVAILABLE NOW</strong></dd></div>
                     <div><dt>PRICE RANGE</dt><dd>{`¥${primaryFood.priceLevel * 500}〜¥${primaryFood.priceLevel * 1000 + 300}`}</dd></div>
                     <div><dt>TRAVEL TIME</dt><dd><strong className="walk">🚶 徒歩 {String(selectedFoods[0] ? 5 : 6).padStart(2, "0")} MIN</strong></dd></div>

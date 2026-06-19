@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { landingUi } from "@/lib/i18n";
+import type { LandingCopy } from "@/lib/site-copy";
 import type { Locale, NearbyFood, Spot, SpotCategory } from "@/types/mad-pilgrim";
 
 const fallbackImages: Record<SpotCategory, string> = {
@@ -51,6 +51,9 @@ function BrandMark() {
 }
 
 function pickHighlights(spots: Spot[]): Spot[] {
+  const featured = spots.filter((spot) => spot.isFeatured);
+  if (featured.length) return featured.slice(0, 3);
+
   const picked: Spot[] = [];
   const usedCategories = new Set<SpotCategory>();
 
@@ -71,15 +74,16 @@ function pickHighlights(spots: Spot[]): Spot[] {
 }
 
 export function LandingPage({
+  copy,
   locale,
   spots,
   foodsBySlug
 }: {
+  copy: LandingCopy;
   locale: Locale;
   spots: Spot[];
   foodsBySlug: Record<string, NearbyFood[]>;
 }) {
-  const copy = landingUi[locale];
   const highlights = pickHighlights(spots);
   const heroSpot = highlights[0] || spots[0];
   const workCount = new Set(spots.map((spot) => `${spot.title.ja}::${spot.title.en}`)).size;
@@ -142,16 +146,6 @@ export function LandingPage({
                 decoding="async"
                 fetchPriority="high"
               />
-              <div className="landing-frame-code">
-                <span>LOCATION 001</span>
-                <span>{categoryCodes[heroSpot.category]}</span>
-              </div>
-              <div className="landing-hero-caption">
-                <small>{copy.featuredScene}</small>
-                <strong>{heroSpot.title[locale]}</strong>
-                <span>{heroSpot.spotName[locale]}</span>
-                <b>{Math.round(heroSpot.confidenceScore * 100)}% {copy.match}</b>
-              </div>
               <span className="landing-vertical-type">TRAVEL THROUGH THE SCENE</span>
             </div>
           ) : null}

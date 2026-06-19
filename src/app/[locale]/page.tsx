@@ -1,15 +1,16 @@
 import type { Metadata } from "next";
 import { LandingPage } from "@/components/LandingPage";
 import { LocationReceiptDashboard } from "@/components/LocationReceiptDashboard";
-import { getLocale, landingUi } from "@/lib/i18n";
+import { getLocale } from "@/lib/i18n";
 import { listNearbyFoodsForSpots, listSpots } from "@/lib/spots-adapter";
+import { getSiteCopy } from "@/lib/site-copy";
 
 type Props = { params: Promise<{ locale: string }> };
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { locale: localeParam } = await params;
   const locale = getLocale(localeParam);
-  const copy = landingUi[locale];
+  const copy = await getSiteCopy(locale);
   const title = locale === "ja"
     ? "MAD Pilgrim | 映像ロケ地と作品につながる食体験"
     : "MAD Pilgrim | Filming Locations & Screen-to-Table";
@@ -39,10 +40,11 @@ export default async function HomePage({ params }: Props) {
   const locale = getLocale(localeParam);
   const spots = await listSpots();
   const foodsBySlug = await listNearbyFoodsForSpots(spots.map((s) => s.slug));
+  const copy = await getSiteCopy(locale);
 
   return (
     <>
-      <LandingPage foodsBySlug={foodsBySlug} locale={locale} spots={spots} />
+      <LandingPage copy={copy} foodsBySlug={foodsBySlug} locale={locale} spots={spots} />
       <div id="discover" className="landing-dashboard-anchor">
         <LocationReceiptDashboard foodsBySlug={foodsBySlug} locale={locale} spots={spots} />
       </div>
