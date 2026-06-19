@@ -201,6 +201,8 @@ a {
   margin: clamp(34px, 6vw, 76px) 0 28px;
   font: 400 clamp(50px, 7.2vw, 112px)/.87 var(--font-heading);
   letter-spacing: -.065em;
+  word-break: keep-all;
+  overflow-wrap: normal;
 }
 
 .landing-hero h1 em {
@@ -820,6 +822,21 @@ a {
 .receipt-blackbar strong { font-size: 19px; letter-spacing: .03em; }
 .receipt-blackbar em { color: var(--color-signal); font-style: normal; }
 .receipt-blackbar span, .receipt-blackbar small { font-size: 12px; }
+.receipt-map-toggle { display: flex; gap: 6px; }
+.receipt-map-toggle button {
+  background: none;
+  border: 1px solid rgba(255, 255, 255, .35);
+  border-radius: 3px;
+  color: rgba(255, 255, 255, .75);
+  cursor: pointer;
+  font: 12px monospace;
+  padding: 4px 8px;
+}
+.receipt-map-toggle button.is-active {
+  background: var(--color-signal);
+  border-color: var(--color-signal);
+  color: var(--color-navy);
+}
 .receipt-tabs { height: 48px; display: flex; align-items: center; gap: 28px; padding: 0 18px; background: var(--color-navy); border-top: 1px dotted #777; color: white; }
 .receipt-tabs button { background: none; border: 0; padding: 6px 2px; color: inherit; font-size: 16px; font-weight: 700; cursor: pointer; }
 .receipt-tabs button.is-active { color: var(--color-signal); text-decoration: underline; text-underline-offset: 6px; }
@@ -862,6 +879,7 @@ a {
 .receipt-map { display: flex; flex-direction: column; min-height: 0; }
 .receipt-map-canvas { flex: 1; min-height: 0; background: #e8e8e4; position: relative; overflow: hidden; }
 .receipt-map-fallback { height: 100%; background: #f4f4f1; }
+.receipt-map-static { width: 100%; height: 100%; object-fit: cover; display: block; }
 .receipt-map-fallback svg { width: 100%; height: 100%; display: block; }
 .map-road { fill: none; stroke: #c7c8c5; stroke-width: 5; }
 .map-road.major { stroke: #b9bbb8; stroke-width: 8; }

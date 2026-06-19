@@ -40,6 +40,7 @@ export function LocationReceiptDashboard({
   const [category, setCategory] = useState<"all" | Spot["category"]>("all");
   const [selectedIndex, setSelectedIndex] = useState(Math.min(2, Math.max(0, spots.length - 1)));
   const [activeView, setActiveView] = useState<DashboardView>("works");
+  const [mapStyle, setMapStyle] = useState<"map" | "satellite">("map");
   const visibleSpots = useMemo(
     () => category === "all" ? spots : spots.filter((spot) => spot.category === category),
     [category, spots]
@@ -71,7 +72,7 @@ export function LocationReceiptDashboard({
       visibleSpots.forEach((spot) => bounds.extend([spot.lng, spot.lat]));
       const map = new mapbox.default.Map({
         container: mapNode.current,
-        style: "mapbox://styles/mapbox/light-v11",
+        style: mapStyle === "satellite" ? "mapbox://styles/mapbox/satellite-streets-v12" : "mapbox://styles/mapbox/light-v11",
         bounds,
         fitBoundsOptions: { padding: 72 },
         attributionControl: true
@@ -98,7 +99,7 @@ export function LocationReceiptDashboard({
       mapInstance.current?.remove();
       mapInstance.current = null;
     };
-  }, [locale, visibleSpots]);
+  }, [locale, visibleSpots, mapStyle]);
 
   useEffect(() => {
     markers.current.forEach((marker, index) => {
@@ -268,7 +269,31 @@ export function LocationReceiptDashboard({
         >
           <div className="receipt-blackbar">
             <strong>{locale === "ja" ? "撮影場所" : "FILMING LOCATION"} <small>LIVE MAP</small></strong>
-            <span>▣&nbsp; 地図&nbsp;&nbsp;&nbsp; 航空写真&nbsp;&nbsp;&nbsp; ⛶</span>
+            <span className="receipt-map-toggle">
+              <button
+                aria-pressed={mapStyle === "map"}
+                className={mapStyle === "map" ? "is-active" : ""}
+                onClick={() => setMapStyle("map")}
+                type="button"
+              >
+                ▣ {locale === "ja" ? "地図" : "MAP"}
+              </button>
+              <button
+                aria-pressed={mapStyle === "satellite"}
+                className={mapStyle === "satellite" ? "is-active" : ""}
+                onClick={() => setMapStyle("satellite")}
+                type="button"
+              >
+                {locale === "ja" ? "航空写真" : "SATELLITE"}
+              </button>
+              <button
+                aria-label={locale === "ja" ? "全画面表示" : "Fullscreen"}
+                onClick={() => mapNode.current?.requestFullscreen()}
+                type="button"
+              >
+                ⛶
+              </button>
+            </span>
           </div>
           <div className="receipt-map-canvas" ref={mapNode}>
             {!hasMapboxToken ? (

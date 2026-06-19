@@ -111,7 +111,8 @@ function toFood(row: PublicFoodRow): NearbyFood {
       ja: row.description_ja || "",
       en: row.description_en || row.description_ja || ""
     },
-    googleMapsUrl: row.google_maps_url || "https://maps.google.com"
+    googleMapsUrl: row.google_maps_url
+      || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${row.name} ${row.address || ""}`.trim())}`
   };
 }
 

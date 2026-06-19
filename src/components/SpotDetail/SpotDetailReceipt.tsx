@@ -26,6 +26,13 @@ function InfoRow({
   );
 }
 
+function mapboxStaticImage(lng: number, lat: number): string | null {
+  const token = process.env.NEXT_PUBLIC_MAPBOX_TOKEN;
+  if (!token || !lng || !lat) return null;
+  const marker = `pin-l+c2a14d(${lng},${lat})`;
+  return `https://api.mapbox.com/styles/v1/mapbox/light-v11/static/${marker}/${lng},${lat},15,0/780x790@2x?access_token=${token}`;
+}
+
 function TextSection({ label, children }: { label: string; children: ReactNode }) {
   return (
     <section className="spot-detail-text-section">
@@ -169,6 +176,15 @@ export function SpotMapPanel({
         <span>{spot.lat.toFixed(4)}, {spot.lng.toFixed(4)}</span>
       </div>
       <div className="receipt-map-canvas">
+        {mapboxStaticImage(spot.lng, spot.lat) ? (
+          <img
+            alt={spot.spotName[locale]}
+            className="receipt-map-static"
+            height="790"
+            src={mapboxStaticImage(spot.lng, spot.lat)!}
+            width="780"
+          />
+        ) : (
         <div className="receipt-map-fallback" aria-label="Location map">
           <svg viewBox="0 0 520 790" role="img" aria-label={spot.spotName[locale]}>
             <defs>
@@ -195,6 +211,7 @@ export function SpotMapPanel({
             </g>
           </svg>
         </div>
+        )}
       </div>
     </section>
   );
