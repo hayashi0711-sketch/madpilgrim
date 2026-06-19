@@ -2,7 +2,12 @@ import Link from "next/link";
 import { toggleFeaturedAction } from "@/app/admin/actions";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 
-export default async function AdminSpotsPage() {
+export default async function AdminSpotsPage({
+  searchParams
+}: {
+  searchParams: Promise<{ error?: string; saved?: string }>;
+}) {
+  const { error: actionError, saved } = await searchParams;
   const supabase = getSupabaseAdminClient();
   const { data: spots, error } = supabase
     ? await supabase
@@ -19,6 +24,17 @@ export default async function AdminSpotsPage() {
           + 新規追加
         </Link>
       </div>
+
+      {actionError ? (
+        <p className="mt-4 rounded-md border border-red-200 bg-red-50 px-3 py-2 text-sm text-red-700">
+          保存に失敗しました: {actionError}
+        </p>
+      ) : null}
+      {saved ? (
+        <p className="mt-4 rounded-md border border-green-200 bg-green-50 px-3 py-2 text-sm text-green-700">
+          保存しました。
+        </p>
+      ) : null}
 
       {error ? (
         <p className="mt-4 text-sm text-red-600">

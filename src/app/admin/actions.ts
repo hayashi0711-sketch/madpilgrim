@@ -36,7 +36,9 @@ export async function logoutAction() {
 export async function updateCopyAction(formData: FormData) {
   const locale = String(formData.get("locale") || "ja");
   const supabase = getSupabaseAdminClient();
-  if (!supabase) throw new Error("Supabase admin client is not configured");
+  if (!supabase) {
+    redirect(`/admin/copy?locale=${locale}&error=${encodeURIComponent("Supabase admin client is not configured")}`);
+  }
 
   const entries = editableCopyKeys.map((key) => ({ key, value: formData.get(`copy:${key}`) }));
   const toUpsert = entries
@@ -47,28 +49,30 @@ export async function updateCopyAction(formData: FormData) {
 
   if (toUpsert.length) {
     const { error } = await supabase.from("site_copy").upsert(toUpsert, { onConflict: "locale,key" });
-    if (error) throw new Error(error.message);
+    if (error) redirect(`/admin/copy?locale=${locale}&error=${encodeURIComponent(error.message)}`);
   }
   if (toClear.length) {
     const { error } = await supabase.from("site_copy").delete().eq("locale", locale).in("key", toClear);
-    if (error) throw new Error(error.message);
+    if (error) redirect(`/admin/copy?locale=${locale}&error=${encodeURIComponent(error.message)}`);
   }
 
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/copy");
+  redirect(`/admin/copy?locale=${locale}&saved=1`);
 }
 
 export async function toggleFeaturedAction(formData: FormData) {
   const id = String(formData.get("id") || "");
   const isFeatured = formData.get("isFeatured") === "on";
   const supabase = getSupabaseAdminClient();
-  if (!supabase) throw new Error("Supabase admin client is not configured");
+  if (!supabase) redirect(`/admin/spots?error=${encodeURIComponent("Supabase admin client is not configured")}`);
 
   const { error } = await supabase.from("spots").update({ is_featured: isFeatured }).eq("id", id);
-  if (error) throw new Error(error.message);
+  if (error) redirect(`/admin/spots?error=${encodeURIComponent(error.message)}`);
 
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
+  redirect("/admin/spots?saved=1");
 }
 
 function readSpotFields(formData: FormData) {
@@ -113,14 +117,14 @@ function readSpotFields(formData: FormData) {
 
 export async function createSpotAction(formData: FormData) {
   const supabase = getSupabaseAdminClient();
-  if (!supabase) throw new Error("Supabase admin client is not configured");
+  if (!supabase) redirect(`/admin/spots/new?error=${encodeURIComponent("Supabase admin client is not configured")}`);
 
   const fields = readSpotFields(formData);
   if (!fields.slug || !fields.title || !fields.category || !fields.spot_name) {
-    throw new Error("slug / title / category / spot_name は必須です");
+    redirect(`/admin/spots/new?error=${encodeURIComponent("slug / title / category / spot_name は必須です")}`);
   }
   if (fields.latitude === null || fields.longitude === null) {
-    throw new Error("緯度・経度は必須です");
+    redirect(`/admin/spots/new?error=${encodeURIComponent("緯度・経度は必須です")}`);
   }
 
   const { error } = await supabase.rpc("upsert_spot_candidate", {
@@ -140,7 +144,7 @@ export async function createSpotAction(formData: FormData) {
     p_prefecture: fields.prefecture,
     p_city: fields.city
   });
-  if (error) throw new Error(error.message);
+  if (error) redirect(`/admin/spots/new?error=${encodeURIComponent(error.message)}`);
 
   // Fields not covered by upsert_spot_candidate are set directly with a follow-up update.
   const { error: updateError } = await supabase
@@ -158,7 +162,7 @@ export async function createSpotAction(formData: FormData) {
       is_featured: fields.is_featured
     })
     .eq("slug", fields.slug);
-  if (updateError) throw new Error(updateError.message);
+  if (updateError) redirect(`/admin/spots/new?error=${encodeURIComponent(updateError.message)}`);
 
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
@@ -167,10 +171,9 @@ export async function createSpotAction(formData: FormData) {
 
 export async function updateSpotAction(formData: FormData) {
   const supabase = getSupabaseAdminClient();
-  if (!supabase) throw new Error("Supabase admin client is not configured");
-
   const id = String(formData.get("id") || "");
-  if (!id) throw new Error("id is required");
+  if (!supabase) redirect(`/admin/spots/${id}?error=${encodeURIComponent("Supabase admin client is not configured")}`);
+  if (!id) redirect("/admin/spots");
 
   const fields = readSpotFields(formData);
 
@@ -180,7 +183,7 @@ export async function updateSpotAction(formData: FormData) {
       p_lat: fields.latitude,
       p_lng: fields.longitude
     });
-    if (geomError) throw new Error(geomError.message);
+    if (geomError) redirect(`/admin/spots/${id}?error=${encodeURIComponent(geomError.message)}`);
   }
 
   const { error } = await supabase
@@ -207,7 +210,7 @@ export async function updateSpotAction(formData: FormData) {
       is_featured: fields.is_featured
     })
     .eq("id", id);
-  if (error) throw new Error(error.message);
+  if (error) redirect(`/admin/spots/${id}?error=${encodeURIComponent(error.message)}`);
 
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
