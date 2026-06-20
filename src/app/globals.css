@@ -145,12 +145,12 @@ a {
 }
 
 .landing-nav nav a {
-  flex: 0 0 auto;
-  min-width: 70px;
+  flex: 0 0 100px;
+  width: 100px;
   display: grid;
   place-items: center;
-  padding: 0 11px;
-  border-left: 3px solid var(--landing-signal);
+  padding: 0 8px;
+  border-left: 1px solid rgba(255, 255, 255, .2);
   font: 700 14px/1.2 "Courier New", monospace;
   text-align: center;
   text-transform: uppercase;
