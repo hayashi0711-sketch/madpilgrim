@@ -7,6 +7,16 @@ import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { editableCopyKeys } from "@/lib/site-copy";
 
 const ADMIN_COOKIE = "mp_admin_session";
+const SPOT_CATEGORIES = new Set(["anime", "drama", "movie", "mv", "cm", "manga"]);
+const SPOT_STATUSES = new Set(["approved", "ai_suggested", "hidden", "unverified"]);
+const FOOD_IMAGE_TYPES = new Set(["washoku", "yoshoku", "chuka", "sweets", "gourmet", "location"]);
+
+function adminSpotsUrl(formData: FormData, params: Record<string, string>) {
+  const category = String(formData.get("returnCategory") || "");
+  const searchParams = new URLSearchParams(params);
+  if (SPOT_CATEGORIES.has(category)) searchParams.set("category", category);
+  return `/admin/spots?${searchParams.toString()}`;
+}
 
 export async function loginAction(formData: FormData) {
   const password = String(formData.get("password") || "");
@@ -75,6 +85,61 @@ export async function toggleFeaturedAction(formData: FormData) {
   redirect("/admin/spots?saved=1");
 }
 
+export async function updateSpotListFieldsAction(formData: FormData) {
+  const id = String(formData.get("id") || "");
+  const category = String(formData.get("category") || "");
+  const status = String(formData.get("status") || "");
+  const text = (key: string) => {
+    const value = formData.get(key);
+    return typeof value === "string" && value.trim() ? value.trim() : null;
+  };
+
+  if (!id || !SPOT_CATEGORIES.has(category) || !SPOT_STATUSES.has(status)) {
+    redirect(adminSpotsUrl(formData, { error: "入力内容が正しくありません" }));
+  }
+
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(adminSpotsUrl(formData, { error: "Supabase admin client is not configured" }));
+  }
+
+  const { error } = await supabase
+    .from("spots")
+    .update({
+      status,
+      is_featured: formData.get("is_featured") === "on",
+      category,
+      broadcaster: text("broadcaster"),
+      youtube_url: text("youtube_url"),
+      youtube_channel_name: text("youtube_channel_name")
+    })
+    .eq("id", id);
+
+  if (error) redirect(adminSpotsUrl(formData, { error: error.message }));
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/spots");
+  redirect(adminSpotsUrl(formData, { saved: "1" }));
+}
+
+export async function deleteSpotAction(formData: FormData) {
+  const id = String(formData.get("id") || "");
+  if (!id) redirect(adminSpotsUrl(formData, { error: "削除対象が指定されていません" }));
+
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(adminSpotsUrl(formData, { error: "Supabase admin client is not configured" }));
+  }
+
+  // nearby_foods.spot_id uses ON DELETE CASCADE.
+  const { error } = await supabase.from("spots").delete().eq("id", id);
+  if (error) redirect(adminSpotsUrl(formData, { error: error.message }));
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/spots");
+  redirect(adminSpotsUrl(formData, { deleted: "1" }));
+}
+
 function readSpotFields(formData: FormData) {
   const num = (key: string) => {
     const raw = formData.get(key);
@@ -108,6 +173,7 @@ function readSpotFields(formData: FormData) {
     release_year: num("release_year"),
     youtube_url: text("youtube_url"),
     youtube_channel_name: text("youtube_channel_name"),
+    food_image_type: FOOD_IMAGE_TYPES.has(text("food_image_type") || "") ? text("food_image_type") : null,
     status: text("status") || "approved",
     source_type: text("source_type") || "official",
     confidence_score: num("confidence_score") ?? 0.9,
@@ -159,6 +225,7 @@ export async function createSpotAction(formData: FormData) {
       release_year: fields.release_year,
       youtube_url: fields.youtube_url,
       youtube_channel_name: fields.youtube_channel_name,
+      food_image_type: fields.food_image_type,
       is_featured: fields.is_featured
     })
     .eq("slug", fields.slug);
@@ -206,6 +273,7 @@ export async function updateSpotAction(formData: FormData) {
       release_year: fields.release_year,
       youtube_url: fields.youtube_url,
       youtube_channel_name: fields.youtube_channel_name,
+      food_image_type: fields.food_image_type,
       status: fields.status,
       is_featured: fields.is_featured
     })

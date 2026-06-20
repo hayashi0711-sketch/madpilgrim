@@ -34,10 +34,10 @@ function spotImage(spot: Spot): string {
   return fallbackImages[spot.category] || mapboxStaticImage(spot) || HERO_IMAGE;
 }
 
-function BrandMark() {
+export function BrandMark({ className = "landing-brand-mark" }: { className?: string }) {
   return (
     <svg
-      className="landing-brand-mark"
+      className={className}
       viewBox="0 0 48 48"
       aria-hidden="true"
       focusable="false"
@@ -94,7 +94,7 @@ export function LandingPage({
     <div className="landing-shell">
       <header className="landing-nav">
         <Link className="landing-wordmark" href={`/${locale}`} aria-label="MAD Pilgrim home">
-          <BrandMark />
+          <BrandMark className="landing-brand-mark" />
           <span className="landing-brand-name">
             <strong>MAD</strong>
             <span>Pilgrim</span>

@@ -1,5 +1,7 @@
 "use client";
 
+import Image from "next/image";
+
 type SpotFormInitial = {
   slug?: string;
   title?: string;
@@ -23,6 +25,7 @@ type SpotFormInitial = {
   youtube_channel_name?: string | null;
   status?: string;
   is_featured?: boolean | null;
+  food_image_type?: string | null;
 };
 
 const categories = [
@@ -37,7 +40,17 @@ const categories = [
 const statuses = [
   { value: "approved", label: "公開（承認済み）" },
   { value: "ai_suggested", label: "確認待ち" },
-  { value: "hidden", label: "非公開" }
+  { value: "hidden", label: "非公開" },
+  { value: "unverified", label: "未検証" }
+];
+
+const foodImageTypes = [
+  { value: "washoku", label: "和食" },
+  { value: "yoshoku", label: "洋食" },
+  { value: "chuka", label: "中華" },
+  { value: "sweets", label: "スイーツ" },
+  { value: "gourmet", label: "グルメ全般" },
+  { value: "location", label: "撮影場所" }
 ];
 
 function Field({
@@ -82,6 +95,31 @@ export function SpotForm({
           </select>
         </Field>
       </div>
+
+      <fieldset>
+        <legend className="text-sm font-semibold">「作品に出た味」のイメージ写真</legend>
+        <div className="mt-2 grid grid-cols-2 gap-3 sm:grid-cols-3 lg:grid-cols-6">
+          {foodImageTypes.map((item) => (
+            <label className="cursor-pointer rounded-md border border-black/15 p-2 text-sm has-[:checked]:border-black has-[:checked]:ring-1 has-[:checked]:ring-black" key={item.value}>
+              <Image
+                alt={item.label}
+                className="aspect-[4/3] w-full rounded object-cover"
+                height={120}
+                src={`/images/food-types/${item.value}.jpg`}
+                width={160}
+              />
+              <span className="mt-2 flex items-center gap-2">
+                <input defaultChecked={initial?.food_image_type === item.value} name="food_image_type" type="radio" value={item.value} />
+                {item.label}
+              </span>
+            </label>
+          ))}
+        </div>
+        <label className="mt-2 flex items-center gap-2 text-sm text-zinc-600">
+          <input defaultChecked={!initial?.food_image_type} name="food_image_type" type="radio" value="" />
+          未選択（既定画像を使用）
+        </label>
+      </fieldset>
 
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label="作品名（日本語）">

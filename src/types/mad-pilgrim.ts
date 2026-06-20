@@ -4,6 +4,8 @@ export type SpotCategory = "anime" | "mv" | "drama" | "movie" | "cm" | "manga";
 
 export type SpotStatus = "unverified" | "ai_suggested" | "approved" | "hidden";
 
+export type FoodImageType = "washoku" | "yoshoku" | "chuka" | "sweets" | "gourmet" | "location";
+
 export type LocalizedText = {
   ja: string;
   en: string;
@@ -47,4 +49,5 @@ export type Spot = {
   youtubeUrl?: string;
   youtubeChannelName?: string;
   isFeatured?: boolean;
+  foodImageType?: FoodImageType;
 };

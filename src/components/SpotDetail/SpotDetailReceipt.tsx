@@ -1,5 +1,6 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
+import { BrandMark } from "@/components/LandingPage";
 import { TrustIndicator } from "@/components/TrustIndicator";
 import { toYoutubeEmbedUrl } from "@/lib/youtube";
 import type { Locale, NearbyFood, Spot, SpotCategory } from "@/types/mad-pilgrim";
@@ -55,7 +56,8 @@ export function SpotReceiptHeader({
   return (
     <header className="receipt-header spot-detail-header">
       <Link className="receipt-brand spot-detail-brand" href={`/${locale}`}>
-        MAD <span>Pilgrim</span>
+        <BrandMark className="receipt-brand-mark" />
+        <span className="receipt-brand-text">MAD <span>Pilgrim</span></span>
       </Link>
       <div className="receipt-subbrand">
         <strong>SCENE RECEIPT</strong>
@@ -230,6 +232,10 @@ export function SpotFoodPanel({
   slug: string;
   spot: Spot;
 }) {
+  const foodImageUrl = spot.foodImageType
+    ? `/images/food-types/${spot.foodImageType}.jpg`
+    : "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=88";
+
   return (
     <aside className="receipt-food spot-detail-food">
       <div className="receipt-blackbar">
@@ -245,7 +251,7 @@ export function SpotFoodPanel({
             <img
               alt={food.name}
               height="245"
-              src="https://images.unsplash.com/photo-1569718212165-3a8278d5f624?auto=format&fit=crop&w=1200&q=88"
+              src={foodImageUrl}
               width="640"
             />
             <span>AVAILABLE NOW</span>

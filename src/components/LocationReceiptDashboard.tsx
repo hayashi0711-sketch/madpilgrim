@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
+import { BrandMark } from "@/components/LandingPage";
 import { TrustIndicator } from "@/components/TrustIndicator";
 import type { Locale, NearbyFood, Spot } from "@/types/mad-pilgrim";
 
@@ -124,7 +125,10 @@ export function LocationReceiptDashboard({
   return (
     <section className="receipt-shell" aria-label={locale === "ja" ? "ロケ地探索ダッシュボード" : "Location explorer dashboard"}>
       <header className="receipt-header">
-        <div className="receipt-brand">MAD <span>Pilgrim</span></div>
+        <div className="receipt-brand">
+          <BrandMark className="receipt-brand-mark" />
+          <span className="receipt-brand-text">MAD <span>Pilgrim</span></span>
+        </div>
         <div className="receipt-subbrand">
           <strong>LOCATION RECEIPT</strong>
           <span>{locale === "ja" ? "映像ロケ地ツーリズム" : "SCREEN TOURISM"}</span>
@@ -231,20 +235,21 @@ export function LocationReceiptDashboard({
                 type="button"
               >
                 <span className="receipt-number">{String(index + 1).padStart(3, "0")}<small>{categoryCode[spot.category]}</small></span>
-                <img alt={`${spot.title[locale]} — ${spot.spotName[locale]}`} height="102" src={mapboxStatic(spot.lng, spot.lat, 92, 102, 13) ?? FALLBACK_CARD} width="92" />
                 <span className="receipt-scene-copy">
-                  <strong>{spot.title[locale]}</strong>
-                  <b>{spot.releaseYear}{spot.broadcaster ? ` / ${spot.broadcaster}` : ""}</b>
-                  <span>
-                    SCENE&nbsp;&nbsp;
-                    {spot.sceneNumber ? `#${/^\d+$/.test(spot.sceneNumber) ? spot.sceneNumber.padStart(2, "0") : spot.sceneNumber}` : `#${String(index + 1).padStart(2, "0")}`}
-                    &nbsp;&nbsp;{spot.sceneTimestamp[locale] || "21:03"}
+                  <span className="receipt-scene-heading">
+                    <strong>{spot.title[locale]}</strong>
                     {selectedIndex === index ? <mark className="receipt-selected-badge">SELECTED</mark> : null}
                   </span>
-                  <span>PLACE&nbsp;&nbsp; {spot.spotName[locale]}</span>
+                  <b className={spot.category === "mv" ? "receipt-scene-artist" : undefined}>
+                    {spot.releaseYear}{spot.broadcaster ? ` / ${spot.broadcaster}` : ""}
+                  </b>
                   <i title={spot.status === "approved" ? "出典確認と人による承認が完了" : "AI候補として人による確認待ち"}>
                     {spot.status === "approved" ? "検証済み" : "AI REVIEW"}
                   </i>
+                </span>
+                <span className="receipt-scene-place">
+                  <small>PLACE</small>
+                  <strong>{spot.spotName[locale]}</strong>
                 </span>
                 <span className="receipt-rate">{Math.round(spot.confidenceScore * 100)}%</span>
               </button>

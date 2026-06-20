@@ -1,6 +1,6 @@
 import { getNearbyFoods, getSpot, spots } from "@/data/sample-spots";
 import { getSupabaseClient } from "@/lib/supabase";
-import type { NearbyFood, Spot, SpotCategory, SpotStatus } from "@/types/mad-pilgrim";
+import type { FoodImageType, NearbyFood, Spot, SpotCategory, SpotStatus } from "@/types/mad-pilgrim";
 
 type PublicSpotRow = {
   id: string;
@@ -32,6 +32,7 @@ type PublicSpotRow = {
   youtube_url: string | null;
   youtube_channel_name: string | null;
   is_featured: boolean | null;
+  food_image_type: FoodImageType | null;
 };
 
 type PublicFoodRow = {
@@ -94,7 +95,8 @@ function toSpot(row: PublicSpotRow): Spot {
     ogImageUrl: row.og_image_url || undefined,
     youtubeUrl: row.youtube_url || undefined,
     youtubeChannelName: row.youtube_channel_name || undefined,
-    isFeatured: Boolean(row.is_featured)
+    isFeatured: Boolean(row.is_featured),
+    foodImageType: row.food_image_type || undefined
   };
 }
 
