@@ -23,6 +23,7 @@ export type NearbyFood = {
   tags: string[];
   description: LocalizedText;
   googleMapsUrl: string;
+  websiteUrl?: string;
 };
 
 export type Spot = {

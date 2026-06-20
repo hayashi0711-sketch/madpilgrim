@@ -26,14 +26,26 @@ export function FoodCard({ food, locale }: { food: NearbyFood; locale: Locale })
           </span>
         ))}
       </div>
-      <a
-        className="mt-4 inline-flex min-h-10 items-center rounded-md border border-black/15 px-4 py-2.5 text-sm font-semibold hover:border-shrine hover:text-shrine"
-        href={food.googleMapsUrl}
-        rel="noreferrer"
-        target="_blank"
-      >
-        {ui[locale].openMap}
-      </a>
+      <div className="mt-4 flex flex-wrap gap-2">
+        <a
+          className="inline-flex min-h-10 items-center rounded-md border border-black/15 px-4 py-2.5 text-sm font-semibold hover:border-shrine hover:text-shrine"
+          href={food.googleMapsUrl}
+          rel="noreferrer"
+          target="_blank"
+        >
+          {ui[locale].openMap}
+        </a>
+        {food.websiteUrl ? (
+          <a
+            className="inline-flex min-h-10 items-center rounded-md border border-black/15 px-4 py-2.5 text-sm font-semibold hover:border-shrine hover:text-shrine"
+            href={food.websiteUrl}
+            rel="noreferrer"
+            target="_blank"
+          >
+            {locale === "ja" ? "お店のホームページ" : "Restaurant website"}
+          </a>
+        ) : null}
+      </div>
     </article>
   );
 }

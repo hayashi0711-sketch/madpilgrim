@@ -547,6 +547,18 @@ a {
   color: white;
 }
 
+.landing-story-image .landing-story-category-icon {
+  position: absolute;
+  z-index: 1;
+  top: 10px;
+  right: 10px;
+  height: 28px;
+  width: auto;
+  max-width: none;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
+}
+
 .landing-story-location {
   left: 10px;
   bottom: 10px;
@@ -857,6 +869,8 @@ a {
 .receipt-blackbar strong { font-size: 19px; letter-spacing: .03em; }
 .receipt-blackbar em { color: var(--color-signal); font-style: normal; }
 .receipt-blackbar span, .receipt-blackbar small { font-size: 12px; }
+.receipt-blackbar-end { display: flex; align-items: center; gap: 8px; }
+.receipt-blackbar-icon { height: 26px; width: auto; border-radius: 3px; }
 .receipt-map-toggle { display: flex; gap: 6px; }
 .receipt-map-toggle button {
   background: none;
@@ -879,6 +893,8 @@ a {
 .receipt-stats b:first-of-type { color: var(--color-signal); font-size: 18px; }
 .receipt-scene-list { height: calc(100% - 148px); overflow-y: auto; background: var(--color-navy); }
 .receipt-scene { width: 100%; min-height: 110px; display: grid; grid-template-columns: 48px minmax(0, 1fr) 110px 64px; gap: 8px; align-items: center; border: 0; border-bottom: 5px solid var(--color-navy); padding: 10px 8px 10px 42px; background: white; text-align: left; cursor: pointer; color: #111; position: relative; }
+
+.receipt-scene-category-icon { position: absolute; top: 6px; right: 6px; height: 16px; width: auto; border-radius: 2px; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
 .receipt-scene::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 30px; background: radial-gradient(circle, var(--color-navy) 4px, transparent 5px) 0 0/10px 22px; }
 /* カテゴリ別カラー（ファッション誌パレット） — ::before の background を上書き */
 .receipt-scene[data-category="drama"]:not(.is-selected)::before { background: #354B6B; }

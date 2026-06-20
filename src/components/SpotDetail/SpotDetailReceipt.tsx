@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { BrandMark } from "@/components/LandingPage";
 import { TrustIndicator } from "@/components/TrustIndicator";
+import { categoryIconSrc } from "@/lib/category-icons";
 import { toYoutubeEmbedUrl } from "@/lib/youtube";
 import type { Locale, NearbyFood, Spot, SpotCategory } from "@/types/mad-pilgrim";
 
@@ -240,9 +241,14 @@ export function SpotFoodPanel({
     <aside className="receipt-food spot-detail-food">
       <div className="receipt-blackbar">
         <strong>{locale === "ja" ? "作品に出た味" : "FOOD ON SCREEN"}</strong>
-        <Link className="spot-detail-view-all" href={`/${locale}/foods/${slug}`}>
-          {locale === "ja" ? "すべて見る →" : "VIEW ALL →"}
-        </Link>
+        <span className="receipt-blackbar-end">
+          {categoryIconSrc(spot.category) ? (
+            <img alt={spot.category} className="receipt-blackbar-icon" src={categoryIconSrc(spot.category)!} />
+          ) : null}
+          <Link className="spot-detail-view-all" href={`/${locale}/foods/${slug}`}>
+            {locale === "ja" ? "すべて見る →" : "VIEW ALL →"}
+          </Link>
+        </span>
       </div>
       <div className="receipt-food-kicker">SCREEN × FOOD LEDGER</div>
       {food ? (
@@ -267,7 +273,20 @@ export function SpotFoodPanel({
               </div>
             </div>
             <dl>
-              <div><dt>VENUE</dt><dd><span><strong>{food.name}</strong><small>{food.address}</small></span></dd></div>
+              <div>
+                <dt>VENUE</dt>
+                <dd>
+                  <span>
+                    <strong>{food.name}</strong>
+                    <small>{food.address}</small>
+                    {food.websiteUrl ? (
+                      <a href={food.websiteUrl} rel="noreferrer" target="_blank">
+                        {locale === "ja" ? "ホームページ" : "Website"}
+                      </a>
+                    ) : null}
+                  </span>
+                </dd>
+              </div>
               <div><dt>AVAILABLE</dt><dd><strong className="available">AVAILABLE NOW</strong></dd></div>
               <div><dt>RATING</dt><dd><strong>{food.rating.toFixed(1)}</strong></dd></div>
               <div><dt>TAGS</dt><dd>{food.tags.join(" / ")}</dd></div>

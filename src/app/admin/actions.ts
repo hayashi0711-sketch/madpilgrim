@@ -212,6 +212,40 @@ function readSpotFields(formData: FormData) {
   };
 }
 
+function readFoodFields(formData: FormData) {
+  const num = (key: string) => {
+    const raw = formData.get(key);
+    if (typeof raw !== "string" || raw.trim() === "") return null;
+    const value = Number(raw);
+    return Number.isFinite(value) ? value : null;
+  };
+  const text = (key: string) => {
+    const raw = formData.get(key);
+    return typeof raw === "string" && raw.trim() !== "" ? raw.trim() : null;
+  };
+  const tags = String(formData.get("tags") || "")
+    .split(",")
+    .map((tag) => tag.trim())
+    .filter(Boolean);
+
+  return {
+    spot_id: text("spot_id"),
+    name: text("name"),
+    category: text("category"),
+    address: text("address"),
+    latitude: num("latitude"),
+    longitude: num("longitude"),
+    rating: num("rating"),
+    price_level: num("price_level"),
+    description_ja: text("description_ja"),
+    description_en: text("description_en"),
+    tags,
+    google_maps_url: text("google_maps_url"),
+    website_url: text("website_url"),
+    is_sponsored: formData.get("is_sponsored") === "on"
+  };
+}
+
 export async function createSpotAction(formData: FormData) {
   const supabase = getSupabaseAdminClient();
   if (!supabase) redirect(`/admin/spots/new?error=${encodeURIComponent("Supabase admin client is not configured")}`);
@@ -265,6 +299,134 @@ export async function createSpotAction(formData: FormData) {
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
   redirect("/admin/spots");
+}
+
+export async function createFoodAction(formData: FormData) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(`/admin/foods/new?error=${encodeURIComponent("Supabase admin client is not configured")}`);
+  }
+
+  const fields = readFoodFields(formData);
+  if (!fields.spot_id || !fields.name) {
+    redirect(`/admin/foods/new?error=${encodeURIComponent("作品と店舗名は必須です")}`);
+  }
+  if ((fields.latitude === null) !== (fields.longitude === null)) {
+    redirect(`/admin/foods/new?error=${encodeURIComponent("緯度と経度は両方入力してください")}`);
+  }
+  if (
+    (fields.latitude !== null && (fields.latitude < -90 || fields.latitude > 90)) ||
+    (fields.longitude !== null && (fields.longitude < -180 || fields.longitude > 180))
+  ) {
+    redirect(`/admin/foods/new?error=${encodeURIComponent("緯度・経度の値が範囲外です")}`);
+  }
+
+  const { data: food, error } = await supabase
+    .from("nearby_foods")
+    .insert({
+      spot_id: fields.spot_id,
+      name: fields.name,
+      category: fields.category,
+      address: fields.address,
+      rating: fields.rating,
+      price_level: fields.price_level,
+      description_ja: fields.description_ja,
+      description_en: fields.description_en,
+      tags: fields.tags,
+      google_maps_url: fields.google_maps_url,
+      website_url: fields.website_url,
+      is_sponsored: fields.is_sponsored
+    })
+    .select("id")
+    .single();
+  if (error) redirect(`/admin/foods/new?error=${encodeURIComponent(error.message)}`);
+
+  const { error: geomError } = await supabase.rpc("admin_upsert_food_geom", {
+    p_id: food.id,
+    p_lat: fields.latitude,
+    p_lng: fields.longitude
+  });
+  if (geomError) {
+    await supabase.from("nearby_foods").delete().eq("id", food.id);
+    redirect(`/admin/foods/new?error=${encodeURIComponent(geomError.message)}`);
+  }
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/foods");
+  redirect("/admin/foods?saved=1");
+}
+
+export async function updateFoodAction(formData: FormData) {
+  const id = String(formData.get("id") || "");
+  if (!id) redirect("/admin/foods");
+
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(`/admin/foods/${id}?error=${encodeURIComponent("Supabase admin client is not configured")}`);
+  }
+
+  const fields = readFoodFields(formData);
+  if (!fields.spot_id || !fields.name) {
+    redirect(`/admin/foods/${id}?error=${encodeURIComponent("作品と店舗名は必須です")}`);
+  }
+  if ((fields.latitude === null) !== (fields.longitude === null)) {
+    redirect(`/admin/foods/${id}?error=${encodeURIComponent("緯度と経度は両方入力してください")}`);
+  }
+  if (
+    (fields.latitude !== null && (fields.latitude < -90 || fields.latitude > 90)) ||
+    (fields.longitude !== null && (fields.longitude < -180 || fields.longitude > 180))
+  ) {
+    redirect(`/admin/foods/${id}?error=${encodeURIComponent("緯度・経度の値が範囲外です")}`);
+  }
+
+  const { error } = await supabase
+    .from("nearby_foods")
+    .update({
+      spot_id: fields.spot_id,
+      name: fields.name,
+      category: fields.category,
+      address: fields.address,
+      rating: fields.rating,
+      price_level: fields.price_level,
+      description_ja: fields.description_ja,
+      description_en: fields.description_en,
+      tags: fields.tags,
+      google_maps_url: fields.google_maps_url,
+      website_url: fields.website_url,
+      is_sponsored: fields.is_sponsored
+    })
+    .eq("id", id);
+  if (error) redirect(`/admin/foods/${id}?error=${encodeURIComponent(error.message)}`);
+
+  const { error: geomError } = await supabase.rpc("admin_upsert_food_geom", {
+    p_id: id,
+    p_lat: fields.latitude,
+    p_lng: fields.longitude
+  });
+  if (geomError) redirect(`/admin/foods/${id}?error=${encodeURIComponent(geomError.message)}`);
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/foods");
+  redirect("/admin/foods?saved=1");
+}
+
+export async function deleteFoodAction(formData: FormData) {
+  const id = String(formData.get("id") || "");
+  if (!id) {
+    redirect(`/admin/foods?error=${encodeURIComponent("削除対象が指定されていません")}`);
+  }
+
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(`/admin/foods?error=${encodeURIComponent("Supabase admin client is not configured")}`);
+  }
+
+  const { error } = await supabase.from("nearby_foods").delete().eq("id", id);
+  if (error) redirect(`/admin/foods?error=${encodeURIComponent(error.message)}`);
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/foods");
+  redirect("/admin/foods?deleted=1");
 }
 
 export async function updateSpotAction(formData: FormData) {

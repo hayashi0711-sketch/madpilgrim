@@ -43,6 +43,7 @@ type PublicFoodRow = {
   address: string | null;
   rating: number | null;
   price_level: number | null;
+  website_url: string | null;
   google_maps_url: string | null;
   description_ja: string | null;
   description_en: string | null;
@@ -115,6 +116,7 @@ function toFood(row: PublicFoodRow): NearbyFood {
       ja: row.description_ja || "",
       en: row.description_en || row.description_ja || ""
     },
+    websiteUrl: row.website_url || undefined,
     googleMapsUrl: row.google_maps_url
       || `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${row.name} ${row.address || ""}`.trim())}`
   };

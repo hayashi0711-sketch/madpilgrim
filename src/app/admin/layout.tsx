@@ -9,6 +9,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
         <nav className="flex items-center gap-5 text-sm font-semibold">
           <Link href="/admin">MAD Pilgrim Admin</Link>
           <Link href="/admin/spots" className="text-zinc-600 hover:text-black">スポット管理</Link>
+          <Link href="/admin/foods" className="text-zinc-600 hover:text-black">店舗管理</Link>
           <Link href="/admin/spots/new" className="text-zinc-600 hover:text-black">新規追加</Link>
           <Link href="/admin/copy" className="text-zinc-600 hover:text-black">サイト文言</Link>
           <Link href="/admin/design" className="text-zinc-600 hover:text-black">デザイン設定</Link>
