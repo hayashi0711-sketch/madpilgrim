@@ -915,7 +915,6 @@ a {
 .receipt-scene[data-category="manga"]:not(.is-selected) .receipt-number small  { background: #6B3A3A; }
 
 .receipt-scene.is-selected { background: linear-gradient(115deg, var(--color-signal), #a8843f); color: white; }
-.receipt-scene.is-selected::after { content: ""; position: absolute; right: 0; top: 50%; z-index: 6; width: 34px; height: 2px; background: white; box-shadow: 9px 0 0 var(--color-signal); }
 .receipt-number { font: 17px monospace; display: flex; flex-direction: column; }
 .receipt-number small {
   margin-top: 5px;
