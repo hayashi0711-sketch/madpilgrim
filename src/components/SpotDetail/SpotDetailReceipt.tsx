@@ -272,21 +272,26 @@ export function SpotFoodPanel({
               </div>
             </div>
             <dl>
+              <div><dt>おすすめ</dt><dd><strong>{food.dishName || food.name}</strong></dd></div>
               <div>
-                <dt>VENUE</dt>
+                <dt>店舗名</dt>
                 <dd>
                   <span>
                     <strong>{food.name}</strong>
                     <small>{food.address}</small>
-                    {food.websiteUrl ? (
-                      <a href={food.websiteUrl} rel="noreferrer" target="_blank">
-                        {locale === "ja" ? "ホームページ" : "Website"}
-                      </a>
-                    ) : null}
                   </span>
                 </dd>
               </div>
-              <div><dt>AVAILABLE</dt><dd><strong className="available">AVAILABLE NOW</strong></dd></div>
+              {food.websiteUrl ? (
+                <div>
+                  <dt>URL</dt>
+                  <dd>
+                    <a href={food.websiteUrl} rel="noreferrer" target="_blank">
+                      {locale === "ja" ? "店舗ホームページ" : "Official website"}
+                    </a>
+                  </dd>
+                </div>
+              ) : null}
               <div><dt>RATING</dt><dd><strong>{food.rating.toFixed(1)}</strong></dd></div>
               <div><dt>TAGS</dt><dd>{food.tags.join(" / ")}</dd></div>
             </dl>

@@ -19,6 +19,14 @@ function adminSpotsUrl(formData: FormData, params: Record<string, string>) {
   return `/admin/spots?${searchParams.toString()}`;
 }
 
+function adminSpotsEditUrl(formData: FormData, id: string, params: Record<string, string>) {
+  const category = String(formData.get("returnCategory") || "");
+  const searchParams = new URLSearchParams(params);
+  if (SPOT_CATEGORIES.has(category)) searchParams.set("category", category);
+  searchParams.set("edit", id);
+  return `/admin/spots?${searchParams.toString()}`;
+}
+
 export async function loginAction(formData: FormData) {
   const password = String(formData.get("password") || "");
   const expected = process.env.ADMIN_PASSWORD;
@@ -148,6 +156,24 @@ export async function updateSpotListFieldsAction(formData: FormData) {
 
   if (error) redirect(adminSpotsUrl(formData, { error: error.message }));
 
+  const foodId = String(formData.get("food_id") || "");
+  const foodName = text("food_name");
+  const foodDishName = text("food_dish_name");
+  const foodWebsiteUrl = text("food_website_url");
+
+  if (foodId && foodName) {
+    const { error: foodError } = await supabase
+      .from("nearby_foods")
+      .update({ name: foodName, dish_name: foodDishName, website_url: foodWebsiteUrl })
+      .eq("id", foodId);
+    if (foodError) redirect(adminSpotsUrl(formData, { error: foodError.message }));
+  } else if (!foodId && foodName) {
+    const { error: foodError } = await supabase
+      .from("nearby_foods")
+      .insert({ spot_id: id, name: foodName, dish_name: foodDishName, website_url: foodWebsiteUrl });
+    if (foodError) redirect(adminSpotsUrl(formData, { error: foodError.message }));
+  }
+
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
   redirect(adminSpotsUrl(formData, { saved: "1" }));
@@ -169,6 +195,26 @@ export async function deleteSpotAction(formData: FormData) {
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
   redirect(adminSpotsUrl(formData, { deleted: "1" }));
+}
+
+export async function bulkDeleteSpotsAction(formData: FormData) {
+  const ids = formData.getAll("ids").map(String).filter(Boolean);
+  if (ids.length === 0) {
+    redirect(adminSpotsUrl(formData, { error: "削除対象が選択されていません" }));
+  }
+
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(adminSpotsUrl(formData, { error: "Supabase admin client is not configured" }));
+  }
+
+  // nearby_foods.spot_id uses ON DELETE CASCADE.
+  const { error } = await supabase.from("spots").delete().in("id", ids);
+  if (error) redirect(adminSpotsUrl(formData, { error: error.message }));
+
+  revalidatePath("/[locale]", "page");
+  revalidatePath("/admin/spots");
+  redirect(adminSpotsUrl(formData, { deleted: String(ids.length) }));
 }
 
 function readSpotFields(formData: FormData) {
@@ -231,6 +277,7 @@ function readFoodFields(formData: FormData) {
   return {
     spot_id: text("spot_id"),
     name: text("name"),
+    dish_name: text("dish_name"),
     category: text("category"),
     address: text("address"),
     latitude: num("latitude"),
@@ -326,6 +373,7 @@ export async function createFoodAction(formData: FormData) {
     .insert({
       spot_id: fields.spot_id,
       name: fields.name,
+      dish_name: fields.dish_name,
       category: fields.category,
       address: fields.address,
       rating: fields.rating,
@@ -384,6 +432,7 @@ export async function updateFoodAction(formData: FormData) {
     .update({
       spot_id: fields.spot_id,
       name: fields.name,
+      dish_name: fields.dish_name,
       category: fields.category,
       address: fields.address,
       rating: fields.rating,
@@ -443,7 +492,7 @@ export async function updateSpotAction(formData: FormData) {
       p_lat: fields.latitude,
       p_lng: fields.longitude
     });
-    if (geomError) redirect(`/admin/spots/${id}?error=${encodeURIComponent(geomError.message)}`);
+    if (geomError) redirect(adminSpotsEditUrl(formData, id, { error: geomError.message }));
   }
 
   const { error } = await supabase
@@ -471,9 +520,9 @@ export async function updateSpotAction(formData: FormData) {
       is_featured: fields.is_featured
     })
     .eq("id", id);
-  if (error) redirect(`/admin/spots/${id}?error=${encodeURIComponent(error.message)}`);
+  if (error) redirect(adminSpotsEditUrl(formData, id, { error: error.message }));
 
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/spots");
-  redirect("/admin/spots");
+  redirect(adminSpotsEditUrl(formData, id, { saved: "1" }));
 }

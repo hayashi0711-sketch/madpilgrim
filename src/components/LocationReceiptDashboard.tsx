@@ -413,9 +413,9 @@ export function LocationReceiptDashboard({
                 </div>
                 {primaryFood ? (
                   <dl>
-                    <div><dt>DISH</dt><dd><strong>{primaryFood.name}</strong></dd></div>
+                    <div><dt>おすすめ</dt><dd><strong>{primaryFood.dishName || primaryFood.name}</strong></dd></div>
                     <div>
-                      <dt>VENUE</dt>
+                      <dt>店舗名</dt>
                       <dd>
                         <a className="receipt-venue-link" href={primaryFood.googleMapsUrl} rel="noreferrer" target="_blank">
                           <span><strong>{primaryFood.name}</strong><small>{primaryFood.address}</small></span>
@@ -423,9 +423,13 @@ export function LocationReceiptDashboard({
                         </a>
                       </dd>
                     </div>
-                    <div><dt>AVAILABLE</dt><dd><strong className="available">AVAILABLE NOW</strong></dd></div>
                     <div><dt>PRICE RANGE</dt><dd>{`¥${primaryFood.priceLevel * 500}〜¥${primaryFood.priceLevel * 1000 + 300}`}</dd></div>
-                    <div><dt>TRAVEL TIME</dt><dd><strong className="walk">🚶 徒歩 {String(selectedFoods[0] ? 5 : 6).padStart(2, "0")} MIN</strong></dd></div>
+                    {primaryFood.websiteUrl ? (
+                      <div>
+                        <dt>URL</dt>
+                        <dd><a href={primaryFood.websiteUrl} rel="noreferrer" target="_blank">{locale === "ja" ? "店舗ホームページ" : "Official website"}</a></dd>
+                      </div>
+                    ) : null}
                     <div><dt>SOURCE</dt><dd>{primaryFood.tags?.join(" / ") || (selected.sourceType === "official" ? "OFFICIAL" : selected.sourceType?.toUpperCase())}</dd></div>
                   </dl>
                 ) : (

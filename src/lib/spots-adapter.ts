@@ -39,6 +39,7 @@ type PublicFoodRow = {
   id: string;
   spot_slug: string;
   name: string;
+  dish_name: string | null;
   category: string | null;
   address: string | null;
   rating: number | null;
@@ -106,6 +107,7 @@ function toFood(row: PublicFoodRow): NearbyFood {
     id: row.id,
     spotSlug: row.spot_slug,
     name: row.name,
+    dishName: row.dish_name || undefined,
     category: row.category || "food",
     address: row.address || "",
     rating: row.rating ?? 0,

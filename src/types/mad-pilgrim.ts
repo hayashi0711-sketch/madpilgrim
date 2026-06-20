@@ -15,6 +15,7 @@ export type NearbyFood = {
   id: string;
   spotSlug: string;
   name: string;
+  dishName?: string;
   category: string;
   address: string;
   rating: number;

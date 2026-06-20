@@ -74,16 +74,21 @@ export function SpotForm({
   action,
   initial,
   spotId,
-  submitLabel
+  submitLabel,
+  extraHidden
 }: {
   action: (formData: FormData) => void | Promise<void>;
   initial?: SpotFormInitial;
   spotId?: string;
   submitLabel: string;
+  extraHidden?: Record<string, string>;
 }) {
   return (
     <form action={action} className="mt-6 space-y-5">
       {spotId ? <input name="id" type="hidden" value={spotId} /> : null}
+      {extraHidden
+        ? Object.entries(extraHidden).map(([key, value]) => <input key={key} name={key} type="hidden" value={value} />)
+        : null}
 
       <div className="grid gap-4 sm:grid-cols-2">
         <Field label="スラッグ（URL用、新規作成時のみ編集可）">

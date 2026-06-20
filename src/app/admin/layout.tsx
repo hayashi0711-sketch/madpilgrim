@@ -18,7 +18,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           <button className="text-sm text-zinc-500 hover:text-black" type="submit">ログアウト</button>
         </form>
       </header>
-      <main className="mx-auto max-w-4xl px-6 py-8">{children}</main>
+      <main className="mx-auto max-w-7xl px-6 py-8">{children}</main>
     </div>
   );
 }

@@ -3,6 +3,7 @@
 type FoodFormInitial = {
   spot_id?: string | null;
   name?: string;
+  dish_name?: string | null;
   category?: string | null;
   address?: string | null;
   latitude?: number | null;
@@ -69,10 +70,14 @@ export function FoodForm({
         <Field label="店舗名">
           <input className={inputClass} defaultValue={initial?.name ?? ""} name="name" required type="text" />
         </Field>
-        <Field label="カテゴリ">
-          <input className={inputClass} defaultValue={initial?.category ?? ""} name="category" type="text" />
+        <Field label="おすすめ（料理名）">
+          <input className={inputClass} defaultValue={initial?.dish_name ?? ""} name="dish_name" type="text" />
         </Field>
       </div>
+
+      <Field label="カテゴリ">
+        <input className={inputClass} defaultValue={initial?.category ?? ""} name="category" type="text" />
+      </Field>
 
       <Field label="住所">
         <input className={inputClass} defaultValue={initial?.address ?? ""} name="address" type="text" />
