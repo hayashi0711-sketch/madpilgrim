@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import type { CSSProperties } from "react";
 import { Hina_Mincho, BIZ_UDPGothic } from "next/font/google";
+import { getDesignTokens } from "@/lib/design-tokens";
 import "./globals.css";
 
 const headingFont = Hina_Mincho({
@@ -22,9 +24,15 @@ export const metadata: Metadata = {
   description: "Filming-location tourism and screen-to-table experiences."
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default async function RootLayout({ children }: { children: React.ReactNode }) {
+  const tokens = await getDesignTokens();
+
   return (
-    <html lang="ja" className={`${headingFont.variable} ${bodyFont.variable}`}>
+    <html
+      lang="ja"
+      className={`${headingFont.variable} ${bodyFont.variable}`}
+      style={tokens as CSSProperties}
+    >
       <body>{children}</body>
     </html>
   );

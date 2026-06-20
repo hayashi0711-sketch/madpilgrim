@@ -11,6 +11,7 @@ export default function AdminLayout({ children }: { children: ReactNode }) {
           <Link href="/admin/spots" className="text-zinc-600 hover:text-black">スポット管理</Link>
           <Link href="/admin/spots/new" className="text-zinc-600 hover:text-black">新規追加</Link>
           <Link href="/admin/copy" className="text-zinc-600 hover:text-black">サイト文言</Link>
+          <Link href="/admin/design" className="text-zinc-600 hover:text-black">デザイン設定</Link>
         </nav>
         <form action={logoutAction}>
           <button className="text-sm text-zinc-500 hover:text-black" type="submit">ログアウト</button>

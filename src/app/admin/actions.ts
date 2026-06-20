@@ -5,6 +5,7 @@ import { redirect } from "next/navigation";
 import { revalidatePath } from "next/cache";
 import { getSupabaseAdminClient } from "@/lib/supabase-admin";
 import { editableCopyKeys } from "@/lib/site-copy";
+import { designTokens, normalizeDesignTokenValue } from "@/lib/design-tokens";
 
 const ADMIN_COOKIE = "mp_admin_session";
 const SPOT_CATEGORIES = new Set(["anime", "drama", "movie", "mv", "cm", "manga"]);
@@ -69,6 +70,36 @@ export async function updateCopyAction(formData: FormData) {
   revalidatePath("/[locale]", "page");
   revalidatePath("/admin/copy");
   redirect(`/admin/copy?locale=${locale}&saved=1`);
+}
+
+export async function saveDesignTokensAction(formData: FormData) {
+  const supabase = getSupabaseAdminClient();
+  if (!supabase) {
+    redirect(
+      `/admin/design?error=${encodeURIComponent("Supabase admin client is not configured")}`
+    );
+  }
+
+  const values = designTokens.map((token) => {
+    const rawValue = formData.get(`token:${token.key}`);
+    const value = normalizeDesignTokenValue(
+      token,
+      typeof rawValue === "string" ? rawValue : undefined
+    );
+
+    if (value === null) {
+      redirect(`/admin/design?error=${encodeURIComponent(`${token.label}の値が不正です`)}`);
+    }
+
+    return { key: token.key, value };
+  });
+
+  const { error } = await supabase.from("design_tokens").upsert(values, { onConflict: "key" });
+  if (error) redirect(`/admin/design?error=${encodeURIComponent(error.message)}`);
+
+  revalidatePath("/", "layout");
+  revalidatePath("/admin/design");
+  redirect("/admin/design?saved=1");
 }
 
 export async function toggleFeaturedAction(formData: FormData) {
