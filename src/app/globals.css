@@ -547,17 +547,6 @@ a {
   color: white;
 }
 
-.landing-story-image .landing-story-category-icon {
-  position: absolute;
-  z-index: 1;
-  top: 10px;
-  right: 10px;
-  height: 42px;
-  width: auto;
-  max-width: none;
-  border-radius: 5px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, .35);
-}
 
 .landing-story-location {
   left: 10px;
@@ -869,8 +858,23 @@ a {
 .receipt-blackbar strong { font-size: 19px; letter-spacing: .03em; }
 .receipt-blackbar em { color: var(--color-signal); font-style: normal; }
 .receipt-blackbar span, .receipt-blackbar small { font-size: 12px; }
-.receipt-blackbar-end { display: flex; align-items: center; gap: 8px; }
-.receipt-blackbar-icon { height: 38px; width: auto; border-radius: 4px; }
+.receipt-blackbar-end { display: flex; align-items: center; gap: 10px; }
+.receipt-category-tag {
+  padding: 4px 8px;
+  border-radius: 3px;
+  background: var(--color-signal);
+  color: var(--color-navy);
+  font: 700 10px/1 "Courier New", monospace;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.receipt-category-tag-drama { background: #6f93c9; color: #121826; }
+.receipt-category-tag-movie { background: #c99a6f; color: #121826; }
+.receipt-category-tag-anime { background: #c97fc9; color: #121826; }
+.receipt-category-tag-mv    { background: #6fc9b8; color: #121826; }
+.receipt-category-tag-cm    { background: #c9b56f; color: #121826; }
+.receipt-category-tag-manga { background: #d18a8a; color: #121826; }
 .receipt-map-toggle { display: flex; gap: 6px; }
 .receipt-map-toggle button {
   background: none;

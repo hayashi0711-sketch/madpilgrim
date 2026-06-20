@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { categoryIconSrc } from "@/lib/category-icons";
 import type { LandingCopy } from "@/lib/site-copy";
 import type { Locale, NearbyFood, Spot, SpotCategory } from "@/types/mad-pilgrim";
 
@@ -187,15 +186,7 @@ export function LandingPage({
                       loading="lazy"
                     />
                     <span className="landing-story-number">{String(index + 1).padStart(2, "0")}</span>
-                    {categoryIconSrc(spot.category) ? (
-                      <img
-                        alt={categoryCodes[spot.category]}
-                        className="landing-story-category-icon"
-                        src={categoryIconSrc(spot.category)!}
-                      />
-                    ) : (
-                      <span className="landing-story-category">{categoryCodes[spot.category]}</span>
-                    )}
+                    <span className="landing-story-category">{categoryCodes[spot.category]}</span>
                     <span className="landing-story-location">⌖ {spot.city || spot.prefecture}</span>
                     <span className="landing-story-visual-note">LOCATION MOOD / EDITORIAL IMAGE</span>
                     {foods.length ? (

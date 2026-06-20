@@ -2,7 +2,6 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import { BrandMark } from "@/components/LandingPage";
 import { TrustIndicator } from "@/components/TrustIndicator";
-import { categoryIconSrc } from "@/lib/category-icons";
 import { toYoutubeEmbedUrl } from "@/lib/youtube";
 import type { Locale, NearbyFood, Spot, SpotCategory } from "@/types/mad-pilgrim";
 
@@ -242,9 +241,9 @@ export function SpotFoodPanel({
       <div className="receipt-blackbar">
         <strong>{locale === "ja" ? "作品に出た味" : "FOOD ON SCREEN"}</strong>
         <span className="receipt-blackbar-end">
-          {categoryIconSrc(spot.category) ? (
-            <img alt={spot.category} className="receipt-blackbar-icon" src={categoryIconSrc(spot.category)!} />
-          ) : null}
+          <span className={`receipt-category-tag receipt-category-tag-${spot.category}`}>
+            {categoryLabels[locale][spot.category]}
+          </span>
           <Link className="spot-detail-view-all" href={`/${locale}/foods/${slug}`}>
             {locale === "ja" ? "すべて見る →" : "VIEW ALL →"}
           </Link>

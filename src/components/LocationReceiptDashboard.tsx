@@ -4,7 +4,6 @@ import Link from "next/link";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { BrandMark } from "@/components/LandingPage";
 import { TrustIndicator } from "@/components/TrustIndicator";
-import { categoryIconSrc } from "@/lib/category-icons";
 import type { Locale, NearbyFood, Spot } from "@/types/mad-pilgrim";
 
 function mapboxStatic(lng: number, lat: number, w: number, h: number, zoom = 13): string | null {
@@ -371,8 +370,10 @@ export function LocationReceiptDashboard({
               <div className="receipt-blackbar">
                 <strong>{primaryFood ? (locale === "ja" ? "作品に出た味" : "FOOD ON SCREEN") : (locale === "ja" ? "ロケ地情報" : "LOCATION NOTES")}</strong>
                 <span className="receipt-blackbar-end">
-                  {primaryFood && categoryIconSrc(selected.category) ? (
-                    <img alt={selected.category} className="receipt-blackbar-icon" src={categoryIconSrc(selected.category)!} />
+                  {primaryFood ? (
+                    <span className={`receipt-category-tag receipt-category-tag-${selected.category}`}>
+                      {categoryCode[selected.category]}
+                    </span>
                   ) : null}
                   LIVE
                 </span>
