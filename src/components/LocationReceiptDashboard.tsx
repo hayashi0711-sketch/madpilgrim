@@ -12,7 +12,6 @@ function mapboxStatic(lng: number, lat: number, w: number, h: number, zoom = 13)
   return `https://api.mapbox.com/styles/v1/mapbox/streets-v12/static/${lng},${lat},${zoom},0/${w}x${h}?access_token=${token}`;
 }
 
-const FALLBACK_CARD = "https://images.unsplash.com/photo-1519501025264-65ba15a82390?auto=format&fit=crop&w=480&q=80";
 const FALLBACK_HERO = "https://images.unsplash.com/photo-1540959733332-eab4deabeeaf?auto=format&fit=crop&w=1200&q=88";
 
 const categoryCode: Record<Spot["category"], string> = {
@@ -251,7 +250,10 @@ export function LocationReceiptDashboard({
                   <small>PLACE</small>
                   <strong>{spot.spotName[locale]}</strong>
                 </span>
-                <span className="receipt-rate">{Math.round(spot.confidenceScore * 100)}%</span>
+                <span className="receipt-rate">
+                  <small>{locale === "ja" ? "検証率" : "VERIFIED RATE"}</small>
+                  <b>{Math.round(spot.confidenceScore * 100)}%</b>
+                </span>
               </button>
             ))}
           </div>
@@ -396,15 +398,11 @@ export function LocationReceiptDashboard({
                         &nbsp;{selected.sceneTimestamp[locale] || ""}
                       </span>
                     </strong>
-                    <b>{selected.releaseYear}{selected.broadcaster ? ` / ${selected.broadcaster}` : ""}</b>
+                    <b className={selected.category === "mv" ? "receipt-scene-link-artist" : undefined}>
+                      {selected.releaseYear}{selected.broadcaster ? ` / ${selected.broadcaster}` : ""}
+                    </b>
                     <p>{selected.description[locale]}</p>
                   </div>
-                  <img
-                    alt={`${selected.title[locale]} scene reference`}
-                    height="118"
-                    src={mapboxStatic(selected.lng, selected.lat, 140, 118, 14) ?? FALLBACK_CARD}
-                    width="140"
-                  />
                 </div>
                 {primaryFood ? (
                   <dl>

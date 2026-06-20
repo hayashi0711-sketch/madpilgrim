@@ -107,7 +107,7 @@ export function LandingPage({
         <nav aria-label={copy.navigation}>
           <a href="#highlights">{copy.highlights}</a>
           <a href="#how-it-works">{copy.howItWorks}</a>
-          <a className="landing-nav-cta" href="#discover">{copy.explore}</a>
+          <a href="#discover">{copy.explore}</a>
           <Link href={`/${altLocale}`}>{altLocale.toUpperCase()}</Link>
         </nav>
       </header>
