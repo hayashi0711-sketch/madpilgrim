@@ -49,7 +49,7 @@ a {
   z-index: 10;
   min-height: 92px;
   display: grid;
-  grid-template-columns: 280px 230px 1fr;
+  grid-template-columns: 560px 230px 1fr;
   align-items: stretch;
   border-bottom: 1px solid #777;
   background: var(--landing-white);
@@ -139,17 +139,18 @@ a {
 
 .landing-nav nav {
   display: flex;
+  justify-content: flex-end;
   align-items: stretch;
   background: var(--color-navy);
 }
 
 .landing-nav nav a {
-  flex: 1 1 0;
-  min-width: 140px;
+  flex: 0 0 auto;
+  min-width: 70px;
   display: grid;
   place-items: center;
-  padding: 0 22px;
-  border-left: 1px solid rgba(255, 255, 255, .2);
+  padding: 0 11px;
+  border-left: 3px solid var(--landing-signal);
   font: 700 14px/1.2 "Courier New", monospace;
   text-align: center;
   text-transform: uppercase;
@@ -158,14 +159,9 @@ a {
   background: var(--color-navy);
 }
 
-.landing-nav nav a:nth-child(odd) {
-  background: var(--landing-signal);
-  color: var(--color-navy);
-}
-
 .landing-nav nav a:hover,
 .landing-nav nav a:focus-visible {
-  background: white;
+  background: var(--landing-signal);
   color: var(--color-navy);
 }
 
