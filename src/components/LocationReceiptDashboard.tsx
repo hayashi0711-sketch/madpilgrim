@@ -235,9 +235,6 @@ export function LocationReceiptDashboard({
                 type="button"
               >
                 <span className="receipt-number">{String(index + 1).padStart(3, "0")}<small>{categoryCode[spot.category]}</small></span>
-                {categoryIconSrc(spot.category) ? (
-                  <img alt={categoryCode[spot.category]} className="receipt-scene-category-icon" src={categoryIconSrc(spot.category)!} />
-                ) : null}
                 <span className="receipt-scene-copy">
                   <span className="receipt-scene-heading">
                     <strong>{spot.title[locale]}</strong>
