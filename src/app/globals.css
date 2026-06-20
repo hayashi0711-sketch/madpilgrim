@@ -903,17 +903,29 @@ a {
 .receipt-scene[data-category="cm"]:not(.is-selected)::before    { background: #4A4035; }
 .receipt-scene[data-category="manga"]:not(.is-selected)::before { background: #6B3A3A; }
 
-.receipt-scene[data-category="drama"]:not(.is-selected) .receipt-number small { color: #354B6B; }
-.receipt-scene[data-category="movie"]:not(.is-selected) .receipt-number small  { color: #6B4D37; }
-.receipt-scene[data-category="anime"]:not(.is-selected) .receipt-number small  { color: #5E3A5E; }
-.receipt-scene[data-category="mv"]:not(.is-selected)    .receipt-number small  { color: #2A4A47; }
-.receipt-scene[data-category="cm"]:not(.is-selected)    .receipt-number small  { color: #4A4035; }
-.receipt-scene[data-category="manga"]:not(.is-selected) .receipt-number small  { color: #6B3A3A; }
+.receipt-scene[data-category="drama"]:not(.is-selected) .receipt-number small { background: #354B6B; }
+.receipt-scene[data-category="movie"]:not(.is-selected) .receipt-number small  { background: #6B4D37; }
+.receipt-scene[data-category="anime"]:not(.is-selected) .receipt-number small  { background: #5E3A5E; }
+.receipt-scene[data-category="mv"]:not(.is-selected)    .receipt-number small  { background: #2A4A47; }
+.receipt-scene[data-category="cm"]:not(.is-selected)    .receipt-number small  { background: #4A4035; }
+.receipt-scene[data-category="manga"]:not(.is-selected) .receipt-number small  { background: #6B3A3A; }
 
 .receipt-scene.is-selected { background: linear-gradient(115deg, var(--color-signal), #a8843f); color: white; }
 .receipt-scene.is-selected::after { content: ""; position: absolute; right: 0; top: 50%; z-index: 6; width: 34px; height: 2px; background: white; box-shadow: 9px 0 0 var(--color-signal); }
 .receipt-number { font: 17px monospace; display: flex; flex-direction: column; }
-.receipt-number small { font-size: 8px; margin-top: 5px; }
+.receipt-number small {
+  margin-top: 5px;
+  padding: 2px 5px;
+  border-radius: 3px;
+  background: var(--color-navy);
+  color: white;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .03em;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.receipt-scene.is-selected .receipt-number small { background: rgba(255, 255, 255, .25); color: white; }
 .receipt-scene-copy { display: flex; flex-direction: column; gap: 5px; min-width: 0; }
 .receipt-scene-heading { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
 .receipt-scene-copy strong { font-size: 20px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
